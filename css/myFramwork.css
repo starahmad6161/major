@@ -1,0 +1,427 @@
+
+
+
+@media (min-width: 576px) {
+  .container
+  {
+    max-width: 95%;
+  }
+}
+
+
+
+
+.custom-box-container
+{
+  position: relative;
+}
+.custom-box-container .custom-box-select-options
+{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0px #ddd;
+  font-size: 15px;
+  padding: 15px;
+  display: none;
+}
+.custom-box-container .custom-box-select-options li
+{
+  align-items: center;
+}
+
+.custom-box-container .custom-box-select-options .hint
+{
+  font-size: 14px;
+  color: #a5a5a5;
+}
+.number-box.infants,
+.number-box.child,
+.number-box.adults
+{
+  align-items: center;
+  height: 30px;
+  background: #ddd;
+  text-align: center;
+  padding: 0 5px;
+}
+
+.custom-box-container .custom-box-select-options .custom-box-number
+{
+  width: 30px;
+  height: 100%;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+.custom-box-container .custom-box-select-options svg
+{
+  color: #124ea2;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+
+/*Start Special CheckBox*/
+.special-checkbox
+{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+.special-checkbox ~ .special-check-label
+{
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(133, 133, 133);
+  background: #fff;
+  border-radius: 3px;
+  position: relative;
+}
+.special-checkbox ~ .special-check-label::after
+{
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  color: #124ea2;
+  transition: cubic-bezier(0.6, 2.17, 0.86, 0.19) .3s;
+}
+.special-checkbox:checked ~ .special-check-label::after
+{
+  transform: translate(-50%,-50%) scale(1);
+}
+/*End Special CheckBox*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .row.special-row
+  {
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+  }
+  .row.special-row .special-col
+  {
+    flex-basis: 285px;
+    max-width: 285px;
+  }
+}
+
+
+/****************************************************************************************/
+/**********************Start special tabs*************************************************/
+/****************************************************************************************/
+.special-tabs .tabs-items-container
+{
+  position: relative;
+}
+.special-tabs .tabs-items-container .tab-overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 35, 139, 0.5);
+  z-index: 1;
+}
+.special-tabs .main-tabs
+{
+  position: relative;
+  z-index: 2;
+}
+.special-tabs .tab .nav-link
+{
+  color: #7ba7f0;
+}
+.special-tabs .tab .nav-link span
+{
+  font-size: 16px;
+}
+.special-tabs .tab img
+{
+  width: 20px;
+  height: 20px;
+}
+.special-tabs .tab.selected .nav-link
+{
+  color: #fff;
+  background: transparent;
+}
+.special-tabs .tabs-items-container .tab
+{
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+}
+
+.special-tabs .all-content .tab-content
+{
+    height: 100%;
+}
+@media (min-width: 1500px) {
+  .special-tabs .nav-link
+  {
+    font-size: 1.1vmax;
+  }
+  .special-tabs .tab img
+  {
+    width: 1.5vmax;
+    height: auto
+  }
+}
+@media (max-width: 991px) {
+  .special-tabs .tab
+  {
+    background-color: #00238b;
+    padding: 10px 0;
+    border-radius: .5em;
+    cursor: pointer;
+  }
+  .special-tabs .all-content .tab-content
+  {
+    height: auto;
+  }
+  .special-tabs .tab-content .holiday-box-item
+  {
+    height: auto;
+  }
+}
+/****************************************************************************************/
+/**********************End special tabs*************************************************/
+/****************************************************************************************/
+
+
+/****************************************************************************************/
+/**********************Start Special Slider*************************************************/
+/****************************************************************************************/
+.special_slider
+{
+    overflow: hidden;
+    position: relative;
+}
+.special_slider .indicators
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 50px;
+    z-index: 99;
+}
+.special_slider .indicators .chev
+{
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: #0a2c5a;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+.special_slider .indicators .chev-left
+{
+    left: 3%;
+}
+.special_slider .indicators .chev-right
+{
+    right: 3%;
+}
+.special_slider .boxes
+{
+    min-height: 350px;
+    position: relative;
+    display: flex;
+    transition: .2s;
+}
+.special_slider .boxes .box
+{
+    color: #fff;
+    top: 50%;
+    /*width: 250px;*/
+    flex-shrink: 0;
+    margin-right: 10px;
+    opacity: .5;
+}
+.special_slider .boxes .box.active
+{
+    opacity: 1;
+}
+
+/****************************************************************************************/
+/**********************End Special Slider*************************************************/
+/****************************************************************************************/
+
+/****************************************************************************************/
+/**********************Start Scroll Bar*************************************************/
+/****************************************************************************************/
+.scroll-container
+{
+    position: relative;
+    width: fit-content;
+    height: 100%;
+}
+.scroll-content
+{
+    height: 100px;
+    overflow-y: scroll;
+    margin-right: 10px;
+}
+.scroll-bar
+{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 17px;
+    height: 100%;
+    background-color: #0e3c7a;
+}
+.scroll-cursor
+{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: #1662c9;
+    z-index: 4;
+}
+
+/****************************************************************************************/
+/**********************End Scroll Bar*************************************************/
+/****************************************************************************************/
+
+
+
+
+/*Classes Not in Bootstrap*/
+@media (min-width: 1750px ){
+  .col-xxx-3
+  {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%;
+  }
+}
+
+@media (min-width: 992px)and (max-width: 1024px) {
+  .col-tablet-12 
+  {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col-tablet-12
+  {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 765px ){
+  .col-md-3_5
+  {
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  
+}
+
+
+
+@media (min-width: 578px) {
+  .h-sm-50
+  {
+    height: 50% !important;
+  }
+  .h-sm-100
+  {
+    height: 100% !important;
+  }
+}
+@media (min-width: 768px) {
+  .h-md-50
+  {
+    height: 50% !important;
+  }
+  .h-md-100
+  {
+    height: 100% !important;
+  }
+}
+@media (min-width: 992px) {
+  .h-lg-50
+  {
+    height: 50% !important;
+  }
+  .h-lg-100
+  {
+    height: 100% !important;
+  }
+}
+@media (min-width: 1024px) {
+  .col-ipad_land-6
+  {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-ipad_land-6
+  {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .h-ipad_land-50
+  {
+    height: 50% !important;
+  }
+  .h-ipad_land-100
+  {
+    height: 100% !important;
+  }
+}
+@media (min-width: 1200px) {
+  .h-xl-50
+  {
+    height: 50% !important;
+  }
+  .h-xl-100
+  {
+    height: 100% !important;
+  }
+}
+
+@media screen and (max-height: 320px) { 
+  .col-iphone5_land-3
+  {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-iphone5_land-5
+  {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .col-iphone5_land-4
+  {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}

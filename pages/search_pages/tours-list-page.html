@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Start Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <!--End Fonts-->
+
+    <link rel="stylesheet" href="../../css/library/all.min.css">
+    <link rel="stylesheet" href="../../css/library/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/library/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../css/library/swiper.min.css">
+    <link rel="stylesheet" href="../../css/myFramwork.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/search_pages/slider-result-page.css">
+    <link rel="stylesheet" href="../../css/search_pages/sidebar-result-page.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/search_pages/tours-list-page.css">
+    <title>tours list page</title>
+</head>
+
+<body>
+
+    <div class="tours-list-page">
+        <!--Start Upper Bar-->
+        <div class="upper-bar py-3">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 col-md-4 text-center mb-2 mb-lg-0">
+                        <div class="brand-name">
+                            <div class="image">
+                                <a href="../../index.html"><img src="../../images/home_page/upper-bar/brand-name.png" alt="image" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-8 text-right">
+                        <ul class="d-flex list-unstyled mb-0 align-items-center justify-content-end w-100 flex-wrap">
+                            <li class="mr-2 d-none d-lg-block">
+                                <span class="d-inline-flex align-items-center font-weight-bold mr-1"><a href="./contact-us.html">Call Us Today</a> </span>
+                            </li>
+                            <li class="mr-2 font-weight-bold d-none d-lg-flex align-items-center">
+                                <img class="icon mr-1" src="../../images/home_page/upper-bar/phone.png" alt="Phone" />
+                                <span><a href="../contact-us.html">+44 20 7123 1234</a> </span>
+                            </li>
+                            <li class="mr-2 d-none d-sm-flex align-items-center">
+                                <img class="icon mr-1" src="../../images/home_page/upper-bar/book.png" alt="Book" />
+                                <span><a href="../booking-passenger-info-page.html">My Booking</a> </span>
+                            </li>
+                            <li class="mr-2 font-weight-bold d-none d-sm-block">
+                                <span class="">
+                                    <a class="" href="#">Log In</a>
+                                </span>
+                            </li>
+                            <li class="font-weight-bold d-block d-sm-none">
+                                <div class="upper-search-container d-flex align-items-center">
+                                    <input class="upper-search form-control" type="search"/>
+                                    <i class="ml-2 search fas fa-search"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Upper Bar-->
+        <!--Start Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light py-2">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-block d-lg-none call-today">
+                    <a href="#">
+                        <span class="font-weight-600">Call Today:</span>
+                        02073931000
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link  " href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../flight-page.html">Flight</a>
+                        </li>
+                        <li class="nav-item anyWhere">
+                            <div class="nav-link   drop-title" href="#">
+                                Destination
+                            </div>
+                            <div class="Drop-Down px-3 py-3 anyWhere-menu" aria-labelledby="navbarDropdown">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <span class="d-block font-weight-bold">All Regions</span>
+                                        <hr />
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link py-1 font-weight-700 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-middle-east" role="tab" aria-controls="v-pills-home" aria-selected="true">Middle East</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-indian" role="tab" aria-controls="v-pills-profile" aria-selected="false">Indian Ocean</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-caribbean" role="tab" aria-controls="v-pills-messages" aria-selected="false">Caribbean</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-maxico" role="tab" aria-controls="v-pills-settings" aria-selected="false">Maxico</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-africa" role="tab" aria-controls="v-pills-settings" aria-selected="false">Africa</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-asia" role="tab" aria-controls="v-pills-settings" aria-selected="false">Asia</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-europe" role="tab" aria-controls="v-pills-settings" aria-selected="false">Europe</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-canada" role="tab" aria-controls="v-pills-settings" aria-selected="false">Canada</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-south-america" role="tab" aria-controls="v-pills-settings" aria-selected="false">Center & South
+                                                America</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-united-states" role="tab" aria-controls="v-pills-settings" aria-selected="false">United States Of
+                                                America</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-australasia" role="tab" aria-controls="v-pills-settings" aria-selected="false">Australasia</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="v-pills-middle-east" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                <span class="d-block font-weight-bold">Middle East Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-indian" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                <span class="d-block font-weight-bold">Indian Ocean Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-caribbean" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                                <span class="d-block font-weight-bold">Caribbean Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-maxico" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Maxico Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-africa" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Africa Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-asia" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Asia Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-europe" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Europe Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-canada" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Canada Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-south-america" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Center & South America
+                                                    Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-united-states" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">United States Of America
+                                                    Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-australasia" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Australasia Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../holiday-page.html">Holiday</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../hotels-page.html">Hotel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="#">Attraction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../cruise-page.html">Cruise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../details_pages/tour-details-page.html">Tour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../details_pages/blog-details-page.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../details_pages/offer-detail-page.html">Offer</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline d-none d-sm-flex my-2 my-lg-0">
+                        <div class="search-container">
+                            <input class="form-control mr-sm-2 search_input" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn my-2 my-sm-0  " type="submit">Search</button>
+                        </div>
+                        <i class="ml-2 search fas fa-search"></i>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--End Navbar-->
+        <!--Start Slider-->
+        <div class="slider">
+            <div class="carousel slide h-100" id="homeCarousel" data-ride="carousel">
+                <div class="carousel-inner h-100">
+                    <!--Slider [1]-->
+                    <div class="carousel-item h-100 active">
+                        <img class="w-100 h-100" src="../../images/search_result/tours-list-page/slide_img.jpg" alt="Ship"/>
+                        <div class="overlay">
+                            <div class="container h-100">
+                                <div class="content h-100 d-flex text-center">
+                                    <div class="m-auto">
+                                        <span class="slider-title">Our Recommendations For</span>
+                                        <h1 class="header-text">Multi Desination Tours & Itineraies</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!--End Slider-->
+        
+
+
+
+
+        <!--Start offer-list-page-content-->
+        <div class="tours-list-page-content py-5">
+            <div class="container">
+                <!--Start All Tabs-->
+                <div class="all-tabs">
+                    <!-- Swiper [Tabs] -->
+                    <div class="row mb-3">
+                        <div class="col-md-8 col-lg-7 col-xl-5">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <!-- Right Arrows -->
+                                <div class="swiper-button-prev d-flex d-sm-none mr-1"></div>
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper custom-nav-tabs align-items-center">
+                                        <div class="swiper-slide custom-nav-item active" data-tab-content="#asia-tab">
+                                            <a class="custom-nav-link py-2">Asia</a>
+                                        </div>
+                                        <div class="swiper-slide custom-nav-item" data-tab-content="#south-east-asia-tab">
+                                            <a class="custom-nav-link py-2">South East</a>
+                                        </div>
+                                        <div class="swiper-slide custom-nav-item" data-tab-content="#africa-tab">
+                                            <a class="custom-nav-link py-2">Africa</a>
+                                        </div>
+                                        <div class="swiper-slide custom-nav-item" data-tab-content="#north-america-tab">
+                                            <a class="custom-nav-link py-2">North America</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Next Arrows -->
+                                <div class="swiper-button-next d-flex d-sm-none ml-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--Start Left sidebar-->
+                        <div class="col-xl-3 result-sidebar mb-2">
+                            <div class="result-accordion">
+                                <!--Filter Accordion-->
+                                <h2 class="d-block accordion-title filter">
+                                    <span class="">Filter</span>
+                                </h2>
+                                <div class="filter-acc accordion-content">
+                                    <!--Pricing And Number of Nights -->
+                                    <form>
+                                        <div class="box mt-3">
+                                            <!--Pricing-->
+                                            <div class="pricing-box px-3 py-3">
+                                                <span class="font-weight-600 d-block title mb-1 mb-3">Pricing</span>
+                                                <div class="d-flex mb-3">
+                                                    <span class="box-val d-block" id="pricing-val">$274-$11000</span>
+                                                </div>
+                                                <div class="range-slide" id="result-slider-range-pricing"></div>
+                                            </div>
+                                            <!--Number of Nights-->
+                                            <div class="nights-box px-3 py-4">
+                                                <span class="font-weight-600 d-block title mb-1 mb-3">Number of Nights</span>
+                                                <div class="d-flex mb-3">
+                                                    <span class="box-val d-block" id="nights-val">0 Night to 21 Nights</span>
+                                                </div>
+                                                <div class="range-slide" id="result-slider-range-nights"></div>
+                                            </div>
+                                        </div>
+                                        <div class="box mt-3">
+                                            <div class="btns d-flex align-items-center justify-content-center py-3">
+                                                <input class="text-uppercase btn px-3 py-2 font-weight-600 mr-1" type="submit" name="filter" value="filter"/>
+                                                <input class="text-uppercase btn px-3 py-2 font-weight-600" type="submit" name="reset" value="reset"/>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!--Category -->
+                                    <div class="box mt-3">
+                                        <!--Category Checkbox-->
+                                        <div class="category-box px-3 py-3">
+                                            <span class="font-weight-600 d-block title mb-1 mb-3">Category</span>
+                                            <ul class="list-unstyled list-items">
+                                                <li class="checkbox d-flex font-weight-600 py-3">
+                                                    <input class="special-checkbox" type="radio" name="category" id="category_1" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="category_1"></label>
+                                                    <span class="d-inline-block font-weight-600 radio-title">View All</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 py-3">
+                                                    <input class="special-checkbox" type="radio" name="category" id="category_2" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="category_2"></label>
+                                                    <span class="d-inline-block font-weight-600 radio-title">Unknown</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 py-3">
+                                                    <input class="special-checkbox" type="radio" name="category" id="category_3" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="category_3"></label>
+                                                    <span class="d-inline-block font-weight-600 radio-title">carles of the world</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 py-3">
+                                                    <input class="special-checkbox" type="radio" name="category" id="category_4" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="category_4"></label>
+                                                    <span class="d-inline-block font-weight-600 radio-title">Beaches</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 py-3">
+                                                    <input class="special-checkbox" type="radio" name="category" id="category_5" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="category_5"></label>
+                                                    <span class="d-inline-block font-weight-600 radio-title">Option</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 py-3">
+                                                    <input class="special-checkbox" type="radio" name="category" id="category_6" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="category_6"></label>
+                                                    <span class="d-inline-block font-weight-600 radio-title">Option</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 py-3">
+                                                    <input class="special-checkbox" type="radio" name="category" id="category_7" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="category_7"></label>
+                                                    <span class="d-inline-block font-weight-600 radio-title">Option</span>
+                                                </li>
+                                                <li class="see-all d-flex align-items-center justify-content-center mt-3">
+                                                    <a class="see-all-tilte px-3 py-2 rounded-pill" href="#">See All Types</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--Tour Type -->
+                                    <div class="box mt-3">
+                                        <!--Tour Type Checkbox-->
+                                        <div class="tour-type-box px-3 py-3">
+                                            <span class="font-weight-600 d-block title mb-1 mb-3">Tour Type</span>
+                                            <ul class="list-unstyled list-items">
+                                                <li class="checkbox d-flex font-weight-600 py-3">
+                                                    <input class="special-checkbox" type="radio" name="tour-type" id="tour-type_1" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="tour-type_1"></label>
+                                                    <span class="d-inline-block font-weight-600 radio-title">View All</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 py-3">
+                                                    <input class="special-checkbox" type="radio" name="tour-type" id="tour-type_2" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="tour-type_2"></label>
+                                                    <span class="d-inline-block font-weight-600 radio-title">Unknown</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 py-3">
+                                                    <input class="special-checkbox" type="radio" name="tour-type" id="tour-type_3" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="tour-type_3"></label>
+                                                    <span class="d-inline-block font-weight-600 radio-title">carles of the world</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 py-3">
+                                                    <input class="special-checkbox" type="radio" name="tour-type" id="tour-type_4" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="tour-type_4"></label>
+                                                    <span class="d-inline-block font-weight-600 radio-title">Beaches</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 py-3">
+                                                    <input class="special-checkbox" type="radio" name="tour-type" id="tour-type_5" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="tour-type_5"></label>
+                                                    <span class="d-inline-block font-weight-600 radio-title">Option</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 py-3">
+                                                    <input class="special-checkbox" type="radio" name="tour-type" id="tour-type_6" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="tour-type_6"></label>
+                                                    <span class="d-inline-block font-weight-600 radio-title">Option</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 py-3">
+                                                    <input class="special-checkbox" type="radio" name="tour-type" id="tour-type_7" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="tour-type_7"></label>
+                                                    <span class="d-inline-block font-weight-600 radio-title">Option</span>
+                                                </li>
+                                                <li class="see-all d-flex align-items-center justify-content-center mt-3">
+                                                    <a class="see-all-tilte px-3 py-2 rounded-pill" href="#">See All Categories</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--City and Country -->
+                                    <div class="box mt-3">
+                                        <form>
+                                            <!--Tour Type Checkbox-->
+                                            <div class="tour-type-box px-3 py-3">
+                                                <!--city-coutry-->
+                                                <div class="city-coutry">
+                                                    <span class="font-weight-600 d-block title mb-1 mb-3">City / Country Name</span>
+                                                    <input class="form-control" type="text" placeholder="Search for country / city"/>
+                                                </div>
+                                                <!--sort-by-->
+                                                <div class="sort-by mt-3">
+                                                    <span class="font-weight-600 d-block title mb-1 mb-3">Sort By</span>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="find-hotel p-0 jq-selectbox">
+                                                                <select class="select-box">
+                                                                    <option selected="selected">--Select--</option>
+                                                                    <option>Option #1</option>
+                                                                    <option>Option #2</option>
+                                                                    <option>Option #3</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="find-hotel p-0 jq-selectbox">
+                                                                <select class="select-box">
+                                                                    <option selected="selected">--Select--</option>
+                                                                    <option>Option #1</option>
+                                                                    <option>Option #2</option>
+                                                                    <option>Option #3</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="see-all d-flex align-items-center justify-content-center mt-3">
+                                                    <input type="submit" class="see-all-tilte px-3 py-2 rounded-pill" value="Search"/>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!--Multiple city country name -->
+                                    <div class="box mt-3">
+                                        <!--Multiple city country name Checkbox-->
+                                        <div class="multiple-city-country-box px-3 py-3">
+                                            <form>
+                                                <span class="font-weight-600 d-block title mb-1 mb-3">Select Multiple City/ Country Name</span>
+                                                <ul class="list-unstyled list-items">
+                                                    <li class="checkbox d-flex font-weight-600 py-3">
+                                                        <input class="special-checkbox" type="radio" name="multiple-city-country" id="multiple-city-country_1" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="multiple-city-country_1"></label>
+                                                        <span class="d-inline-block font-weight-600 radio-title">View All</span>
+                                                    </li>
+                                                    <li class="checkbox d-flex font-weight-600 py-3">
+                                                        <input class="special-checkbox" type="radio" name="multiple-city-country" id="multiple-city-country_2" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="multiple-city-country_2"></label>
+                                                        <span class="d-inline-block font-weight-600 radio-title">Unknown</span>
+                                                    </li>
+                                                    <li class="checkbox d-flex font-weight-600 py-3">
+                                                        <input class="special-checkbox" type="radio" name="multiple-city-country" id="multiple-city-country_3" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="multiple-city-country_3"></label>
+                                                        <span class="d-inline-block font-weight-600 radio-title">carles of the world</span>
+                                                    </li>
+                                                    <li class="checkbox d-flex font-weight-600 py-3">
+                                                        <input class="special-checkbox" type="radio" name="multiple-city-country" id="multiple-city-country_4" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="multiple-city-country_4"></label>
+                                                        <span class="d-inline-block font-weight-600 radio-title">Beaches</span>
+                                                    </li>
+                                                    <li class="checkbox d-flex font-weight-600 py-3">
+                                                        <input class="special-checkbox" type="radio" name="multiple-city-country" id="multiple-city-country_5" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="multiple-city-country_5"></label>
+                                                        <span class="d-inline-block font-weight-600 radio-title">Option</span>
+                                                    </li>
+                                                    <li class="checkbox d-flex font-weight-600 py-3">
+                                                        <input class="special-checkbox" type="radio" name="multiple-city-country" id="multiple-city-country_6" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="multiple-city-country_6"></label>
+                                                        <span class="d-inline-block font-weight-600 radio-title">Option</span>
+                                                    </li>
+                                                    <li class="checkbox d-flex font-weight-600 py-3">
+                                                        <input class="special-checkbox" type="radio" name="multiple-city-country" id="multiple-city-country_7" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="multiple-city-country_7"></label>
+                                                        <span class="d-inline-block font-weight-600 radio-title">Option</span>
+                                                    </li>
+                                                    <li class="see-all d-flex align-items-center justify-content-center mt-3">
+                                                        <input type="submit" class="see-all-tilte px-3 py-2 rounded-pill" value="Search"/>
+                                                    </li>
+                                                </ul>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Left sidebar-->
+                        <!--Start Main Search Body-->
+                        <div class="col-xl-9">
+                            <!--tab-content-->
+                            <div class="custom-tab-content">
+                                <!--Asia-->
+                                <div class="custom-content active" id="asia-tab">
+                                    <div class="main-search-body">
+                                        <div class="row">
+                                            <!--Card #1-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #2-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #3-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #4-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #5-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #6-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #7-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #8-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #9-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- south-east-asia -->
+                                <div class="custom-content" id="south-east-asia-tab">
+                                    <div class="main-search-body">
+                                        <div class="row">
+                                            <!--Card #1-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #2-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #3-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #4-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #5-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #6-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #7-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #8-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #9-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- africa-tab-->
+                                <div class="custom-content" id="africa-tab">
+                                    <div class="main-search-body">
+                                        <div class="row">
+                                            <!--Card #1-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #2-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #3-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #4-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #5-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #6-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #7-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #8-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #9-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- north-america-tab-->
+                                <div class="custom-content" id="north-america-tab">
+                                    <div class="main-search-body">
+                                        <div class="row">
+                                            <!--Card #1-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #2-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #3-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #4-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #5-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #6-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #7-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #8-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Card #9-->
+                                            <div class="col-sm-6 col-md-4 col-lg-4 col-xxx-3 mb-2">
+                                                <div class="card-info">
+                                                    <div class="image">
+                                                        <img class="card-img" src="../../images/search_result/tours-list-page/adventure_img.jpg"/>
+                                                        <div class="img-text-container px-4 py-2">
+                                                            <h3 class="ship-name">Ship Name</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6">
+                                                            <div class="days-num d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">23 Itineraries</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="price-info d-flex align-items-center justify-content-center">
+                                                                <span class="text-uppercase">
+                                                                    <span class="from">from</span>
+                                                                    <span class="price font-weight-500">$880</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End tabs-->
+
+
+            </div>
+        </div>
+        <!--End offer-list-page-content-->
+
+
+
+
+
+
+        <!--End tours-list-page-content-->
+        <!--Start pagination-->
+        <div class="pagination">
+            <ul class="p-0 list-unstyled mx-auto">
+                <li class="d-inline-block"> 
+                    <i class="fas fa-chevron-left  "></i>
+                    <i class="fas fa-chevron-left  "></i> 
+                </li>
+                <li class="d-inline-block"> 
+                    <i class="fas fa-chevron-left  "></i> 
+                </li>
+                <li class="d-inline-block number active"> 
+                    <span class=" ">1</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">2</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">3</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">4</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">5</span>
+                </li>
+                <li class="d-inline-block"> 
+                    <span class=" ">......</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">12</span>
+                </li>
+                <li class="d-inline-block"> 
+                    <i class="fas fa-chevron-right  "></i>
+                </li>
+                <li class="d-inline-block"> 
+                    <i class="fas fa-chevron-right  "></i>
+                    <i class="fas fa-chevron-right  "></i>
+                </li>
+            </ul>
+        </div>
+        <!--End pagination-->
+        
+        <!--Start Fixed buttons-->
+        <div class="result-fixed-buttons d-none d-sm-block">
+            <ul class="list-unstyled px-2 py-3 m-0">
+                <li class="d-block mb-2">
+                    <img src="../../images/search_result/flight_result/flight.png" alt="icon"/>
+                    <img src="../../images/search_result/flight_result/flight_active.png" alt="icon"/>
+                </li>
+                <li class="d-block mb-2 active">
+                    <img src="../../images/search_result/flight_result/car.png" alt="icon"/>
+                    <img src="../../images/search_result/flight_result/car_active.png" alt="icon"/>
+                </li>
+                <li class="d-block mb-2">
+                    <img src="../../images/search_result/flight_result/holiday.png" alt="icon"/>
+                    <img src="../../images/search_result/flight_result/holiday_active.png" alt="icon"/>
+                </li>
+                <li class="d-block mb-2">
+                    <img src="../../images/search_result/flight_result/cruise.png" alt="icon"/>
+                    <img src="../../images/search_result/flight_result/cruise_active.png" alt="icon"/>
+                </li>
+            </ul>
+        </div>
+        <!--End Fixed buttons-->
+        
+        <!--Start Footer-->
+        <div class="footer py-5">
+            <div class="container">
+                <span class="title d-block text-center mx-auto">Destinations</span>
+                <ul class="list-unstyled text-center mt-3 mx-auto cities">
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Dubai</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">New York</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Cape Town</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Istambul</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Hong Kong</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Doha</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Lose Angeles</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Sydney</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Auckland</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Tokyo</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Parise</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Bombay</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Bangkok</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Dubai</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Delhi</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Kuala Lumpure</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Jeddah</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Nairobia</a></li>
+                </ul>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <ul class="terms list-unstyled text-center text-lg-left mx-auto mx-lg-0 mb-0" >
+                            <li class=" d-inline-block mr-2 mb-3 "><a href="../terms-conditions.html">Terms and conditions</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href=" # ">Privacy policy</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href="../contact-us.html">Contact</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href=" # ">FAQs</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href="../booking-passenger-info-page.html">Flight information</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-lg-4 ">
+                        <ul class="social-media-icons list-unstyled text-center text-lg-right mx-auto mx-lg-0 ">
+                            <li class="d-inline-block mr-2">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="d-inline-block mr-2">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="d-inline-block mr-2">
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="d-inline-block mr-2">
+                                <a href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright text-center text-lg-left">
+                    Copyright 2019 Major Independent Partner
+                </div>
+            </div>
+        </div>
+        <div class="go-top">
+            <div class="icon">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </div>
+        <!--End Footer-->
+    </div>
+
+
+    <script src="../../js/library/all.min.js"></script>
+    <script src="../../js/library/jquery-3.3.1.min.js"></script>
+    <script src="../../js/library/popper.min.js"></script>
+    <script src="../../js/library/bootstrap.min.js"></script>
+    <script src="../../js/library/jquery-ui.min.js"></script>
+    <script src="../../js/library/jssor.slider.min.js"></script>
+    <script src="../../js/library/swiper.min.js"></script>
+    <script src="../../js/myFramwork.js"></script>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/search_pages/tours-list-page.js"></script>
+</body>
+
+</html>

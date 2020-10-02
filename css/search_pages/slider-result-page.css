@@ -1,0 +1,39 @@
+/*Start Slider*/
+.slider .carousel .carousel-inner .carousel-item .overlay
+{
+    background: rgba(0,0,0,.2);
+}
+.slider .carousel .carousel-inner .carousel-item .overlay .content
+{
+    color: #fff;
+}
+.slider .carousel .carousel-inner .carousel-item .overlay .content .slider-title
+{
+    font-size: 1.5em;
+}
+.slider .carousel .carousel-inner .carousel-item .overlay .content h1
+{
+    font-size: 3.5em;
+}
+.slider .carousel .carousel-inner .carousel-item .overlay .content .date
+{
+    background: linear-gradient(90deg, #113992, #a40080);
+    border-radius: 2em;
+    font-size: 1.1em;
+}
+@media (min-width: 1500px ) {
+    .slider .carousel .carousel-inner .carousel-item .overlay .content .slider-title
+    {
+        font-size: 2vmax !important;
+    }
+    .slider .carousel .carousel-inner .carousel-item .overlay .content h1
+    {
+        font-size: 3vmax !important;
+    }
+    .slider .carousel .carousel-inner .carousel-item .overlay .content .date
+    {
+        font-size: 1.5vmax !important;
+        display: inline-block;
+    }
+}
+/*End Slider*/

@@ -1,0 +1,251 @@
+/*Start Slider*/
+.tours-list-page .slider .carousel .carousel-inner .carousel-item .overlay .content .header-text
+{
+    font-size: 35px;
+}
+@media (min-width: 1750px) {
+    .tours-list-page .slider .carousel .carousel-inner .carousel-item .overlay .content .header-text
+    {
+        font-size: 2vmax;
+    }
+}
+/*End Slider*/
+
+/*Start Main Body*/
+/*Start Sidebar*/
+.tours-list-page .nav-tabs .nav-item .nav-link,
+.tours-list-page .nav-tabs .nav-link
+{
+    font-size: 16px;
+}
+.tours-list-page .nav-tabs .nav-item.show .nav-link,
+.tours-list-page .nav-tabs .nav-link.active
+{
+    background-color: #014468;
+    color: #fff;
+}
+.tours-list-page .ui-accordion .ui-accordion-header.ui-accordion-header-active
+{
+    background: #014468;
+}
+.tours-list-page .accordion-content .box
+{
+    background-color: #014468;
+    border-radius: .2em;
+}
+.tours-list-page .accordion-content .box .title
+{
+    color: #fff;
+    font-size: 16px;
+}
+.tours-list-page .accordion-content .box .box-val
+{
+    color: #fff;
+    font-size: 14px;
+}
+.tours-list-page .range-slide.ui-slider-horizontal .ui-slider-range
+{
+    background-color: #1a74f0;
+}
+.tours-list-page .range-slide.ui-slider.ui-corner-all.ui-slider-horizontal.ui-widget.ui-widget-content
+{
+    border: none;
+}
+.tours-list-page .ui-accordion .ui-accordion-content
+{
+    overflow: hidden;
+}
+.tours-list-page .ui-slider-handle.ui-corner-all.ui-state-default
+{
+    border: none;
+}
+.tours-list-page .accordion-content .box .btns .btn
+{
+    border-radius: .1em;
+    color: #fff;
+    background-color: #3a85bf;
+    font-size: 13px;
+}
+.tours-list-page .accordion-content .box .checkbox
+{
+    border-bottom: .1em solid rgba(202, 202, 202, 0.25);
+}
+.tours-list-page .accordion-content .box .checkbox:last-of-type
+{
+    border-bottom: none;
+}
+.tours-list-page .accordion-content .box .checkbox .radio-title
+{
+    font-size: 14px;
+    color: #fff;
+}
+.tours-list-page .accordion-content .box .checkbox .special-checkbox:checked ~ .special-check-label
+{
+    background-color: #1a74f0;
+    transition: .3s;
+}
+.tours-list-page .accordion-content .box .checkbox .special-checkbox ~ .special-check-label::after
+{
+    color: #fff;
+}
+.tours-list-page .accordion-content .box .see-all .see-all-tilte
+{
+    background-color: #3a85bf;
+    color: #fff;
+}
+.tours-list-page .accordion-content .box .tour-type-box .jq-selectbox .ui-selectmenu-button.ui-button
+{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tours-list-page .accordion-content .box .tour-type-box .jq-selectbox .ui-selectmenu-text
+{
+    font-size: 13px;
+}
+
+
+
+.tours-list-page-content .all-tabs .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.tours-list-page-content .all-tabs .swiper-slide {
+    text-align: center;
+    font-size: 16px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tours-list-page-content .all-tabs .swiper-button-prev,
+.tours-list-page-content .all-tabs .swiper-button-next 
+{
+    position: static;
+    margin: 0;
+    width: auto;
+}
+.tours-list-page-content .all-tabs .swiper-slide.active {
+    background-color: #014468;
+    color: #fff;
+}
+.tours-list-page-content .all-tabs .swiper-button-prev::after,
+.tours-list-page-content .all-tabs .swiper-button-next::after 
+{
+    font-size: 16px;
+    font-weight: 900;
+
+}
+.tours-list-page .tours-list-page-content .card-info
+{
+    border-radius: .5em;
+    overflow: hidden;
+}
+.tours-list-page .tours-list-page-content .image
+{
+    position: relative;
+    width: 100%;
+}
+.tours-list-page .tours-list-page-content .image img
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.tours-list-page .tours-list-page-content .image .img-text-container
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+.tours-list-page .tours-list-page-content .image .img-text-container .ship-name
+{
+    color: #fff;
+    font-size: 18px;
+}
+.tours-list-page .tours-list-page-content .days-num,
+.tours-list-page .tours-list-page-content .price-info
+{
+    color: #fff;
+    min-height: 50px;
+}
+.tours-list-page .tours-list-page-content .days-num
+{
+    background-color: #0c356d;
+    font-size: 13px;
+}
+.tours-list-page .tours-list-page-content .price-info
+{
+    background-color: #1762c9;
+}
+.tours-list-page .tours-list-page-content .price-info .from
+{
+    font-size: 12px;
+}
+.tours-list-page .tours-list-page-content .price-info .price
+{
+    font-size: 18px;
+}
+@media (min-width: 1750px) {
+    .tours-list-page .nav-tabs .nav-item .nav-link,
+    .tours-list-page .nav-tabs .nav-link
+    {
+        font-size: 1vmax;
+    }
+    .tours-list-page .accordion-content .box .title
+    {
+        font-size: .9vmax;
+    }
+    .tours-list-page .accordion-content .box .box-val
+    {
+        font-size: .8vmax;
+    }
+    .tours-list-page .accordion-content .box .btns .btn
+    {
+        font-size: .7vmax;
+    }
+    .tours-list-page .accordion-content .box .checkbox .radio-title
+    {
+        font-size: .8vmax;
+    }
+    .tours-list-page .accordion-content .box .see-all .see-all-tilte
+    {
+        font-size: .8vmax;
+    }
+
+    .tours-list-page .tours-list-page-content .image .img-text-container .ship-name
+    {
+        font-size: 1.1vmax;
+    }
+    .tours-list-page .tours-list-page-content .days-num
+    {
+        font-size: .8vmax;
+    }
+    .tours-list-page .tours-list-page-content .price-info .from
+    {
+        font-size: .8vmax;
+    }
+    .tours-list-page .tours-list-page-content .price-info .price
+    {
+        font-size: 1.1vmax;
+    }
+}
+/*End Sidebar*/

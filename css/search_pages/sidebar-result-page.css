@@ -1,0 +1,219 @@
+/*Start Result sidebar*/
+.result-sidebar .price-container,
+.result-sidebar .stops-container,
+.result-sidebar .search-box,
+.filter-acc .top-box-container,
+.filter-acc .hotel-box-container
+{
+    border-radius: .5em;
+    border: 1px solid #ebebeb;
+}
+.result-sidebar .stops-container .times ul li
+{
+    border: 1px solid #113992;
+    background: #fff;
+    cursor: pointer;
+    font-size: 13px;
+}
+.result-sidebar .stops-container .times ul li:nth-of-type(1)
+{
+    border-radius: 2em 0 0 2em;
+}
+.result-sidebar .stops-container .times ul li:nth-of-type(2)
+{
+    border-radius: 0 2em 2em 0;
+}
+.result-sidebar .stops-container .times ul li.active
+{
+    color: #fff;
+    background-color: #113992;
+}
+.result-sidebar .stops-container .take-off-lon .title
+{
+    
+}
+.result-sidebar .stops-container .take-off-lon .hint,
+.result-sidebar .stops-container .take-off-lon .take-off-time,
+.result-sidebar .stops-container .take-off-hkt .hint,
+.result-sidebar .stops-container .take-off-hkt .take-off-time
+{
+    color: #8a8a8a;
+}
+.result-sidebar .stops-container .take-off-lon .take-off-time,
+.result-sidebar .stops-container .take-off-hkt .take-off-time
+{
+    color: #113992;
+}
+.result-sidebar .stops-container .airlines .show-more
+{
+    background: #eaeaea;
+    color: #4aaae7;
+    border-radius: 2em;
+    cursor: pointer;
+    font-size: 14px;
+}
+.result-sidebar .stops-container .flight-leg .hint
+{
+    color: #8a8a8a;
+}
+.result-sidebar .stops-container .flight-leg .flight-leg-result
+{
+    color: #113992;
+}
+.result-sidebar .buttons button
+{
+    background: #9a9a9a;
+    color: #fff;
+    border: none;
+    border-radius: 2em;
+}
+@media (min-width: 1500px ) {
+    .result-sidebar .special-checkbox ~ .special-check-label
+    {
+        width: 1.2em;
+        height: 1.2em;
+        font-size: 1vmax;
+    }
+  
+    .result-sidebar .buttons button.reset,
+    .result-sidebar .buttons input[type="submit"]
+    {
+        font-size: 1vmax;
+    }
+}
+/*End result sidebar*/
+
+
+/*Start Sidebar*/
+.filter-acc .title
+{
+    font-size: 16px;
+}
+.filter-acc .destance-info,
+.filter-acc .price-info
+{
+    font-size: 14px;
+}
+.filter-acc .checkbox
+{
+    font-size: 16px;
+}
+.filter-acc .hint
+{
+    font-size: 13px;
+}
+.filter-acc .take-off-time,
+.filter-acc .flight-leg-result,
+.filter-acc .flight-leg-result
+{
+    font-size: 13px;
+}
+.filter-acc .top-box-container #find-hotel-button
+{
+    background: #fff;
+    border-radius: .5em;
+}
+.filter-acc .top-box-container .hotel-address .form-group
+{
+    position: relative;
+}
+.filter-acc .top-box-container .hotel-address .form-group img
+{
+    width: .8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.filter-acc .hotel-box-container .hotel .stars li
+{
+    color: #fc6d09;
+    font-size: 11px;
+}
+.filter-acc .hotel-box-container .hotel span
+{
+    font-size: 14px;
+}
+
+@media (min-width: 1500px) {
+    .filter-acc .title
+    {
+        font-size: 1.1vmax;
+    }
+    .filter-acc .top-box-container .hotel-address .form-group img
+    {
+        width: 1em;
+    }
+    .filter-acc .checkbox
+    {
+        font-size: 1vmax;
+    }
+    .filter-acc .destance-info, .filter-acc .price-info
+    {
+        font-size: .9vmax;
+    }
+    .filter-acc .hint
+    {
+        font-size: .9vmax;
+    }
+    .filter-acc .take-off-time, .filter-acc .flight-leg-result, .filter-acc .flight-leg-result
+    {
+        font-size: .9vmax;
+    }
+    .result-sidebar .stops-container .times ul li
+    {
+        font-size: .8vmax;
+    }
+    .result-sidebar .stops-container .airlines .show-more
+    {
+        font-size: .9vmax;
+    }
+    .filter-acc .hotel-box-container .hotel .stars li
+    {
+        font-size: .8vmax;
+    }
+    .filter-acc .hotel-box-container .hotel span
+    {
+        font-size: 1vmax;
+    }
+    .filter-acc input
+    {
+        font-size: .9vmax;
+    }
+}
+
+/*End Sidebar*/
+
+.main-search-body img.head-img
+{
+    width: 40px;
+}
+@media (min-width: 1500px) {
+    .main-search-body img.head-img
+    {
+        width: 2vmax;
+    }
+}
+
+/*Result body*/
+/*
+.flight-result-body,
+.car-result-body,
+.cruise-result-body,
+.holiday-result-body,
+.hotel-result-body
+{
+    padding-right: 50px;
+}
+*/
+@media (min-width: 768px) and (max-width: 1199px) {
+    .flight-result-body,
+    .car-result-body,
+    .cruise-result-body,
+    .holiday-result-body,
+    .hotel-result-body
+    {
+        padding-right: 50px;
+    }
+}

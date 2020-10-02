@@ -1,0 +1,2157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Start Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <!--End Fonts-->
+
+    <link rel="stylesheet" href="../../css/library/all.min.css">
+    <link rel="stylesheet" href="../../css/library/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/library/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../css/myFramwork.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/search_pages/slider-result-page.css">
+    <link rel="stylesheet" href="../../css/search_pages/sidebar-result-page.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/search_pages/flight-result-page.css">
+    <title>Flight Result page</title>
+</head>
+
+<body>
+
+    <div class="flight-result-page">
+        <!--Start Upper Bar-->
+        <div class="upper-bar py-3">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 col-md-4 text-center mb-2 mb-lg-0">
+                        <div class="brand-name">
+                            <div class="image">
+                                <a href="../../index.html"><img src="../../images/home_page/upper-bar/brand-name.png" alt="image" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-8 text-right">
+                        <ul class="d-flex list-unstyled mb-0 align-items-center justify-content-end w-100 flex-wrap">
+                            <li class="mr-2 d-none d-lg-block">
+                                <span class="d-inline-flex align-items-center font-weight-bold mr-1"><a href="./contact-us.html">Call Us Today</a> </span>
+                            </li>
+                            <li class="mr-2 font-weight-bold d-none d-lg-flex align-items-center">
+                                <img class="icon mr-1" src="../../images/home_page/upper-bar/phone.png" alt="Phone" />
+                                <span><a href="../contact-us.html">+44 20 7123 1234</a> </span>
+                            </li>
+                            <li class="mr-2 d-none d-sm-flex align-items-center">
+                                <img class="icon mr-1" src="../../images/home_page/upper-bar/book.png" alt="Book" />
+                                <span><a href="../booking-passenger-info-page.html">My Booking</a> </span>
+                            </li>
+                            <li class="mr-2 font-weight-bold d-none d-sm-block">
+                                <span class="">
+                                    <a class="" href="#">Log In</a>
+                                </span>
+                            </li>
+                            <li class="font-weight-bold d-block d-sm-none">
+                                <div class="upper-search-container d-flex align-items-center">
+                                    <input class="upper-search form-control" type="search"/>
+                                    <i class="ml-2 search fas fa-search"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Upper Bar-->
+        <!--Start Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light py-2">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-block d-lg-none call-today">
+                    <a href="#">
+                        <span class="font-weight-600">Call Today:</span>
+                        02073931000
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link  " href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../flight-page.html">Flight</a>
+                        </li>
+                        <li class="nav-item anyWhere">
+                            <div class="nav-link   drop-title" href="#">
+                                Destination
+                            </div>
+                            <div class="Drop-Down px-3 py-3 anyWhere-menu" aria-labelledby="navbarDropdown">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <span class="d-block font-weight-bold">All Regions</span>
+                                        <hr />
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link py-1 font-weight-700 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-middle-east" role="tab" aria-controls="v-pills-home" aria-selected="true">Middle East</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-indian" role="tab" aria-controls="v-pills-profile" aria-selected="false">Indian Ocean</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-caribbean" role="tab" aria-controls="v-pills-messages" aria-selected="false">Caribbean</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-maxico" role="tab" aria-controls="v-pills-settings" aria-selected="false">Maxico</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-africa" role="tab" aria-controls="v-pills-settings" aria-selected="false">Africa</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-asia" role="tab" aria-controls="v-pills-settings" aria-selected="false">Asia</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-europe" role="tab" aria-controls="v-pills-settings" aria-selected="false">Europe</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-canada" role="tab" aria-controls="v-pills-settings" aria-selected="false">Canada</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-south-america" role="tab" aria-controls="v-pills-settings" aria-selected="false">Center & South
+                                                America</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-united-states" role="tab" aria-controls="v-pills-settings" aria-selected="false">United States Of
+                                                America</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-australasia" role="tab" aria-controls="v-pills-settings" aria-selected="false">Australasia</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="v-pills-middle-east" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                <span class="d-block font-weight-bold">Middle East Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-indian" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                <span class="d-block font-weight-bold">Indian Ocean Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-caribbean" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                                <span class="d-block font-weight-bold">Caribbean Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-maxico" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Maxico Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-africa" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Africa Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-asia" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Asia Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-europe" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Europe Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-canada" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Canada Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-south-america" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Center & South America
+                                                    Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-united-states" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">United States Of America
+                                                    Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-australasia" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Australasia Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../holiday-page.html">Holiday</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../hotels-page.html">Hotel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="#">Attraction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../cruise-page.html">Cruise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../details_pages/tour-details-page.html">Tour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../details_pages/blog-details-page.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../details_pages/offer-detail-page.html">Offer</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline d-none d-sm-flex my-2 my-lg-0">
+                        <div class="search-container">
+                            <input class="form-control mr-sm-2 search_input" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn my-2 my-sm-0  " type="submit">Search</button>
+                        </div>
+                        <i class="ml-2 search fas fa-search"></i>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--End Navbar-->
+        <!--Start Slider-->
+        <div class="slider">
+            <div class="carousel slide h-100" id="homeCarousel" data-ride="carousel">
+                <div class="carousel-inner h-100">
+                    <!--Slider [1]-->
+                    <div class="carousel-item h-100 active">
+                        <img class="w-100 h-100" src="../../images/search_result/flight_result/slider-back.png" alt="Ship"/>
+                        <div class="overlay">
+                            <div class="container h-100">
+                                <div class="content h-100 d-flex text-center">
+                                    <div class="m-auto">
+                                        <span class="slider-title">Our Recommendations For Your</span>
+                                        <h1>Dubai Holiday</h1>
+                                        <div class="date py-2 px-3">
+                                            21 <sup>st</sup> March 2019
+                                            - 30 <sup>th</sup> March 2019
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!--End Slider-->
+        
+        <!--Start flight-result-body-->
+        <div class="flight-result-body py-5">
+            <div class="container">
+                <div class="row">
+                    <!--Start Left sidebar-->
+                    <div class="col-lg-4 col-xl-3 result-sidebar">
+                        <form>
+                            <div class="result-accordion">
+                                <!--Search Box Accordion-->
+                                <h2 class="d-block accordion-title">
+                                    <span class=" ">Search Box</span>
+                                </h2>
+                                <div class="search-box accordion-content p-4">
+                                    <!--Journey type-->
+                                    <div class="Journey-type mt-3">
+                                        <span class="font-weight-600 d-block title mb-1   mb-3">Journey Type</span>
+                                        <ul class="p-0">
+                                            <li class="d-block">
+                                                <div class="checkbox d-inline-flex">
+                                                    <input class="special-checkbox" type="radio" name="Journey-type" id="Journey-type_1" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="Journey-type_1"></label>
+                                                    <span class="checkbox-text  ">One Way</span>
+                                                </div>
+                                            </li>
+                                            <li class="d-block">
+                                                <div class="checkbox d-inline-flex">
+                                                    <input class="special-checkbox" type="radio" name="Journey-type" id="Journey-type_2" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="Journey-type_2"></label>
+                                                    <span class="checkbox-text  ">Return</span>
+                                                </div>
+                                            </li>
+                                            <li class="d-block">
+                                                <div class="checkbox d-inline-flex">
+                                                    <input class="special-checkbox" type="radio" name="Journey-type" id="Journey-type_3" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="Journey-type_3"></label>
+                                                    <span class="checkbox-text  ">Multi Center</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--Flying From-->
+                                    <div class="flying-from mt-3">
+                                        <span class="font-weight-600 d-block title mb-1   mb-3">Flying From</span>
+                                        <input class="form-control" />
+                                    </div>
+                                    <!--Destination-->
+                                    <div class="destination mt-3">
+                                        <span class="font-weight-600 d-block title mb-1   mb-3">Destination</span>
+                                        <input class="form-control" />
+                                    </div>
+                                    <!--Passenger-->
+                                    <div class="passenger mt-3">
+                                        <span class="font-weight-600 d-block title mb-1   mb-3">Passenger</span>
+                                        <div class="passenger-container custom-box-container anyWhere">
+                                            <input type="text" class="custom-box-input form-control" placeholder="2 Adults, 1 Child, 1 Infant" aria-label="London" aria-describedby="custom-box" readonly>
+                                            <ul class="custom-box-select-options list-unstyled anyWhere-menu" placeholder="2 Adults, 1 Child, 1 Infant">
+                                                <li class="d-flex justify-content-between mb-2">
+                                                    <span class="title">
+                                                        <span class="d-block">Adults</span>
+                                                    <span class="hint d-block"></span>
+                                                    </span>
+                                                    <div class="number-box d-flex adults">
+                                                        <i class="fas fa-minus h-100"></i>
+                                                        <input type="hidden" value="0" />
+                                                        <div class="text-center mx-2 custom-box-number d-flex justify-content-center align-items-center">
+                                                            0</div>
+                                                        <i class="fas fa-plus h-100"></i>
+                                                    </div>
+                                                </li>
+                                                <li class="d-flex justify-content-between mb-2">
+                                                    <span class="title">
+                                                        <span class="d-block">Child</span>
+                                                    <span class="hint d-block">2-12</span>
+                                                    </span>
+                                                    <div class="number-box d-flex child">
+                                                        <i class="fas fa-minus h-100"></i>
+                                                        <input type="hidden" value="0" />
+                                                        <div class="text-center mx-2 custom-box-number d-flex justify-content-center align-items-center">
+                                                            0</div>
+                                                        <i class="fas fa-plus h-100"></i>
+                                                    </div>
+                                                </li>
+                                                <li class="d-flex justify-content-between mb-2">
+                                                    <span class="title">
+                                                        <span class="d-block">Infants</span>
+                                                    <span class="hint d-block">0-23 months</span>
+                                                    </span>
+                                                    <div class="number-box d-flex infants">
+                                                        <i class="fas fa-minus h-100"></i>
+                                                        <input type="hidden" value="0" />
+                                                        <div class="text-center mx-2 custom-box-number d-flex justify-content-center align-items-center">
+                                                            0</div>
+                                                        <i class="fas fa-plus h-100"></i>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--Departure date-->
+                                    <div class="departure-date mt-3">
+                                        <span class="font-weight-600 d-block title mb-1   mb-3">Departure date</span>
+                                        <input class="form-control datepicker"/>
+                                    </div>
+                                    <!--Return date-->
+                                    <div class="return-date mt-3">
+                                        <div class="return-date">
+                                            <div class="return-date-box">
+                                                <label class="d-inline-block font-weight-600">Return Date</label>
+                                                <input id="return-check" type="checkbox" />
+                                                <label class="return-check ml-2" for="return-check"/></label>
+                                            </div>
+                                            <input type="text" class="form-control return-input datepicker" placeholder="27 May 2019" aria-label="London" aria-describedby="return-date1" disabled>
+                                        </div>
+                                    </div>
+                                    <!--Class-->
+                                    <div class="class mt-3">
+                                        <span class="font-weight-600 d-block title mb-1   mb-3">Class</span>
+                                        <div class="form-control p-0 jq-selectbox">
+                                            <select class="select-box">
+                                                <option value="1">First Class</option>
+                                                <option value="2">Business</option>
+                                                <option value="3" selected>Economy</option>
+                                                <option value="4">Premium Economy</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!--Direct Flights-->
+                                    <div class="direct-flights mt-3 d-flex align-items-center">
+                                        <input class="special-checkbox" type="checkbox" id="direct-flights" />
+                                        <label class="special-check-label direct-flight mb-0 mr-2" for="direct-flights"></label>
+                                        <span class="checkbox-text  ">Direct Flight Only</span>
+                                    </div>
+                                    <!--Flexible Dates-->
+                                    <div class="flexible-dates mt-3 d-flex align-items-center">
+                                        <input class="special-checkbox" type="checkbox" id="flexible" />
+                                        <label class="special-check-label direct-flight mb-0 mr-2" for="flexible"></label>
+                                        <span class="checkbox-text  ">Flexible dates +/- 3 days</span>
+                                    </div>
+                                </div>
+                                <!--Filter Accordion-->
+                                <h2 class="d-block accordion-title filter">
+                                    <span class=" ">Filter</span>
+                                </h2>
+                                <div class="filter-acc accordion-content">
+                                     <!--Top Box Container-->
+                                    <div class="top-box-container p-4">
+                                        <div class="find-hotel mb-3 jq-selectbox">
+                                            <label class="font-weight-600   title" for="find-hotel">find me a hotel close to this popular site :</label>
+                                            <select class="select-box" id="find-hotel">
+                                                <option selected>City Center</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="hotel-address mb-3">
+                                            <label class="font-weight-600   title" for="find-hotel">or this address :</label>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" placeholder="Enter street address/postcode">
+                                                <img src="../../images/search_result/holiday-result/map-location.png" alt="location"/>
+                                            </div>
+                                        </div>
+                                        <!--Range Max distance-->
+                                        <div class="ragne-container">
+                                            <div class="d-flex mb-2">
+                                                <span class="mr-auto font-weight-600 title  ">Max. destance :</span>
+                                                <div class="destance-info ml-auto font-weight-600  " id="result-destance">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4" id="result-range-max-destance"></div>
+                                        <!--Range Price-->
+                                        <div class="ragne-container">
+                                            <div class="d-flex mb-2">
+                                                <span class="mr-auto font-weight-600 title  ">price</span>
+                                                <div class="price-info ml-auto font-weight-600  " id="result-price">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4" id="result-range-max-price"></div>
+                                    </div>
+                                    <!--Stops-->
+                                    <div class="stops-container p-4 mt-3">
+                                        <div class="stops">
+                                            <h3 class="font-weight-600 d-block title mb-1   mb-3">Stops</h3>
+                                            <ul class="p-0">
+                                                <!--Non Stop-->
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="stops" id="radio_stop_1" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="radio_stop_1"></label>
+                                                    <span class=" ">non-stop</span>
+                                                </li>
+                                                <!--1 stop-->
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="stops" id="radio_stop_2" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_stop_2"></label>
+                                                        <span class=" ">1 stop</span>
+                                                    </div>
+                                                    <span class="d-block ml-auto  ">+ $500</span>
+                                                </li>
+                                                <!--2+ stop-->
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="stops" id="radio_stop_3" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_stop_3"></label>
+                                                        <span class=" ">2+ stop</span>
+                                                    </div>
+                                                    <span class="d-block ml-auto  ">+ $500</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--Times-->
+                                        <div class="times mt-3">
+                                            <h3 class="font-weight-600 d-block title mb-1   mb-3">Times</h3>
+                                            <ul class="list-unstyled p-0 d-flex font-weight-600">
+                                                <li class="d-inline-block active py-2 px-3  ">Take-Off</li>
+                                                <li class="d-inline-block py-2 px-3  ">Landing</li>
+                                            </ul>
+                                        </div>
+                                        <!--take-off-lon-->
+                                        <div class="take-off-lon mt-3">
+                                            <span class="font-weight-600 d-block title mb-1   mb-3">Take-Off From Lon</span>
+                                            <div class="d-flex mb-3">
+                                                <span class="hint  ">Sun 06:30 - 22:30</span>
+                                                <span class="take-off-time d-block ml-auto font-weight-600  " id="take-lon-val">11:30 - 22:30</span>
+                                            </div>
+                                            <div class="range-slide" id="result-slider-range-take-lon"></div>
+                                        </div>
+                                        <!--take-off-htk-->
+                                        <div class="take-off-hkt mt-3">
+                                            <span class="font-weight-600 d-block title mb-1   mb-3">Take-Off From HKT</span>
+                                            <div class="d-flex mb-3">
+                                                <span class="hint  ">Wed 06:30 - 22:30</span>
+                                                <span class="take-off-time d-block ml-auto font-weight-600  " id="take-hkt-val">11:30 - 22:30</span>
+                                            </div>
+                                            <div class="range-slide" id="result-slider-range-take-hkt"></div>
+                                        </div>
+                                        <!--Airlines-->
+                                        <div class="airlines mt-3">
+                                            <span class="font-weight-600 d-block title mb-1   mb-3">Airlines</span>
+                                            <ul class="p-0">
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="airlines" id="radio_airlines_1" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_airlines_1"></label>
+                                                        <span class="font-weight-600  ">British Airways</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="airlines" id="radio_airlines_2" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_airlines_2"></label>
+                                                        <span class="font-weight-600  ">Emirates</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="airlines" id="radio_airlines_3" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_airlines_3"></label>
+                                                        <span class="font-weight-600  ">Ethad Airways</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="airlines" id="radio_airlines_4" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_airlines_4"></label>
+                                                        <span class="font-weight-600  ">Finnair</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="airlines" id="radio_airlines_5" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_airlines_5"></label>
+                                                        <span class="font-weight-600  ">Qatar Airways</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="airlines" id="radio_airlines_6" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_airlines_6"></label>
+                                                        <span class="font-weight-600  ">Multiple airlines</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block show-more px-1 py-2 text-center font-weight-600 mt-2">Show 28 more airlines</li>
+                                            </ul>
+                                        </div>
+                                        <!--Alliance-->
+                                        <div class="alliance mt-3">
+                                            <h3 class="font-weight-600 d-block title mb-1   mb-3">Alliance</h3>
+                                            <ul class="p-0">
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="alliance" id="radio_alliance_1" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_alliance_1"></label>
+                                                        <span class="font-weight-600  ">Oneworld</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="alliance" id="radio_alliance_2" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_alliance_2"></label>
+                                                        <span class="font-weight-600  ">Skyteam</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="alliance" id="radio_alliance_3" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_alliance_3"></label>
+                                                        <span class="font-weight-600  ">Star Alliance</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--Airport-->
+                                        <div class="airport mt-3">
+                                            <h3 class="font-weight-600 d-block title mb-1   mb-3">Airport</h3>
+                                            <div class="checkbox d-inline-flex">
+                                                <input class="special-checkbox" type="checkbox" name="airport" id="airport" />
+                                                <label class="special-check-label direct-flight mb-0 mr-2" for="airport"></label>
+                                                <span class="font-weight-600  ">Depart/return same</span>
+                                            </div>
+                                        </div>
+                                        <!--london-->
+                                        <div class="london mt-3">
+                                            <h3 class="font-weight-600 d-block title mb-1   mb-3">London</h3>
+                                            <ul class="p-0">
+                                                <li class="d-block mb-1">
+                                                    <div class="d-flex">
+                                                        <div class="checkbox d-inline-flex">
+                                                            <input class="special-checkbox" type="radio" name="london" id="radio_london_1" />
+                                                            <label class="special-check-label direct-flight mb-0 mr-2" for="radio_london_1"></label>
+                                                            <span class="font-weight-600  ">LHR: Heatgrow</span>
+                                                        </div>
+                                                        <div class="text ml-auto font-weight-600  ">$550</div>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block mb-1">
+                                                    <div class="d-flex">
+                                                        <div class="checkbox d-inline-flex">
+                                                            <input class="special-checkbox" type="radio" name="london" id="radio_london_2" />
+                                                            <label class="special-check-label direct-flight mb-0 mr-2" for="radio_london_2"></label>
+                                                            <span class="font-weight-600  ">LGW: Gatwick</span>
+                                                        </div>
+                                                        <div class="text ml-auto font-weight-600  ">$550</div>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block mb-1">
+                                                    <div class="d-flex">
+                                                        <div class="checkbox d-inline-flex">
+                                                            <input class="special-checkbox" type="radio" name="london" id="radio_london_3" />
+                                                            <label class="special-check-label direct-flight mb-0 mr-2" for="radio_london_3"></label>
+                                                            <span class="font-weight-600  ">LCY: London City</span>
+                                                        </div>
+                                                        <div class="text ml-auto font-weight-600  ">$550</div>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block mb-1">
+                                                    <div class="d-flex">
+                                                        <div class="checkbox d-inline-flex">
+                                                            <input class="special-checkbox" type="radio" name="london" id="radio_london_4" />
+                                                            <label class="special-check-label direct-flight mb-0 mr-2" for="radio_london_4"></label>
+                                                            <span class="font-weight-600  ">STN: Stansted</span>
+                                                        </div>
+                                                        <div class="text ml-auto font-weight-600  ">$550</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--Flight-leg-->
+                                        <div class="flight-leg">
+                                            <ul class="p-0 list-unstyled">
+                                                <li class="d-block mb-3">
+                                                    <h3 class="font-weight-600 d-block title mb-1   mb-3">Flight Leg</h3>
+                                                    <div class="d-flex mb-2 mt-2">
+                                                        <span class="mr-auto font-weight-600 hint  ">15h 40m - 52h 15m</span>
+                                                        <div class="flight-leg-result ml-auto font-weight-600  " id="result-flight-leg"></div>
+                                                    </div>
+                                                    <div id="result-range-max-flight-leg"></div>
+                                                </li>
+                                                <li class="d-block mb-3">
+                                                    <h3 class="font-weight-600 d-block title mb-1   mb-3">Stopover</h3>
+                                                    <div class="d-flex mb-2 mt-2">
+                                                        <span class="hint font-weight-600  ">15h 40m - 52h 15m</span>
+                                                        <span class="flight-leg-result d-block ml-auto font-weight-600  " id="result-flight-leg-2">11:30 - 22:30</span>
+                                                    </div>
+                                                    <div class="range-slide" id="result-range-dration_2"></div>
+                                                </li>
+                                                <li class="d-block mb-3">
+                                                    <h3 class="font-weight-600 d-block title mb-1   mb-3">Price</h3>
+                                                    <div class="d-flex mb-3 mt-2">
+                                                        <span class="hint font-weight-600  " id="result-flight-leg-price">$446 - $5949 </span>
+                                                    </div>
+                                                    <div class="range-slide" id="result-range-dration_price"></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--Cabin-->
+                                        <div class="cabin mt-4">
+                                            <h3 class="font-weight-600 d-block title mb-1   mb-3">Cabin</h3>
+                                            <ul class="p-0">
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="cabin" id="radio_cabin_1" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_cabin_1"></label>
+                                                        <span class="font-weight-600  ">Basic Economy</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="cabin" id="radio_cabin_2" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_cabin_2"></label>
+                                                        <span class="font-weight-600  ">Economy</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="cabin" id="radio_cabin_3" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_cabin_3"></label>
+                                                        <span class="font-weight-600  ">Business</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="cabin" id="radio_cabin_4" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_cabin_4"></label>
+                                                        <span class="font-weight-600  ">First</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="cabin" id="radio_cabin_5" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_cabin_5"></label>
+                                                        <span class="font-weight-600  ">Mixed</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--Hotel Box Container-->
+                                    <div class="hotel-box-container p-4 mt-3">
+                                        <!--Hotel-->
+                                        <div class="hotel">
+                                            <h3 class="font-weight-600 d-block title mb-1   mb-3">Hotel</h3>
+                                            <ul class="list-unstyled list-items">
+                                                <!--Star [5]-->
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="hotel-star" id="radio_star_5" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="radio_star_5"></label>
+                                                    <ul class="list-unstyled stars">
+                                                        <li class="d-inline-block">
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="d-inline-block ml-auto  ">5-star hotels</span>
+                                                </li>
+                                                <!--Star [4]-->
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="hotel-star" id="radio_star_4" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="radio_star_4"></label>
+                                                    <ul class="list-unstyled stars">
+                                                        <li class="d-inline-block">
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="d-inline-block ml-auto  ">4-star hotels</span>
+                                                </li>
+                                                <!--Star [3]-->
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="hotel-star" id="radio_star_3" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="radio_star_3"></label>
+                                                    <ul class="list-unstyled stars">
+                                                        <li class="d-inline-block">
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="d-inline-block ml-auto  ">3-star hotels</span>
+                                                </li>
+                                                <!--Star [2]-->
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="hotel-star" id="radio_star_2" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="radio_star_2"></label>
+                                                    <ul class="list-unstyled stars">
+                                                        <li class="d-inline-block">
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="d-inline-block ml-auto  ">2-star hotels</span>
+                                                </li>
+                                                <!--Star [1]-->
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="hotel-star" id="radio_star_1" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="radio_star_1"></label>
+                                                    <ul class="list-unstyled stars">
+                                                        <li class="d-inline-block">
+                                                            <i class="fas fa-star  "></i>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="d-inline-block ml-auto  ">0/1-star hotels</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--facilities & Amenities-->
+                                        <div class="facilities-amenities">
+                                            <h3 class="font-weight-600 d-block title mb-1   mb-3">Popular Facilities & Amenities</h3>
+                                            <ul class="list-unstyled list-items">
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_1" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_1"></label>
+                                                    <span class="d-inline-block font-weight-600  ">Free WiFi</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_2" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_2"></label>
+                                                    <span class="d-inline-block font-weight-600  ">Air Conditioning</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_3" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_3"></label>
+                                                    <span class="d-inline-block font-weight-600  ">Car Park</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_4" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_4"></label>
+                                                    <span class="d-inline-block font-weight-600  ">Pool</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_5" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_5"></label>
+                                                    <span class="d-inline-block font-weight-600  ">SPA</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_6" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_6"></label>
+                                                    <span class="d-inline-block font-weight-600  ">Resturant</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_7" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_7"></label>
+                                                    <span class="d-inline-block font-weight-600  ">Sauna</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_8" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_8"></label>
+                                                    <span class="d-inline-block font-weight-600  ">Gym</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_9" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_9"></label>
+                                                    <span class="d-inline-block font-weight-600  ">24-hour Reception</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_10" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_10"></label>
+                                                    <span class="d-inline-block font-weight-600  ">House/Apartment</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--Else Accomodation-->
+                                        <div class="else-accomodation">
+                                            <span class="d-block title mb-3 font-weight-600  ">What else should your accomodation have ?</span>
+                                            <input class="form-control" type="text" placeholder="enter street address/postcode"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons d-flex justify-content-center my-5">
+                                <button class="reset py-2 px-3 mr-3">Reset</button>
+                                <input class="py-2 px-3" type="submit" value="Done" name="done" />
+                            </div>
+                        </form>
+                    </div>
+                    <!--End Left sidebar-->
+
+                    <!--Start Main Search Body-->
+                    <div class="col-lg-8 col-xl-9">
+                        <div class="main-search-body">
+                            <span class="h2 d-block">
+                                <img class="mr-3" src="../../images/search_result/flight_result/flight_icon.png" alt="Plane"/>
+                                <h2 class="d-inline-block special-h">Flight <span>R</span>esult </h2>
+                            </span>
+                            <div class="offers-with-connection rounded">
+                                <!--Carousel-->
+                                <div class="carousel slide" id="flight-result-offers-slider" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="d-flex header py-3">
+                                            <div class="m-auto">
+                                                <span class=" ">19 Offers With Connection</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <!--Table-->
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">
+                                                            <div class="d-block d-md-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-arrow-down mr-2 d-none d-md-block"></i>
+                                                                <div>
+                                                                    <div class="return d-block">
+                                                                        <span>Return</span>
+                                                                        <i class="fas fa-arrow-right ml-2 d-md-none"></i>
+                                                                    </div>
+                                                                    <div class="depart">
+                                                                        <span>Depart</span>
+                                                                        <i class="fas fa-arrow-down mr-2 d-md-none"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <i class="fas fa-arrow-right ml-2 d-none d-md-block"></i>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="sun_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="sun_11"></label>
+                                                                <span class="d-block d-md-inline-block">Sun <br class="d-block d-md-none"/> 16/11</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="mon_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="mon_11"></label>
+                                                                <span class="d-block d-md-inline-block">Mon <br class="d-block d-md-none"/> 17/11</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="tue_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="tue_11"></label>
+                                                                <span class="d-block d-md-inline-block">Tue <br class="d-block d-md-none"/> 18/11</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="wed_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="wed_11"></label>
+                                                                <span class="d-block d-md-inline-block">Wed <br class="d-block d-md-none"/> 19/11</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="thu_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="thu_11"></label>
+                                                                <span class="d-block d-md-inline-block">Thu <br class="d-block d-md-none"/> 20/11</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="fri_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="fri_11"></label>
+                                                                <span class="d-block d-md-inline-block">Fri <br class="d-block d-md-none"/> 21/11</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="sat_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="sat_11"></label>
+                                                                <span class="d-block d-md-inline-block">Sat <br class="d-block d-md-none"/> 22/11</span>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="fri_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="fri_10"></label>
+                                                                <span>Fri 10/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex">
+                                                                <input class="special-checkbox" type="checkbox" id="sat_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="sat_10"></label>
+                                                                <span>Sat 11/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex">
+                                                                <input class="special-checkbox" type="checkbox" id="sun_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="sun_10"></label>
+                                                                <span>Sun 12/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex">
+                                                                <input class="special-checkbox" type="checkbox" id="mon_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="mon_10"></label>
+                                                                <span>Mon 13/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex">
+                                                                <input class="special-checkbox" type="checkbox" id="tue_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="tue_10"></label>
+                                                                <span>Tue 14/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex">
+                                                                <input class="special-checkbox" type="checkbox" id="wed_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="wed_10"></label>
+                                                                <span>Wed 15/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex">
+                                                                <input class="special-checkbox" type="checkbox" id="thu_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="thu_10"></label>
+                                                                <span>Thu 16/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <!--Table-->
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">
+                                                            <div class="d-block d-md-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-arrow-down mr-2 d-none d-md-block"></i>
+                                                                <div>
+                                                                    <div class="return d-block">
+                                                                        <span>Return</span>
+                                                                        <i class="fas fa-arrow-right ml-2 d-md-none"></i>
+                                                                    </div>
+                                                                    <div class="depart">
+                                                                        <span>Depart</span>
+                                                                        <i class="fas fa-arrow-down mr-2 d-md-none"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <i class="fas fa-arrow-right ml-2 d-none d-md-block"></i>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="sun_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="sun_11"></label>
+                                                                <span class="d-block d-md-inline-block">Sun <br class="d-block d-md-none"/> 16/11</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="mon_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="mon_11"></label>
+                                                                <span class="d-block d-md-inline-block">Mon <br class="d-block d-md-none"/> 17/11</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="tue_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="tue_11"></label>
+                                                                <span class="d-block d-md-inline-block">Tue <br class="d-block d-md-none"/> 18/11</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="wed_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="wed_11"></label>
+                                                                <span class="d-block d-md-inline-block">Wed <br class="d-block d-md-none"/> 19/11</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="thu_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="thu_11"></label>
+                                                                <span class="d-block d-md-inline-block">Thu <br class="d-block d-md-none"/> 20/11</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="fri_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="fri_11"></label>
+                                                                <span class="d-block d-md-inline-block">Fri <br class="d-block d-md-none"/> 21/11</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="sat_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="sat_11"></label>
+                                                                <span class="d-block d-md-inline-block">Sat <br class="d-block d-md-none"/> 22/11</span>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="fri_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="fri_10"></label>
+                                                                <span>Fri 10/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex">
+                                                                <input class="special-checkbox" type="checkbox" id="sat_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="sat_10"></label>
+                                                                <span>Sat 11/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex">
+                                                                <input class="special-checkbox" type="checkbox" id="sun_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="sun_10"></label>
+                                                                <span>Sun 12/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex">
+                                                                <input class="special-checkbox" type="checkbox" id="mon_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="mon_10"></label>
+                                                                <span>Mon 13/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex">
+                                                                <input class="special-checkbox" type="checkbox" id="tue_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="tue_10"></label>
+                                                                <span>Tue 14/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex">
+                                                                <input class="special-checkbox" type="checkbox" id="wed_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="wed_10"></label>
+                                                                <span>Wed 15/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex">
+                                                                <input class="special-checkbox" type="checkbox" id="thu_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="thu_10"></label>
+                                                                <span>Thu 16/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <!--Table-->
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">
+                                                            <div class="d-block d-md-flex justify-content-center align-items-center">
+                                                                <i class="fas fa-arrow-down mr-2 d-none d-md-block"></i>
+                                                                <div>
+                                                                    <div class="return d-block">
+                                                                        <span>Return</span>
+                                                                        <i class="fas fa-arrow-right ml-2 d-md-none"></i>
+                                                                    </div>
+                                                                    <div class="depart">
+                                                                        <span>Depart</span>
+                                                                        <i class="fas fa-arrow-down mr-2 d-md-none"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <i class="fas fa-arrow-right ml-2 d-none d-md-block"></i>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="sun_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="sun_11"></label>
+                                                                <span class="d-block d-md-inline-block">Sun <br class="d-block d-md-none"/> 16/11</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="mon_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="mon_11"></label>
+                                                                <span class="d-block d-md-inline-block">Mon <br class="d-block d-md-none"/> 17/11</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="tue_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="tue_11"></label>
+                                                                <span class="d-block d-md-inline-block">Tue <br class="d-block d-md-none"/> 18/11</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="wed_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="wed_11"></label>
+                                                                <span class="d-block d-md-inline-block">Wed <br class="d-block d-md-none"/> 19/11</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="thu_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="thu_11"></label>
+                                                                <span class="d-block d-md-inline-block">Thu <br class="d-block d-md-none"/> 20/11</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="fri_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="fri_11"></label>
+                                                                <span class="d-block d-md-inline-block">Fri <br class="d-block d-md-none"/> 21/11</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="checkbox d-block d-md-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="sat_11" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="sat_11"></label>
+                                                                <span class="d-block d-md-inline-block">Sat <br class="d-block d-md-none"/> 22/11</span>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex justify-content-center align-items-center">
+                                                                <input class="special-checkbox" type="checkbox" id="fri_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="fri_10"></label>
+                                                                <span>Fri 10/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex">
+                                                                <input class="special-checkbox" type="checkbox" id="sat_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="sat_10"></label>
+                                                                <span>Sat 11/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex">
+                                                                <input class="special-checkbox" type="checkbox" id="sun_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="sun_10"></label>
+                                                                <span>Sun 12/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex">
+                                                                <input class="special-checkbox" type="checkbox" id="mon_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="mon_10"></label>
+                                                                <span>Mon 13/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex">
+                                                                <input class="special-checkbox" type="checkbox" id="tue_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="tue_10"></label>
+                                                                <span>Tue 14/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex">
+                                                                <input class="special-checkbox" type="checkbox" id="wed_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="wed_10"></label>
+                                                                <span>Wed 15/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="checkbox d-inline-flex">
+                                                                <input class="special-checkbox" type="checkbox" id="thu_10" />
+                                                                <label class="special-check-label direct-flight mb-0 mr-1" for="thu_10"></label>
+                                                                <span>Thu 16/10</span>
+                                                            </div>
+                                                        </th>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                        <td>$909</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#flight-result-offers-slider" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#flight-result-offers-slider" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--End offers-with-connection-->
+                            <!--Start Airplane flight-->
+                            <div class="airplane-flight rounded">
+                                <ul class="list-unstyled p-0">
+                                    <!--airplane #1 -->
+                                    <li class="d-block mb-3 rounded px-1 px-sm-4 py-2 airplane-list">
+                                        <div class="content d-flex align-items-center">
+                                            <div class="w-100">
+                                                <div class="row no-gutters">
+                                                    <!--Image [Only Show In (sm - Lg) Screen]-->
+                                                    <div class="col-4 col-lg-12 col-xl-2 text-center order-1 text-lg-left mb-3 mb-xl-0">
+                                                        <div class="d-block d-lg-flex align-items-center text-center text-lg-left">
+                                                            <img class="airplane-logo mr-1 mb-2 mb-lg-0" src="../../images/search_result/flight_result/emirat.png" alt="AirLogo"/>
+                                                            <span class="airplane-name font-weight-600 d-block">Emirates</span>
+                                                        </div>
+                                                        <!--Date-->
+                                                        <span class="date font-weight-600 d-block">25 January , 2019</span>
+                                                    </div>
+                                                    <!--Time Start-->
+                                                    <div class="col-6 col-lg-3 col-xl order-lg-2 order-5 mb-3">
+                                                        <div class="d-flex mb-2">
+                                                                <span class="time-from d-block font-weight-600  ">14:25</span>
+                                                            <span class="plane-icon ml-auto mr-3">
+                                                                <img class="plane" src="../../images/search_result/flight_result/plane.png" alt="Plane"/>
+                                                            </span>
+                                                        </div>
+                                                        <span class="city-name d-block">London (STN)</span>
+                                                    </div>
+                                                    <!--Time End-->
+                                                    <div class="col-6 col-lg col-xl order-lg-3 order-6 mb-3 text-center text-lg-left pl-2 pt-lg-0">
+                                                        <span class="date-to d-block font-weight-600 mb-2  ">21:50</span>
+                                                        <span class="city-name d-block">Dubai (DXB)</span>
+                                                    </div>
+                                                    <!--Total Flight Time [Stops]-->
+                                                    <div class="col-6 col-lg col-xl order-lg-4 order-7 mb-3">
+                                                        <div class="stops d-flex d-sm-block align-items-center">
+                                                            <span class="flight-time d-block font-weight-600 mb-2 mr-2">12h 30m</span>
+                                                            <div class="stop-line d-flex align-items-center flex-wrap flex-md-nowrap mr-2">
+                                                                <span class="stop-dot my-auto my-sm-0 mx-sm-auto"></span>
+                                                            </div>
+                                                            <span class="d-block stop-num text-center font-weight-600 mt-lg-2 text-muted  mr-2 ">1 Stop</span>
+                                                        </div>
+                                                    </div>
+                                                    <!--Icons-->
+                                                    <div class="col-4 col-lg-3 col-xl order-lg-5 order-2 mb-3 text-center align-self-center">
+                                                        <div class="icons">
+                                                            <img class="mr-2" src="../../images/search_result/flight_result/icon_1.png" alt="icon"/>
+                                                            <img class="mr-2" src="../../images/search_result/flight_result/icon_2.png" alt="icon"/>
+                                                            <img class="mr-2" src="../../images/search_result/flight_result/icon_3.png" alt="icon"/>
+                                                        </div>
+                                                    </div>
+                                                    <!--Price [Start From]-->
+                                                    <div class="col-4 col-lg col-xl order-lg-6 order-3 mb-3 align-self-center">
+                                                        <div class="start-price text-center text-md-right">
+                                                            <span class="d-block start-from-txt  ">Start from</span>
+                                                            <span class="price font-weight-600  ">$909</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 d-lg-none d-flex order-8">
+                                                        <div class="show-more text-center d-block d-md-flex align-items-center justify-content-end ml-auto">
+                                                            <span class="text mr-1">More Info</span>
+                                                            <i class="fas fa-chevron-down mr-1"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-none d-lg-flex">
+                                                    <div class="show-more d-flex align-items-center justify-content-end ml-auto">
+                                                        <span class="text mr-1">More Info</span>
+                                                        <i class="fas fa-chevron-down mr-1"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Start More Info Box-->
+                                        <div class="more-info mt-3">
+                                            <span class="d-block flight-details-text  ">Flight Details</span>
+                                            <ul class="list-unstyled more-info-container">
+                                                <!--Stop #1-->
+                                                <li class="row">
+                                                    <!--Airline Logo-->
+                                                    <div class="col-md-3">
+                                                        <div class="airline-info mt-3 mb-2 mb-md-0">
+                                                            <div class="row no-gutters align-items-center">
+                                                                <div class="col col-md-12 flex-grow-0">
+                                                                    <img class="mr-2" src="../../images/search_result/flight_result/emirat.png" alt="airline-img"/>
+                                                                </div>
+                                                                <div class="col col-md-12">
+                                                                    <span class="airline-name font-weight-600 d-block pr-3 mr-lg-0">Emirates EK-359</span>
+                                                                </div>
+                                                                <div class="col col-md-12 ">
+                                                                    <span class="class d-block text-muted text-right text-md-left">Economy</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--Flight Details-->
+                                                    <div class="col-md-9">
+                                                        <ul class="list-unstyled p-0 flight-details-container">
+                                                            <li class="flight-details pl-3 pl-md-0">
+                                                                <div class="line"></div>
+                                                                <!--Start Main Row-->
+                                                                <div class="row no-gutters">
+                                                                    <!--Flight Details [Left-column] -->
+                                                                    <div class="col-md-8">
+                                                                        <div class="flight-from">
+                                                                            <div class="row">
+                                                                                <div class="col-4">
+                                                                                    <span class="time d-block font-weight-600  ">23:40</span>
+                                                                                    <span class="date d-block  ">16 Feb 2019</span>
+                                                                                </div>
+                                                                                <div class="col-8">
+                                                                                    <span class="city-name d-block font-weight-600  ">London (STN)</span>
+                                                                                    <span class="city-info d-block  ">London Stansted Airport <br/> (United Kingdom)</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="access-time d-flex align-items-center mb-2">
+                                                                            <img class="mr-2" src="../../images/search_result/flight_result/access-time.png" alt="time"/>
+                                                                            <span class=" ">6h 15m</span>
+                                                                        </div>
+                                                                        <div class="flight-to">
+                                                                            <div class="row">
+                                                                                <div class="col-4">
+                                                                                    <span class="time d-block font-weight-600  ">06:30</span>
+                                                                                    <span class="date d-block  text-muted">17 Feb 2019</span>
+                                                                                </div>
+                                                                                <div class="col-8">
+                                                                                    <span class="city-name d-block font-weight-600  ">Istambul (SAW)</span>
+                                                                                    <span class="city-info d-block  ">Sabina Gokcen Internationl Airport <br/> (Turkey)</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--Flight Details [Right-column] -->
+                                                                    <div class="col-md-4 mt-3 mt-md-0">
+                                                                        <ul class="row list-unstyled">
+                                                                            <li class="col-6 col-md-12 mb-2">Aircraft <span>Boeing 777</span> </li>
+                                                                            <li class="col-6 col-md-12 mb-2">Cabin <span>baggage 7 kg</span> </li>
+                                                                            <li class="col-6 col-md-12 mb-2">
+                                                                                <img class="mr-2" src="../../images/search_result/flight_result/icon_1.png" alt="icon"/>
+                                                                                <span>Baggage 30 kg</span>
+                                                                            </li>
+                                                                            <li class="col-6 col-md-12 mb-2  ">
+                                                                                <img class="mr-2" src="../../images/search_result/flight_result/icon_2.png" alt="icon"/>
+                                                                                <span>In-flight-meal</span>
+                                                                            </li>
+                                                                            <li class="col-6 col-md-12 mb-2  ">
+                                                                                <img class="mr-2" src="../../images/search_result/flight_result/icon_3.png" alt="icon"/>
+                                                                                <span>Wifi</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <!--End Main Row-->
+                                                            </li>
+                                                            <li class="note px-4 py-2 my-3  ">
+                                                                Transit for 2h 20m in Connection Airport <br/>
+                                                                IMPORTANT: Transit visa may be required
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <!--Stop #2-->
+                                                <li class="row">
+                                                    <!--Airline Logo-->
+                                                    <div class="col-md-3">
+                                                        <div class="airline-info mt-3 mb-2 mb-md-0">
+                                                            <div class="row no-gutters align-items-center">
+                                                                <div class="col col-md-12 flex-grow-0">
+                                                                    <img class="mr-2" src="../../images/search_result/flight_result/emirat.png" alt="airline-img"/>
+                                                                </div>
+                                                                <div class="col col-md-12">
+                                                                    <span class="airline-name font-weight-600 d-block pr-3 mr-lg-0">Emirates EK-359</span>
+                                                                </div>
+                                                                <div class="col col-md-12">
+                                                                    <span class="class d-block text-muted text-right text-md-left">Economy</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--Flight Details-->
+                                                    <div class="col-md-9">
+                                                        <ul class="list-unstyled p-0 flight-details-container">
+                                                            <li class="flight-details flight-details-2 pl-3 pl-md-0">
+                                                                <div class="line"></div>
+                                                                <!--Start Main Row-->
+                                                                <div class="row no-gutters">
+                                                                    <!--Flight Details [Left-column] -->
+                                                                    <div class="col-md-8">
+                                                                        <div class="flight-from">
+                                                                            <div class="row">
+                                                                                <div class="col-4">
+                                                                                    <span class="time d-block font-weight-600  ">23:40</span>
+                                                                                    <span class="date d-block  ">16 Feb 2019</span>
+                                                                                </div>
+                                                                                <div class="col-8">
+                                                                                    <span class="city-name d-block font-weight-600  ">London (STN)</span>
+                                                                                    <span class="city-info d-block  ">London Stansted Airport <br/> (United Kingdom)</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="access-time d-flex align-items-center mb-2">
+                                                                            <img class="mr-2" src="../../images/search_result/flight_result/access-time.png" alt="time"/>
+                                                                            <span class=" ">6h 15m</span>
+                                                                        </div>
+                                                                        <div class="flight-to">
+                                                                            <div class="row">
+                                                                                <div class="col-4">
+                                                                                    <span class="time d-block font-weight-600  ">06:30</span>
+                                                                                    <span class="date d-block  text-muted">17 Feb 2019</span>
+                                                                                </div>
+                                                                                <div class="col-8">
+                                                                                    <span class="city-name d-block font-weight-600  ">Istambul (SAW)</span>
+                                                                                    <span class="city-info d-block  ">Sabina Gokcen Internationl Airport <br/> (Turkey)</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--Flight Details [Right-column] -->
+                                                                    <div class="col-md-4 mt-3 mt-md-0">
+                                                                        <ul class="row list-unstyled">
+                                                                            <li class="col-6 col-md-12 mb-2">Aircraft <span>Boeing 777</span> </li>
+                                                                            <li class="col-6 col-md-12 mb-2">Cabin <span>baggage 7 kg</span> </li>
+                                                                            <li class="col-6 col-md-12 mb-2">
+                                                                                <img class="mr-2" src="../../images/search_result/flight_result/icon_1.png" alt="icon"/>
+                                                                                <span>Baggage 30 kg</span>
+                                                                            </li>
+                                                                            <li class="col-6 col-md-12 mb-2  ">
+                                                                                <img class="mr-2" src="../../images/search_result/flight_result/icon_2.png" alt="icon"/>
+                                                                                <span>In-flight-meal</span>
+                                                                            </li>
+                                                                            <li class="col-6 col-md-12 mb-2  ">
+                                                                                <img class="mr-2" src="../../images/search_result/flight_result/icon_3.png" alt="icon"/>
+                                                                                <span>Wifi</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <!--End Main Row-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--End More Info Box-->
+                                    </li>
+                                    <!--airplane #2 -->
+                                    <li class="d-block mb-3 rounded px-1 px-sm-4 py-2 airplane-list">
+                                        <div class="content d-flex align-items-center">
+                                            <div class="w-100">
+                                                <div class="row no-gutters">
+                                                    <!--Image [Only Show In (sm - Lg) Screen]-->
+                                                    <div class="col-4 col-lg-12 col-xl-2 text-center order-1 text-lg-left mb-3 mb-xl-0">
+                                                        <div class="d-block d-lg-flex align-items-center text-center text-lg-left">
+                                                            <img class="airplane-logo mr-1 mb-2 mb-lg-0" src="../../images/search_result/flight_result/emirat.png" alt="AirLogo"/>
+                                                            <span class="airplane-name font-weight-600 d-block">Emirates</span>
+                                                        </div>
+                                                        <!--Date-->
+                                                        <span class="date font-weight-600 d-block">25 January , 2019</span>
+                                                    </div>
+                                                    <!--Time Start-->
+                                                    <div class="col-6 col-lg-3 col-xl order-lg-2 order-5 mb-3">
+                                                        <div class="d-flex mb-2">
+                                                                <span class="time-from d-block font-weight-600  ">14:25</span>
+                                                            <span class="plane-icon ml-auto mr-3">
+                                                                <img class="plane" src="../../images/search_result/flight_result/plane.png" alt="Plane"/>
+                                                            </span>
+                                                        </div>
+                                                        <span class="city-name d-block">London (STN)</span>
+                                                    </div>
+                                                    <!--Time End-->
+                                                    <div class="col-6 col-lg col-xl order-lg-3 order-6 mb-3 text-center text-lg-left pl-2 pt-lg-0">
+                                                        <span class="date-to d-block font-weight-600 mb-2  ">21:50</span>
+                                                        <span class="city-name d-block">Dubai (DXB)</span>
+                                                    </div>
+                                                    <!--Total Flight Time [Stops]-->
+                                                    <div class="col-6 col-lg col-xl order-lg-4 order-7 mb-3">
+                                                        <div class="stops d-flex d-sm-block align-items-center">
+                                                            <span class="flight-time d-block font-weight-600 mb-2 mr-2">12h 30m</span>
+                                                            <div class="stop-line d-flex align-items-center flex-wrap flex-md-nowrap mr-2">
+                                                                <span class="stop-dot my-auto my-sm-0 mx-sm-auto"></span>
+                                                            </div>
+                                                            <span class="d-block stop-num text-center font-weight-600 mt-lg-2 text-muted  mr-2 ">1 Stop</span>
+                                                        </div>
+                                                    </div>
+                                                    <!--Icons-->
+                                                    <div class="col-4 col-lg-3 col-xl order-lg-5 order-2 mb-3 text-center align-self-center">
+                                                        <div class="icons">
+                                                            <img class="mr-2" src="../../images/search_result/flight_result/icon_1.png" alt="icon"/>
+                                                            <img class="mr-2" src="../../images/search_result/flight_result/icon_2.png" alt="icon"/>
+                                                            <img class="mr-2" src="../../images/search_result/flight_result/icon_3.png" alt="icon"/>
+                                                        </div>
+                                                    </div>
+                                                    <!--Price [Start From]-->
+                                                    <div class="col-4 col-lg col-xl order-lg-6 order-3 mb-3 align-self-center">
+                                                        <div class="start-price text-center text-md-right">
+                                                            <span class="d-block start-from-txt  ">Start from</span>
+                                                            <span class="price font-weight-600  ">$909</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 d-lg-none d-flex order-8">
+                                                        <div class="show-more text-center d-block d-md-flex align-items-center justify-content-end ml-auto">
+                                                            <span class="text mr-1">More Info</span>
+                                                            <i class="fas fa-chevron-down mr-1"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-none d-lg-flex">
+                                                    <div class="show-more d-flex align-items-center justify-content-end ml-auto">
+                                                        <span class="text mr-1">More Info</span>
+                                                        <i class="fas fa-chevron-down mr-1"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Start More Info Box-->
+                                        <div class="more-info mt-3">
+                                            <span class="d-block flight-details-text  ">Flight Details</span>
+                                            <ul class="list-unstyled more-info-container">
+                                                <!--Stop #1-->
+                                                <li class="row">
+                                                    <!--Airline Logo-->
+                                                    <div class="col-md-3">
+                                                        <div class="airline-info mt-3 mb-2 mb-md-0">
+                                                            <div class="row no-gutters align-items-center">
+                                                                <div class="col col-md-12 flex-grow-0">
+                                                                    <img class="mr-2" src="../../images/search_result/flight_result/emirat.png" alt="airline-img"/>
+                                                                </div>
+                                                                <div class="col col-md-12">
+                                                                    <span class="airline-name font-weight-600 d-block pr-3 mr-lg-0">Emirates EK-359</span>
+                                                                </div>
+                                                                <div class="col col-md-12 ">
+                                                                    <span class="class d-block text-muted text-right text-md-left">Economy</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--Flight Details-->
+                                                    <div class="col-md-9">
+                                                        <ul class="list-unstyled p-0 flight-details-container">
+                                                            <li class="flight-details pl-3 pl-md-0">
+                                                                <div class="line"></div>
+                                                                <!--Start Main Row-->
+                                                                <div class="row no-gutters">
+                                                                    <!--Flight Details [Left-column] -->
+                                                                    <div class="col-md-8">
+                                                                        <div class="flight-from">
+                                                                            <div class="row">
+                                                                                <div class="col-4">
+                                                                                    <span class="time d-block font-weight-600  ">23:40</span>
+                                                                                    <span class="date d-block  ">16 Feb 2019</span>
+                                                                                </div>
+                                                                                <div class="col-8">
+                                                                                    <span class="city-name d-block font-weight-600  ">London (STN)</span>
+                                                                                    <span class="city-info d-block  ">London Stansted Airport <br/> (United Kingdom)</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="access-time d-flex align-items-center mb-2">
+                                                                            <img class="mr-2" src="../../images/search_result/flight_result/access-time.png" alt="time"/>
+                                                                            <span class=" ">6h 15m</span>
+                                                                        </div>
+                                                                        <div class="flight-to">
+                                                                            <div class="row">
+                                                                                <div class="col-4">
+                                                                                    <span class="time d-block font-weight-600  ">06:30</span>
+                                                                                    <span class="date d-block  text-muted">17 Feb 2019</span>
+                                                                                </div>
+                                                                                <div class="col-8">
+                                                                                    <span class="city-name d-block font-weight-600  ">Istambul (SAW)</span>
+                                                                                    <span class="city-info d-block  ">Sabina Gokcen Internationl Airport <br/> (Turkey)</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--Flight Details [Right-column] -->
+                                                                    <div class="col-md-4 mt-3 mt-md-0">
+                                                                        <ul class="row list-unstyled">
+                                                                            <li class="col-6 col-md-12 mb-2">Aircraft <span>Boeing 777</span> </li>
+                                                                            <li class="col-6 col-md-12 mb-2">Cabin <span>baggage 7 kg</span> </li>
+                                                                            <li class="col-6 col-md-12 mb-2">
+                                                                                <img class="mr-2" src="../../images/search_result/flight_result/icon_1.png" alt="icon"/>
+                                                                                <span>Baggage 30 kg</span>
+                                                                            </li>
+                                                                            <li class="col-6 col-md-12 mb-2  ">
+                                                                                <img class="mr-2" src="../../images/search_result/flight_result/icon_2.png" alt="icon"/>
+                                                                                <span>In-flight-meal</span>
+                                                                            </li>
+                                                                            <li class="col-6 col-md-12 mb-2  ">
+                                                                                <img class="mr-2" src="../../images/search_result/flight_result/icon_3.png" alt="icon"/>
+                                                                                <span>Wifi</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <!--End Main Row-->
+                                                            </li>
+                                                            <li class="note px-4 py-2 my-3  ">
+                                                                Transit for 2h 20m in Connection Airport <br/>
+                                                                IMPORTANT: Transit visa may be required
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <!--Stop #2-->
+                                                <li class="row">
+                                                    <!--Airline Logo-->
+                                                    <div class="col-md-3">
+                                                        <div class="airline-info mt-3 mb-2 mb-md-0">
+                                                            <div class="row no-gutters align-items-center">
+                                                                <div class="col col-md-12 flex-grow-0">
+                                                                    <img class="mr-2" src="../../images/search_result/flight_result/emirat.png" alt="airline-img"/>
+                                                                </div>
+                                                                <div class="col col-md-12">
+                                                                    <span class="airline-name font-weight-600 d-block pr-3 mr-lg-0">Emirates EK-359</span>
+                                                                </div>
+                                                                <div class="col col-md-12">
+                                                                    <span class="class d-block text-muted text-right text-md-left">Economy</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--Flight Details-->
+                                                    <div class="col-md-9">
+                                                        <ul class="list-unstyled p-0 flight-details-container">
+                                                            <li class="flight-details flight-details-2 pl-3 pl-md-0">
+                                                                <div class="line"></div>
+                                                                <!--Start Main Row-->
+                                                                <div class="row no-gutters">
+                                                                    <!--Flight Details [Left-column] -->
+                                                                    <div class="col-md-8">
+                                                                        <div class="flight-from">
+                                                                            <div class="row">
+                                                                                <div class="col-4">
+                                                                                    <span class="time d-block font-weight-600  ">23:40</span>
+                                                                                    <span class="date d-block  ">16 Feb 2019</span>
+                                                                                </div>
+                                                                                <div class="col-8">
+                                                                                    <span class="city-name d-block font-weight-600  ">London (STN)</span>
+                                                                                    <span class="city-info d-block  ">London Stansted Airport <br/> (United Kingdom)</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="access-time d-flex align-items-center mb-2">
+                                                                            <img class="mr-2" src="../../images/search_result/flight_result/access-time.png" alt="time"/>
+                                                                            <span class=" ">6h 15m</span>
+                                                                        </div>
+                                                                        <div class="flight-to">
+                                                                            <div class="row">
+                                                                                <div class="col-4">
+                                                                                    <span class="time d-block font-weight-600  ">06:30</span>
+                                                                                    <span class="date d-block  text-muted">17 Feb 2019</span>
+                                                                                </div>
+                                                                                <div class="col-8">
+                                                                                    <span class="city-name d-block font-weight-600  ">Istambul (SAW)</span>
+                                                                                    <span class="city-info d-block  ">Sabina Gokcen Internationl Airport <br/> (Turkey)</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--Flight Details [Right-column] -->
+                                                                    <div class="col-md-4 mt-3 mt-md-0">
+                                                                        <ul class="row list-unstyled">
+                                                                            <li class="col-6 col-md-12 mb-2">Aircraft <span>Boeing 777</span> </li>
+                                                                            <li class="col-6 col-md-12 mb-2">Cabin <span>baggage 7 kg</span> </li>
+                                                                            <li class="col-6 col-md-12 mb-2">
+                                                                                <img class="mr-2" src="../../images/search_result/flight_result/icon_1.png" alt="icon"/>
+                                                                                <span>Baggage 30 kg</span>
+                                                                            </li>
+                                                                            <li class="col-6 col-md-12 mb-2  ">
+                                                                                <img class="mr-2" src="../../images/search_result/flight_result/icon_2.png" alt="icon"/>
+                                                                                <span>In-flight-meal</span>
+                                                                            </li>
+                                                                            <li class="col-6 col-md-12 mb-2  ">
+                                                                                <img class="mr-2" src="../../images/search_result/flight_result/icon_3.png" alt="icon"/>
+                                                                                <span>Wifi</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <!--End Main Row-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--End More Info Box-->
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--End  Airplane flight-->
+                        </div>
+                    </div>
+                    <!--End Main Search Body-->
+                </div>
+            </div>
+        </div>
+        <!--End flight-result-body-->
+        <!--Start pagination-->
+        <div class="pagination">
+            <ul class="p-0 list-unstyled mx-auto">
+                <li class="d-inline-block"> 
+                    <i class="fas fa-chevron-left  "></i>
+                    <i class="fas fa-chevron-left  "></i> 
+                </li>
+                <li class="d-inline-block"> 
+                    <i class="fas fa-chevron-left  "></i> 
+                </li>
+                <li class="d-inline-block number active"> 
+                    <span class=" ">1</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">2</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">3</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">4</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">5</span>
+                </li>
+                <li class="d-inline-block"> 
+                    <span class=" ">......</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">12</span>
+                </li>
+                <li class="d-inline-block"> 
+                    <i class="fas fa-chevron-right  "></i>
+                </li>
+                <li class="d-inline-block"> 
+                    <i class="fas fa-chevron-right  "></i>
+                    <i class="fas fa-chevron-right  "></i>
+                </li>
+            </ul>
+        </div>
+        <!--End pagination-->
+        
+        <!--Start Fixed buttons-->
+        <div class="result-fixed-buttons d-none d-sm-block">
+            <ul class="list-unstyled px-2 py-3 m-0">
+                <li class="d-block mb-2 active">
+                    <img src="../../images/search_result/flight_result/flight.png" alt="icon"/>
+                    <img src="../../images/search_result/flight_result/flight_active.png" alt="icon"/>
+                </li>
+                <li class="d-block mb-2">
+                    <img src="../../images/search_result/flight_result/car.png" alt="icon"/>
+                    <img src="../../images/search_result/flight_result/car_active.png" alt="icon"/>
+                </li>
+                <li class="d-block mb-2">
+                    <img src="../../images/search_result/flight_result/holiday.png" alt="icon"/>
+                    <img src="../../images/search_result/flight_result/holiday_active.png" alt="icon"/>
+                </li>
+                <li class="d-block mb-2">
+                    <img src="../../images/search_result/flight_result/cruise.png" alt="icon"/>
+                    <img src="../../images/search_result/flight_result/cruise_active.png" alt="icon"/>
+                </li>
+            </ul>
+        </div>
+        <!--End Fixed buttons-->
+        
+        <!--Start Footer-->
+        <div class="footer py-5">
+            <div class="container">
+                <span class="title d-block text-center mx-auto">Destinations</span>
+                <ul class="list-unstyled text-center mt-3 mx-auto cities">
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Dubai</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">New York</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Cape Town</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Istambul</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Hong Kong</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Doha</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Lose Angeles</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Sydney</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Auckland</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Tokyo</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Parise</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Bombay</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Bangkok</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Dubai</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Delhi</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Kuala Lumpure</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Jeddah</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Nairobia</a></li>
+                </ul>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <ul class="terms list-unstyled text-center text-lg-left mx-auto mx-lg-0 mb-0" >
+                            <li class=" d-inline-block mr-2 mb-3 "><a href="../terms-conditions.html">Terms and conditions</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href=" # ">Privacy policy</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href="../contact-us.html">Contact</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href=" # ">FAQs</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href="../booking-passenger-info-page.html">Flight information</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-lg-4 ">
+                        <ul class="social-media-icons list-unstyled text-center text-lg-right mx-auto mx-lg-0 ">
+                            <li class="d-inline-block mr-2">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="d-inline-block mr-2">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="d-inline-block mr-2">
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="d-inline-block mr-2">
+                                <a href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright text-center text-lg-left">
+                    Copyright 2019 Major Independent Partner
+                </div>
+            </div>
+        </div>
+        <div class="go-top">
+            <div class="icon">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </div>
+        <!--End Footer-->
+    </div>
+
+
+    <script src="../../js/library/all.min.js"></script>
+    <script src="../../js/library/jquery-3.3.1.min.js"></script>
+    <script src="../../js/library/popper.min.js"></script>
+    <script src="../../js/library/bootstrap.min.js"></script>
+    <script src="../../js/library/jquery-ui.min.js"></script>
+    <script src="../../js/search_pages/sidebar-result.js"></script>
+    <script src="../../js/myFramwork.js"></script>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/search_pages/flight-result-page.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,709 @@
+
+/*Start Header*/
+.blog-details-page .slider
+{
+    position: relative;
+} 
+.blog-details-page .slider .header-back 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+.blog-details-page .slider::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    z-index: 2;
+    display: block;
+}
+.blog-details-page .slider .content
+{
+    position: relative;
+    z-index: 3;
+}
+.blog-details-page .slider .content .header-title
+{
+    color: #fff;
+    font-size: 35px;
+}
+.blog-details-page .slider .content .header-text
+{
+    color: #fff;
+    font-size: 20px;
+    width: 50%;
+}
+/*End Header*/
+/*Start Left Side*/
+.blog-details-page .left-side
+{
+    
+}
+.blog-details-page .left-side .social-icons .icon
+{
+    transition: .3s;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.blog-details-page .left-side .social-icons .icon svg
+{
+    font-size: 25px;
+    transition: .3s;
+}
+.blog-details-page .left-side .social-icons .facebook-icon svg
+{
+    color: #425998;
+}
+.blog-details-page .left-side .social-icons .facebook-icon:hover
+{
+    background-color: #425998;
+}
+.blog-details-page .left-side .social-icons .twitter-icon svg
+{
+    color: #57afe5;
+}
+.blog-details-page .left-side .social-icons .twitter-icon:hover
+{
+    background-color: #57afe5;
+}
+.blog-details-page .left-side .social-icons .google-icon svg
+{
+    color: #c84e31;
+}
+.blog-details-page .left-side .social-icons .google-icon:hover
+{
+    background-color: #c84e31;
+}
+.blog-details-page .left-side .social-icons .icon:hover svg
+{
+    color: #fff;
+}
+.blog-details-page .left-side .main-site .date
+{
+    color: #717171;
+}
+.blog-details-page .left-side .main-site .article-text
+{
+    font-size: 18px;
+}
+.blog-details-page .left-side .main-site .hot-offer
+{
+    position: relative;
+}
+.blog-details-page .left-side .main-site .hot-offer .hot-offer-background
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+.blog-details-page .left-side .main-site .hot-offer::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    z-index: 2;
+}
+.blog-details-page .left-side .main-site .hot-offer .content
+{
+    position: relative;
+    z-index: 3;
+}
+.blog-details-page .left-side .main-site .hot-offer .content .price-info
+{
+    background-color: #003c5d;
+    width: fit-content;
+}
+.blog-details-page .left-side .main-site .hot-offer .content .price-info *
+{
+    color: #fff;
+}
+.blog-details-page .left-side .main-site .hot-offer .content .price-info .from
+{
+    font-size: 15px;
+    font-style: italic;
+}
+.blog-details-page .left-side .main-site .hot-offer .content .price-info .price
+{
+    font-size: 22px;
+}
+.blog-details-page .left-side .main-site .hot-offer .content .price-info .person
+{
+    font-size: 15px;
+    font-style: italic;
+}
+.blog-details-page .left-side .main-site .hot-offer .content .hot_dest .text
+{
+    color: #fff;
+    font-size: 15px;
+    font-style: italic;
+}
+.blog-details-page .left-side .main-site .hot-offer .content .hot_dest::after
+{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.blog-details-page .left-side .main-site .hot-offer .content .hot_title .text
+{
+    color: #fff;
+    font-size: 20px;
+}
+.blog-details-page .left-side .main-site .hot-offer .content .hot_title::after
+{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.blog-details-page .left-side .main-site .hot-offer .content .hot_info .text
+{
+    color: #fff;
+    font-size: 15px;
+}
+.blog-details-page .left-side .main-site .hot-offer .content .hot_info .stars svg
+{
+    font-size: 18px;
+    color: #fbd032;
+}
+.blog-details-page .left-side .main-site .hot-offer .content .airline-logo
+{
+    background-color: rgba(255,255,255,.5);
+    width: fit-content;
+}
+.blog-details-page .left-side .main-site .hot-offer .content .airline-logo img
+{
+    width: 150px;
+}
+.blog-details-page .left-side .main-site .hot-offer .content .terms_shares .term-p
+{
+    color: #fff;
+    font-size: 16px;
+}
+.blog-details-page .left-side .main-site .hot-offer .content .terms_shares .term-p span
+{
+    font-style: italic;
+    font-size: 14px;
+}
+.blog-details-page .left-side .main-site .article-title
+{
+    font-size: 20px;
+}
+.blog-details-page .left-side .main-site .article-tags .article_tag
+{
+    color: #a6a6a9;
+    background-color: #f5f5f5;
+}
+.blog-details-page .left-side .main-site .blog-author-profile .author-text
+{
+    font-size: 18px;
+}
+.blog-details-page .left-side .main-site .blog-author-profile .image 
+{
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+}
+.blog-details-page .left-side .main-site .blog-author-profile .image .author-img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.blog-details-page .left-side .main-site .blog-author-profile .author-name
+{
+    color: #353535;
+    font-size: 16px;
+}
+.blog-details-page .left-side .main-site .blog-author-profile .author_info
+{
+    font-size: 12px;
+    color: #353535;
+}
+.blog-details-page .left-side .main-site .blog-question .text
+{
+    font-size: 18px;
+}
+.blog-details-page .left-side .main-site .blog-question .hint
+{
+    color: #aaa9ac;
+    font-size: 15px;
+}
+.blog-details-page .left-side .main-site .blog-upload *
+{
+    color: #cccfd4;
+}
+.blog-details-page .left-side .blog-posts .card
+{    
+    border: 1px solid #ededed;
+    box-shadow: 0 0 60px 20px #e8e8e8;
+}
+.blog-details-page .left-side .blog-posts .card .card-body .card-title
+{
+    font-size: 18px;
+    color: #404040;
+}
+.blog-details-page .left-side .blog-posts .card .card-body .card-text
+{
+    font-size: 14px;
+    color: #404040;
+}
+.blog-details-page .left-side .blog-posts .card .card-body .author-info
+{
+    border-top: 1px solid rgb(245, 245, 245);
+}
+.blog-details-page .left-side .blog-posts .card .card-body .author-info .author-img
+{
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.blog-details-page .left-side .blog-posts .card .card-body .author-info .author-name
+{
+    color: #474747;
+    font-size: 14px;
+}
+.blog-details-page .left-side .blog-posts .card .card-body .author-info .post-date
+{
+    color: #474747;
+    font-size: 14px;
+}
+.blog-details-page .other-articles .card .article-date
+{
+    color: #8a8f94;
+    font-size: 14px;
+}
+.blog-details-page .other-articles .card .card-title
+{
+    font-size: 18px;
+    color: #212123;
+}
+.blog-details-page .other-articles .card .read-btn
+{
+    color: #2f5fea;
+    font-size: 16px;
+}
+.blog-details-page .comments-section
+{
+    background-color: #fcfcfc;
+}
+.blog-details-page .comments-section .comments-section-title
+{
+    font-size: 25px;
+    color: #202020;
+}
+.blog-details-page .comments-section .comments-section-subtitle
+{
+    font-size: 20px;
+    color: #202020;
+}
+.blog-details-page .comments-section .user-img
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.blog-details-page .comments-section textarea
+{
+    resize: none;
+}
+.blog-details-page .comments-section .input-container
+{
+    width: 70%;
+}
+.blog-details-page .comments-section .submitComment
+{
+    background-color: #003c5d;
+    color: #fff;
+    font-size: 15px;
+}
+.blog-details-page .contact-us-section
+{
+    background-color: #f6f6f6;
+}
+.blog-details-page .contact-us-section svg,
+.blog-details-page .contact-us-section .text
+{
+    color: #3a3a3a;
+}
+.blog-details-page .contact-us-section svg
+{
+    font-size: 20px;
+}
+.blog-details-page .contact-us-section .text
+{
+    font-size: 18px;
+}
+.blog-details-page .contact-us-section .fa-phone
+{
+    transform: rotateY(180deg);
+}
+.blog-details-page .subscribe-section
+{
+    background-color: #0e2e43;
+}
+.blog-details-page .subscribe-section .input-container
+{
+    width: 350px;
+}
+.blog-details-page .subscribe-section .title
+{
+    color: #fff;
+    font-size: 25px;
+}
+.blog-details-page .subscribe-section .text
+{
+    color: #fff;
+    color: #f0f0f0;
+}
+.blog-details-page .subscribe-section .btn-submit
+{
+    background-color: #6c757d;
+    color: #fff;
+}
+.blog-details-page .subscribe-section .btn-submit:hover
+{
+    background-color: #6c757d;
+}
+@media (min-width: 1750px){
+    .blog-details-page .slider .content .header-title
+    {
+        font-size: 1.7vmax;
+    }
+    .blog-details-page .slider .content .header-text
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .left-side .social-icons .icon svg
+    {
+        font-size: 1.2vmax;
+    }
+    .blog-details-page .left-side .main-site .date
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .left-side .main-site .article-text
+    {
+        font-size: 1.1vmax;
+    }
+    .blog-details-page .left-side .main-site .hot-offer .content .hot_dest .text
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .left-side .main-site .hot-offer .content .hot_title .text
+    {
+        font-size: 1.2vmax;
+    }
+    .blog-details-page .left-side .main-site .hot-offer .content .hot_info .text
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .left-side .main-site .hot-offer .content .hot_info .stars svg
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .left-side .main-site .hot-offer .content .price-info .from,
+    .blog-details-page .left-side .main-site .hot-offer .content .price-info .person
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .left-side .main-site .hot-offer .content .price-info .price
+    {
+        font-size: 1.3vmax;
+    }
+    .blog-details-page .left-side .main-site .hot-offer .content .airline-logo img
+    {
+        width: 7vmax;
+    }
+    .blog-details-page .left-side .main-site .hot-offer .content .terms_shares .term-p span
+    {
+        font-size: .8vmax;
+    }
+    .blog-details-page .left-side .main-site .hot-offer .content .terms_shares .term-p
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .left-side .main-site .article-title
+    {
+        font-size: 1.3vmax;
+    }
+    .blog-details-page .left-side .main-site .article-tags .article_tag
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .left-side .main-site .blog-author-profile .author-text
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .left-side .main-site .blog-author-profile .image
+    {
+        width: 4vmax;
+        height: 4vmax;
+    }
+    .blog-details-page .left-side .main-site .blog-author-profile .author-name
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .left-side .main-site .blog-author-profile .author_info
+    {
+        font-size: .7vmax;
+    }
+    .blog-details-page .left-side .main-site .blog-question .text
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .left-side .main-site .blog-question .hint
+    {
+        font-size: .9vmax;
+    }
+    .blog-details-page .left-side .main-site .blog-upload *
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .left-side .blog-posts .card .card-body .card-title
+    {
+        font-size: 1.1vmax;
+    }
+    .blog-details-page .left-side .blog-posts .card .card-body .card-text
+    {
+        font-size: .8vmax;
+    }
+    .blog-details-page .left-side .blog-posts .card .card-body .author-info .author-img
+    {
+        width: 2.5vmax;
+        height: 2.5vmax;
+    }
+    .blog-details-page .left-side .blog-posts .card .card-body .author-info .author-name
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .left-side .blog-posts .card .card-body .author-info .post-date
+    {
+        font-size: .9vmax;
+    }
+    .blog-details-page .other-articles .card .article-date
+    {
+        font-size: .7vmax;
+    }
+    .blog-details-page .other-articles .card .card-title
+    {
+        font-size: 1.1vmax;
+    }
+    .blog-details-page .other-articles .card .read-btn
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .comments-section .comments-section-title
+    {
+        font-size: 1.3vmax;
+    }
+    .blog-details-page .comments-section .comments-section-subtitle
+    {
+        font-size: 1.2vmax;
+    }
+    .blog-details-page .comments-section .user-img
+    {
+        width: 5vmax;
+        height: 5vmax;
+    }
+    .blog-details-page .comments-section .submitComment
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page input[type="text"] {
+        font-size: 1vmax;
+    }
+    .blog-details-page .contact-us-section svg
+    {
+        font-size: 1.2vmax;
+    }
+    .blog-details-page .contact-us-section .text
+    {
+        font-size: 1.1vmax;
+    }
+    .blog-details-page .subscribe-section .title
+    {
+        font-size: 1.3vmax;
+    }
+    .blog-details-page .subscribe-section .text
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .subscribe-section .input-container
+    {
+        width: 25%;
+    }
+}
+@media (max-width: 767px) {
+    .blog-details-page .comments-section .input-container
+    {
+        width: 100%;   
+    }
+}
+@media (max-width: 576px) {
+    .blog-details-page .slider .content .header-title
+    {
+        font-size: 22px;
+    }
+    .blog-details-page .slider .content .header-text
+    {
+        font-size: 17px;
+        width: 100%;
+    }
+    .blog-details-page .subscribe-section .input-container
+    {
+        width: 100%;
+    }  
+}
+/*End Left Side*/
+
+/*Start Right Sidebar*/
+
+.blog-details-page .right-side .holiday-card
+{
+    border-radius: 0 1em 1em 1em;
+    border: 1px solid #ddd;
+    box-shadow: -2px 5px 12px 0px #ddd;
+}
+.blog-details-page .right-side .holiday-card .card-img-top
+{
+    position: relative;
+}
+.blog-details-page .right-side .holiday-card .card-img-top .offer-img
+{
+    
+}
+.blog-details-page .right-side .holiday-card .card-img-top .price-info
+{
+    background-color: #155ebf;
+    border-bottom-right-radius: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.blog-details-page .right-side .holiday-card .price-info .from,
+.blog-details-page .right-side .holiday-card .price-info .price
+{
+    color: #fff;
+}
+.blog-details-page .right-side .holiday-card .price-info .from
+{
+    font-size: 13px;
+}
+.blog-details-page .right-side .holiday-card .price-info .price
+{
+    font-size: 17px;
+}
+.blog-details-page .right-side .holiday-card .card-content .card-title
+{
+    color: #444;
+    font-size: 17px;
+}
+.blog-details-page .right-side .holiday-card .card-content .card-text
+{
+    font-size: 15px;
+    color: #444444;
+}
+.blog-details-page .right-side .holiday-card .card-content .features .feat
+{
+    background-color: #0a2c5a;
+}
+.blog-details-page .right-side .holiday-card .card-content .features .feat img
+{
+    width: 16px;
+}
+.blog-details-page .right-side .holiday-card .card-content .features .feat span
+{
+    color: #fff;
+    font-size: 15px;
+}
+.blog-details-page .right-side .holiday-card .card-content .offer-text
+{
+    color: #eb008c;
+}
+.blog-details-page .right-side .holiday-card .card-content .book-by
+{
+    color: #444;
+}
+.blog-details-page .right-side .holiday-card .card-content .valid span
+{
+    color: #444;
+    font-size: 14px;
+}
+.blog-details-page .right-side .holiday-card .card-content .airline-logo
+{
+    width: 60px;
+    height: 30px;
+}
+@media (min-width: 1750px) {
+    .blog-details-page .right-side .holiday-card .price-info .from
+    {
+        font-size: .7vmax;
+    }
+    .blog-details-page .right-side .holiday-card .price-info .price
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .right-side .holiday-card .card-content .card-title
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .right-side .holiday-card .card-content .card-text
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .right-side .holiday-card .card-content .features .feat img
+    {
+        width: 1vmax;
+    }
+    .blog-details-page .right-side .holiday-card .card-content .features .feat span
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .right-side .holiday-card .card-content .offer-text
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .right-side .holiday-card .card-content .book-by
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .right-side .holiday-card .card-content .valid span
+    {
+        font-size: 1vmax;
+    }
+    .blog-details-page .right-side .holiday-card .card-content .airline-logo
+    {
+        width: 4.5vmax;
+        height: 2vmax;
+    }
+}
+/*End Right Sidebar*/

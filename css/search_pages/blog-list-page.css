@@ -1,0 +1,218 @@
+
+
+/*Start Main Site*/
+.blog-list-page .card
+{
+    box-shadow: 0px 6px 13px -2px #ddd;
+    border-radius: 1em;
+    overflow: hidden;
+}
+.blog-list-page .card .card-image
+{
+    position: relative;
+}
+.blog-list-page .card .card-image img
+{
+    
+}
+.blog-list-page .card .card-image .read-time
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background-color: #1348bd;
+    font-size: 13px;
+}
+.blog-list-page .card .card-body .card-title
+{
+    color: #0a2052;
+    font-size: 16px;
+}
+.blog-list-page .card .card-body .card-text
+{
+    font-size: 13px;
+    color: #999;
+}
+.blog-list-page .card .card-body .author-info .text
+{
+    color: #999;
+    font-size: 14px;
+}
+.blog-list-page .card .card-body .author-info .author-img
+{
+    width: 35px;
+    height: 35px;
+}
+.blog-list-page .card .card-body .author-info .author-name
+{
+    font-size: 14px;
+    color: #222;
+}
+.blog-list-page .card .card-body .more-btn
+{
+    background: linear-gradient(180deg, #260b77, #720078);
+    color: #fff;
+    font-size: 14px;
+}
+.blog-list-page .image-container
+{
+    position: relative;
+}
+.blog-list-page .image-container .background-img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+.blog-list-page .image-container .content
+{
+    position: relative;
+    z-index: 2;
+    padding-top: 10em;
+}
+.blog-list-page .image-container .content .title
+{
+    color: #fff;
+    font-size: 25px;
+}
+.blog-list-page .image-container .content .box
+{
+    background-color: rgba(0,0,0,.5);
+    border-radius: .5em;
+}
+.blog-list-page .image-container .content .box .hotel-info
+{
+    
+}
+.blog-list-page .image-container .content .box .hotel-info .item
+{
+    position: relative;
+}
+.blog-list-page .image-container .content .box .hotel-info .item::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 2px;
+    height: 100%;
+    display: inline-flex;
+    background-color: rgba(255,255,255,.44);
+    flex-shrink: 0;
+    margin: auto 10px ;
+}
+.blog-list-page .image-container .content .box .hotel-info .item.no-after::after
+{
+    display: none;
+}
+.blog-list-page .image-container .content .box .hotel-info .item img
+{
+    width: 30px;
+}
+.blog-list-page .image-container .content .box .hotel-info .item .text
+{
+    color: #fff;
+    font-size: 14px;
+}
+.blog-list-page .image-container .content .box .price-info
+{
+    
+}
+.blog-list-page .image-container .content .box .price-info .from
+{
+    font-size: 13px;
+    color: #fff;
+}
+.blog-list-page .image-container .content .box .price-info .price
+{
+    font-size: 30px;
+    color: #ec008c;
+}
+.blog-list-page .image-container .location-img
+{
+    width: 16px;
+}
+.blog-list-page .image-container .location-name
+{
+    color: #fff;
+    font-size: 14px;
+}
+.blog-list-page .image-container .detail-btn
+{
+    background: linear-gradient(180deg, #124ea2, #ec008c);
+    color: #fff;
+}
+@media (min-width:1750px) {
+    .blog-list-page .card .card-image .read-time
+    {
+        font-size: .7vmax;
+    }
+    .blog-list-page .card .card-body .card-title
+    {
+        font-size: 1vmax;
+    }
+    .blog-list-page .card .card-body .card-text
+    {
+        font-size: .8vmax;
+    }
+    .blog-list-page .card .card-body .author-info .text
+    {
+        font-size: .8vmax;
+    }
+    .blog-list-page .card .card-body .author-info .author-img
+    {
+        width: 1.5vmax;
+    }
+    .blog-list-page .card .card-body .author-info .author-name
+    {
+        font-size: .8vmax;
+    }
+    .blog-list-page .card .card-body .more-btn
+    {
+        font-size: .8vmax;
+    }
+    .blog-list-page .image-container .content .title
+    {
+        font-size: 1.2vmax;
+    }
+    .blog-list-page .image-container .location-img
+    {
+        width: 1vmax;
+    }
+    .blog-list-page .image-container .location-name
+    {
+        font-size: .8vmax;
+    }
+    .blog-list-page .image-container .content .box .hotel-info .item img
+    {
+        width: 1.5vmax;
+    }
+    .blog-list-page .image-container .content .box .hotel-info .item .text
+    {
+        font-size: .8vmax;
+    }
+    .blog-list-page .image-container .content .box .price-info .from
+    {
+        font-size: .7vmax;
+    }
+    .blog-list-page .image-container .content .box .price-info .price
+    {
+        font-size: 1.5vmax;
+    }
+    .blog-list-page .image-container .detail-btn
+    {
+        font-size: 1vmax;
+    }
+}
+@media (max-width: 767px) {
+    .blog-list-page .image-container .content .box .hotel-info .item::after
+    {
+        display: none;
+    }
+}
+/*End Main Site*/

@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Start Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <!--End Fonts-->
+
+    <link rel="stylesheet" href="../css/library/all.min.css">
+    <link rel="stylesheet" href="../css/library/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/library/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/myFramwork.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/search_pages/slider-result-page.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/booking-passenger-info-page.css">
+    <title>Booking and Passenger page</title>
+</head>
+
+<body>
+
+    <div class="booking-passenger-info-page">
+        <!--Start Upper Bar-->
+        <div class="upper-bar py-3">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 col-md-4 text-center mb-2 mb-lg-0">
+                        <div class="brand-name">
+                            <div class="image">
+                                <a href="../index.html"><img src="../images/home_page/upper-bar/brand-name.png" alt="image" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-8 text-right">
+                        <ul class="d-flex list-unstyled mb-0 align-items-center justify-content-end w-100 flex-wrap">
+                            <li class="mr-2 d-none d-lg-block">
+                                <span class="d-inline-flex align-items-center font-weight-bold mr-1"><a href="./contact-us.html">Call Us Today</a> </span>
+                            </li>
+                            <li class="mr-2 font-weight-bold d-none d-lg-flex align-items-center">
+                                <img class="icon mr-1" src="../images/home_page/upper-bar/phone.png" alt="Phone" />
+                                <span><a href="./contact-us.html">+44 20 7123 1234</a> </span>
+                            </li>
+                            <li class="mr-2 d-none d-sm-flex align-items-center">
+                                <img class="icon mr-1" src="../images/home_page/upper-bar/book.png" alt="Book" />
+                                <span><a href="./booking-passenger-info-page.html">My Booking</a> </span>
+                            </li>
+                            <li class="mr-2 font-weight-bold d-none d-sm-block">
+                                <span class="">
+                                    <a class="" href="#">Log In</a>
+                                </span>
+                            </li>
+                            <li class="font-weight-bold d-block d-sm-none">
+                                <div class="upper-search-container d-flex align-items-center">
+                                    <input class="upper-search form-control" type="search"/>
+                                    <i class="ml-2 search fas fa-search"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Upper Bar-->
+        <!--Start Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light py-2">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-block d-lg-none call-today">
+                    <a href="#">
+                        <span class="font-weight-600">Call Today:</span>
+                        02073931000
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link  " href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="./flight-page.html">Flight</a>
+                        </li>
+                        <li class="nav-item anyWhere">
+                            <div class="nav-link   drop-title" href="#">
+                                Destination
+                            </div>
+                            <div class="Drop-Down px-3 py-3 anyWhere-menu" aria-labelledby="navbarDropdown">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <span class="d-block font-weight-bold">All Regions</span>
+                                        <hr />
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link py-1 font-weight-700 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-middle-east" role="tab" aria-controls="v-pills-home" aria-selected="true">Middle East</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-indian" role="tab" aria-controls="v-pills-profile" aria-selected="false">Indian Ocean</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-caribbean" role="tab" aria-controls="v-pills-messages" aria-selected="false">Caribbean</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-maxico" role="tab" aria-controls="v-pills-settings" aria-selected="false">Maxico</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-africa" role="tab" aria-controls="v-pills-settings" aria-selected="false">Africa</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-asia" role="tab" aria-controls="v-pills-settings" aria-selected="false">Asia</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-europe" role="tab" aria-controls="v-pills-settings" aria-selected="false">Europe</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-canada" role="tab" aria-controls="v-pills-settings" aria-selected="false">Canada</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-south-america" role="tab" aria-controls="v-pills-settings" aria-selected="false">Center & South
+                                                America</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-united-states" role="tab" aria-controls="v-pills-settings" aria-selected="false">United States Of
+                                                America</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-australasia" role="tab" aria-controls="v-pills-settings" aria-selected="false">Australasia</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="v-pills-middle-east" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                <span class="d-block font-weight-bold">Middle East Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-indian" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                <span class="d-block font-weight-bold">Indian Ocean Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-caribbean" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                                <span class="d-block font-weight-bold">Caribbean Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-maxico" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Maxico Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-africa" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Africa Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-asia" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Asia Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-europe" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Europe Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-canada" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Canada Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-south-america" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Center & South America
+                                                    Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-united-states" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">United States Of America
+                                                    Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-australasia" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Australasia Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="./destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="./holiday-page.html">Holiday</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="./hotels-page.html">Hotel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="#">Attraction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="./cruise-page.html">Cruise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="./details_pages/tour-details-page.html">Tour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="./details_pages/blog-details-page.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="./details_pages/offer-detail-page.html">Offer</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline d-none d-sm-flex my-2 my-lg-0">
+                        <div class="search-container">
+                            <input class="form-control mr-sm-2 search_input" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn my-2 my-sm-0  " type="submit">Search</button>
+                        </div>
+                        <i class="ml-2 search fas fa-search"></i>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--End Navbar-->
+        <!--Start Slider-->
+        <div class="slider">
+            <div class="carousel slide h-100" id="homeCarousel" data-ride="carousel">
+                <div class="carousel-inner h-100">
+                    <!--Slider [1]-->
+                    <div class="carousel-item h-100 active">
+                        <img class="w-100 h-100" src="../images/search_result/flight_result/slider-back.png" alt="Ship"/>
+                        <div class="overlay">
+                            <div class="container h-100">
+                                <div class="content h-100 d-flex text-center">
+                                    <div class="m-auto">
+                                        <span class="slider-title">Our Recommendations For Your</span>
+                                        <h1>Dubai Holiday</h1>
+                                        <div class="date py-2 px-3">
+                                            21 <sup>st</sup> March 2019
+                                            - 30 <sup>th</sup> March 2019
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Slider [2]-->
+                    <div class="carousel-item h-100">
+                        <img class="w-100 h-100" src="../images/search_result/flight_result/slider-back.png" alt="Ship"/>
+                        <div class="overlay">
+                            <div class="container h-100">
+                                <div class="content h-100 d-flex text-center">
+                                    <div class="m-auto">
+                                        <span class="slider-title">Our Recommendations For Your</span>
+                                        <h1>Dubai Holiday</h1>
+                                        <div class="date py-2 px-3">
+                                            21 <sup>st</sup> March 2019
+                                            - 30 <sup>th</sup> March 2019
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!--End Slider-->
+        
+        <!--Start booking-passenger-info-->
+        <div class="booking-passenger-info py-5">
+            <div class="container">
+                <!--Summary-->
+                <div class="summary">
+                    <h2 class="blue-back d-block py-1 px-3 mt-3 main-title">Summary</h2>
+                    <!--Start Flight Summary Info-->
+                    <div class="d-flex align-items-center">
+                        <span class="title d-inline-block my-3 pr-2   font-weight-600">Flight Summary</span>
+                        <span class="line"></span>
+                    </div>
+                    <div class="flight-summary-info card-border">
+                        <!--Airline Info-->
+                        <div class="airline-info px-4 py-3">
+                            <div class="row">
+                                <div class="col-xl-2 d-none d-lg-flex align-items-center text-center text-lg-left mb-3 mb-xl-0">
+                                    <div class="row no-gutters text-center align-items-center">
+                                        <div class="col-sm-2">
+                                            <img src="../images/booking-passenger-info-page/emirates.png" alt="Emirates"/>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="d-inline-block ml-2 font-weight-600 ">Emirates</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-10">
+                                    <div class="row">
+                                        <!--Start Top Row [ Airline Info ]-->
+                                        <div class="col-4 col-lg-12 col-xl-2 order-1 mb-3 d-block d-lg-none align-items-center text-center text-lg-left airline-logo">
+                                            <div class="row no-gutters text-center align-items-center">
+                                                <div class="col-sm-2">
+                                                    <img src="../images/booking-passenger-info-page/emirates.png" alt="Emirates"/>
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <span class="d-inline-block ml-2 font-weight-600 ">Emirates</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Date-->
+                                        <div class="col-12 mb-2 order-4 order-lg-1">
+                                            <span class="date font-weight-600">25 January , 2019</span>
+                                        </div>
+                                        <!--Time Start-->
+                                        <div class="col-6 col-sm-4 col-lg col-xl-2 order-lg-2 order-5">
+                                            <div class="d-flex">
+                                                <span class="d-block font-weight-500 time">14:25</span>
+                                                <div class="plane-icon ml-auto d-flex align-items-center">
+                                                    <img src="../images/booking-passenger-info-page/plane.png" alt="plane"/>
+                                                </div>
+                                            </div>
+                                            <span class="d-block  text-muted mt-2 city-name">London (STN)</span>
+                                        </div>
+                                        <!--Time End-->
+                                        <div class="col-6 col-sm-4 col-lg col-xl-2 order-lg-3 order-6">
+                                            <span class="d-block font-weight-500 time">21:50</span>
+                                            <span class="d-block  text-muted mt-2 city-name">Dubai (DXB)</span>
+                                        </div>
+                                        <!--Total Flight Time [Stops]-->
+                                        <div class="col-sm-4 col-lg order-lg-4 order-7">
+                                            <div class="stops d-sm-block align-items-center">
+                                                <span class="flight-time d-block font-weight-600 mb-2 mr-2">12h 30m</span>
+                                                <div class="stop-line d-flex align-items-center flex-wrap flex-md-nowrap mr-2">
+                                                    <span class="stop-dot my-auto mx-auto"></span>
+                                                </div>
+                                                <span class="d-block stop-num text-center font-weight-600 mt-2 text-muted  mr-2 ">1 Stop</span>
+                                            </div>
+                                        </div>
+                                        <!--Icons-->
+                                        <div class="col-4 col-lg order-lg-5 order-2">
+                                            <div class="icons d-flex justify-content-center">
+                                                <img class="mr-2" src="../images/booking-passenger-info-page/bag.png" alt="bag"/>
+                                                <img class="mr-2" src="../images/booking-passenger-info-page/meal.png" alt="meal"/>
+                                                <img class="mr-2" src="../images/booking-passenger-info-page/wifi.png" alt="Wifi"/>
+                                            </div>
+                                        </div>
+                                        <!--Price [Start From]-->
+                                        <div class="col-4 col-lg order-lg-6 order-3">
+                                            <div class="text-right">
+                                                <span class="text-muted d-block price-text">Start from</span>
+                                                <span class="main-color font-weight-600 d-block price">$909</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                                
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="head-background"></div>
+                        <div class="price-table">
+                            <div class="row">
+                                <div class="offset-4"></div>
+                                <div class="col-md-8">
+                                    <table class="table table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" colspan="2"></th>
+                                                <th class="font-weight-600 " scope="col">Price</th>
+                                                <th class="font-weight-600  text-center" scope="col">No.of passengers</th>
+                                                <th class="font-weight-600 " scope="col">Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Adult Fare</td>
+                                                <td>$32.00</td>
+                                                <td class="text-center">2</td>
+                                                <td>$64.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td class="text-muted">Adult Tax</td>
+                                                <td class="text-muted">$32.00</td>
+                                                <td class="text-center">2</td>
+                                                <td>$64.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Child Fare</td>
+                                                <td>$32.00</td>
+                                                <td class="text-center">2</td>
+                                                <td>$64.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td class="text-muted">Child Tax</td>
+                                                <td class="text-muted">$32.00</td>
+                                                <td class="text-center">2</td>
+                                                <td>$64.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Infants Fare</td>
+                                                <td>$32.00</td>
+                                                <td class="text-center">2</td>
+                                                <td>$64.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td class="text-muted">Infants Tax</td>
+                                                <td class="text-muted">$32.00</td>
+                                                <td class="text-center">2</td>
+                                                <td>$64.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"  colspan="3"></th>
+                                                <td class="text-center font-weight-600 total">Total</td>
+                                                <td class="font-weight-600 total">$1,485.82</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Flight Summary Info-->
+                    <!--Start Hotel Summary -->
+                    <div class="d-flex align-items-center">
+                        <span class="title d-inline-block my-3 pr-2   font-weight-600">Hotel Summary</span>
+                        <span class="line"></span>
+                    </div>
+                    <div class="hotel-summary-info card-border">
+                        <div class="card px-2 py-2 mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-lg-4">
+                                    <div class="image h-100">
+                                        <img class="card-img h-100" src="../images/booking-passenger-info-page/hotel-img.png" alt="Hotel">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-8">
+                                                <div class="d-flex align-items-center flex-wrap flex-md-nowrap">
+                                                    <h5 class="card-title mr-4 main-color font-weight-600  ">Burj Al Arab Hotel</h5>
+                                                    <ul class="list-unstyled stars">
+                                                        <li class="d-inline-block"><i class="fas fa-star  "></i></li>
+                                                        <li class="d-inline-block"><i class="fas fa-star  "></i></li>
+                                                        <li class="d-inline-block"><i class="fas fa-star  "></i></li>
+                                                        <li class="d-inline-block"><i class="fas fa-star  "></i></li>
+                                                        <li class="d-inline-block"><i class="fas fa-star  "></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="d-flex location">
+                                                    <img class="map-icon mr-2 mt-2" src="../images/booking-passenger-info-page/map-location.png" alt="map Icon"/>
+                                                    <p class="card-text text-muted align-self-start  ">Jumeirah St - Dubai. United Arab Emirates</p>
+                                                </div>
+                                                <!--Room Type-->
+                                                <div class="row no-gutters mt-3 text-muted">
+                                                    <div class="col-6">
+                                                        <span class="hotel-info_type">Room Type</span>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <span class="ml-auto font-weight-600 text-left hotel-info_text">Standard King Room</span>
+                                                    </div>
+                                                </div>
+                                                <!--No. of room-->
+                                                <div class="row no-gutters mt-3 text-muted">
+                                                    <div class="col-6">
+                                                        <span class="hotel-info_type">No. of room</span>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <span class="ml-auto font-weight-600 text-left hotel-info_text">2</span>
+                                                    </div>
+                                                </div>
+                                                <!--Meal Plane-->
+                                                <div class="row no-gutters mt-3 text-muted">
+                                                    <div class="col-6">
+                                                        <span class="hotel-info_type">Meal Plane</span>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <span class="ml-auto font-weight-600 text-left hotel-info_text">Breakfast</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-4 mt-md-0">
+                                                <div class="room-num h-100 pl-4">
+                                                    <!--Room #1-->
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6 col-md-12 col-lg-4">
+                                                            <span class="font-weight-600 text-muted text">Room 1</span>
+                                                        </div>
+                                                        <div class="col-6 col-md-12 col-lg-8">
+                                                            <ul class="list-unstyled d-flex align-items-center">
+                                                                <li class="d-flex align-items-center mr-2">
+                                                                    <img class="mr-1 room-icon" src="../images/booking-passenger-info-page/adult.png" alt="adult"/>
+                                                                    <span class="text-muted num">2</span>
+                                                                </li>
+                                                                <li class="d-flex align-items-center mr-2">
+                                                                    <img class="mr-1 room-icon" src="../images/booking-passenger-info-page/child.png" alt="adult"/>
+                                                                    <span class="text-muted num">1</span>
+                                                                </li>
+                                                                <li class="d-flex align-items-center mr-2">
+                                                                    <img class="mr-1 room-icon" src="../images/booking-passenger-info-page/infant.png" alt="adult"/>
+                                                                    <span class="text-muted num">1</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!--Room #2-->
+                                                    <div class="row no-gutters">
+                                                        <div class="col-6 col-md-12 col-lg-4">
+                                                            <span class="font-weight-600 text-muted text">Room 2</span>
+                                                        </div>
+                                                        <div class="col-6 col-md-12 col-lg-8">
+                                                            <ul class="list-unstyled d-flex align-items-center">
+                                                                <li class="d-flex align-items-center mr-2">
+                                                                    <img class="mr-1 room-icon" src="../images/booking-passenger-info-page/adult.png" alt="adult"/>
+                                                                    <span class="text-muted num">2</span>
+                                                                </li>
+                                                                <li class="d-flex align-items-center mr-2">
+                                                                    <img class="mr-1 room-icon" src="../images/booking-passenger-info-page/child.png" alt="adult"/>
+                                                                    <span class="text-muted num">1</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="head-background"></div>
+                        <!--Price Info-->
+                        <div class="price-info">
+                            <div class="row no-gutters">
+                                <div class="col-md-6 order-md-1 order-2">
+                                    <div class="d-flex px-2 py-2 h-100 align-items-center justify-content-center">
+                                        <div class="box blue__box px-3 py-2 mr-2">
+                                            <span class="d-block title">Check in date</span>
+                                            <span class="d-block date font-weight-600">15 January 2019</span>
+                                        </div>
+                                        <div class="box red__box px-3 py-2">
+                                            <span class="d-block title">Check out date</span>
+                                            <span class="d-block date font-weight-600">18 January 2019</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 order-md-2 order-1">
+                                    <table class="table table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-600   main-color" scope="col">Room Type</th>
+                                                <th class="font-weight-600   main-color" scope="col">Price</th>
+                                                <th class="font-weight-600   main-color" scope="col">Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="font-weight-600 text-muted  ">Room 1</td>
+                                                <td class="font-weight-600  ">$909</td>
+                                                <td class="font-weight-600  ">$909</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-600 text-muted  ">Room 1</td>
+                                                <td class="font-weight-600  ">$909</td>
+                                                <td class="font-weight-600  ">$909</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-600 total"></td>
+                                                <td class="font-weight-600 total">Total</td>
+                                                <td class="font-weight-600 total">$1,485,82</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Hotel Summary -->
+
+                    <!--Start Cruise Summary -->
+                    <div class="d-flex align-items-center">
+                        <span class="title d-inline-block my-3 pr-2   font-weight-600">Cruise Summary</span>
+                        <span class="line"></span>
+                    </div>
+                    <div class="cruise-summary-info card-border">
+                        <div class="card px-2 py-2 mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <div class="image h-100">
+                                        <img class="card-img h-100" src="../images/booking-passenger-info-page/cruise-ship.png" alt="Hotel">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body h-100">
+                                        <div class="row no-gutters h-100">
+                                            <div class="col-sm-8">
+                                                <img class="ship-logo mb-2" src="../images/booking-passenger-info-page/caribbean.png" alt="caribbean" />
+                                                <h5 class="card-title mr-4 main-color font-weight-600  ">Caribbean Princess</h5>
+                                                <p class="card-text align-self-start font-weight-600  ">4 Nights Western Caribbean Cruise from Fort Lauderdale – Roundtrip</p>
+                                            </div>
+                                            <div class="col-sm-4 mt-4 mt-md-0">
+                                                <div class="price-passengers-container pl-3 h-100">
+                                                    <div class="row no-gutters">
+                                                        <div class="col-12 order-2 order-sm-1">
+                                                            <div class="price text-right mb-4">
+                                                                <span class="price_text text-muted font-weight-500 d-block">Start from</span>
+                                                                <span class="price_num main-color font-weight-600">$909</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 order-1 order-sm-2">
+                                                            <div class="passengers mt-4">
+                                                                <div class="">
+                                                                    <span class="font-weight-600 text-muted d-block mb-2 passengers_title">Passengers</span>
+                                                                    <ul class="list-unstyled d-flex align-items-center icons">
+                                                                        <li class="d-flex align-items-center mr-2">
+                                                                            <img class="mr-1 room-icon" src="../images/booking-passenger-info-page/adult.png" alt="adult"/>
+                                                                            <span class="text-muted  ">2</span>
+                                                                        </li>
+                                                                        <li class="d-flex align-items-center mr-2">
+                                                                            <img class="mr-1 room-icon" src="../images/booking-passenger-info-page/child.png" alt="adult"/>
+                                                                            <span class="text-muted  ">1</span>
+                                                                        </li>
+                                                                        <li class="d-flex align-items-center mr-2">
+                                                                            <img class="mr-1 room-icon" src="../images/booking-passenger-info-page/infant.png" alt="adult"/>
+                                                                            <span class="text-muted  ">1</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th class="font-weight-600  font-sm-8  main-color py-2 pl-3" scope="col">Days</th>
+                                    <th class="font-weight-600  font-sm-8  main-color py-2" scope="col">Port Of Call</th>
+                                    <th class="font-weight-600  font-sm-8  main-color py-2" scope="col">Arrival Times</th>
+                                    <th class="font-weight-600  font-sm-8  main-color py-2" scope="col">Departure Times</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="num pl-3"><span class="text-center blue-back d-block">1</span></td>
+                                    <td class="font-weight-600  ">Miami, Fl</td>
+                                    <td class=" ">&ndash;&ndash;&ndash;&ndash;</td>
+                                    <td class=" ">16:30</td>
+                                </tr>
+                                <tr>
+                                    <td class="num pl-3"><span class="text-center blue-back d-block">2</span></td>
+                                    <td class="font-weight-600  ">At Sea</td>
+                                    <td class=" ">&ndash;&ndash;&ndash;&ndash;</td>
+                                    <td class=" ">&ndash;&ndash;&ndash;&ndash;</td>
+                                </tr>
+                                <tr>
+                                    <td class="num pl-3"><span class="text-center blue-back d-block">3</span></td>
+                                    <td class="font-weight-600  ">Rootana island ,honduras</td>
+                                    <td class=" ">09:30</td>
+                                    <td class=" ">18:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="num pl-3"><span class="text-center blue-back d-block">4</span></td>
+                                    <td class="font-weight-600  ">Costa Maya , Mexico </td>
+                                    <td class=" ">08:30</td>
+                                    <td class=" ">17:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="num pl-3"><span class="text-center blue-back d-block">5</span></td>
+                                    <td class="font-weight-600  ">Cozumel, Mexico</td>
+                                    <td class=" ">07:30</td>
+                                    <td class=" ">08:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="num pl-3"><span class="text-center blue-back d-block">6</span></td>
+                                    <td class="font-weight-600  ">At Sea</td>
+                                    <td class=" ">&ndash;&ndash;&ndash;&ndash;</td>
+                                    <td class=" ">&ndash;&ndash;&ndash;&ndash;</td>
+                                </tr>
+                                <tr>
+                                    <td class="num pl-3"><span class="text-center blue-back d-block">7</span></td>
+                                    <td class="font-weight-600  ">Cococay, Bahamas</td>
+                                    <td class=" ">09:30</td>
+                                    <td class=" ">18:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="num pl-3"><span class="text-center blue-back d-block">8</span></td>
+                                    <td class="font-weight-600  ">Miami, fl</td>
+                                    <td class=" ">09:30</td>
+                                    <td class=" ">&ndash;&ndash;&ndash;&ndash;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--End Cruise Summary -->
+                </div>
+                <!--Booking-->
+                <div class="booking">
+                    <form action="./payment-page.html" method="GET">
+                        <h2 class="blue-back d-block py-1 px-3 mt-3 main-title">Booking</h2>
+                        <div class="user-info px-2 py-2">
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="jq-selectbox">
+                                        <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Title</label>
+                                        <select class="select-box">
+                                            <option selected></option>
+                                            <option>Option #1</option>
+                                            <option>Option #2</option>
+                                            <option>Option #3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Name</label>
+                                    <input class="form-control  " type="text"/>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Surname</label>
+                                    <input class="form-control  " type="text"/>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Post Code</label>
+                                    <input class="form-control  " type="text"/>
+                                </div>
+                                <div class="col-md-8 mb-3">
+                                    <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">House number/name</label>
+                                    <input class="form-control  " type="text"/>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">1st line of address</label>
+                                    <input class="form-control  " type="text"/>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Address line 2</label>
+                                    <input class="form-control  " type="text"/>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Email address</label>
+                                    <input class="form-control  " type="email"/>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Confirm email address</label>
+                                    <input class="form-control  " type="email"/>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Phone Number</label>
+                                    <input class="form-control  " type="text"/>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Town</label>
+                                    <input class="form-control  " type="text"/>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="jq-selectbox">
+                                        <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">City</label>
+                                        <select class="select-box">
+                                            <option selected></option>
+                                            <option>Option #1</option>
+                                            <option>Option #2</option>
+                                            <option>Option #3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Room #1-->
+                        <div class="room-info">
+                            <div class="d-flex align-items-center">
+                                <span class="title d-inline-block my-3 pr-2   font-weight-600 text-uppercase">Room 1</span>
+                                <span class="line"></span>
+                            </div>
+                            <!--Adult Room-->
+                            <div class="room-head">
+                                <img class="mr-1" src="../images/booking-passenger-info-page/adult-big.png" alt="adult"/>
+                                <span class="font-weight-600  ">Adult 1</span>
+                            </div>
+                            <div class="px-3 mt-3">
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <div class="jq-selectbox">
+                                            <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Title</label>
+                                            <select class="select-box">
+                                                <option selected></option>
+                                                <option>Option #1</option>
+                                                <option>Option #2</option>
+                                                <option>Option #3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Name</label>
+                                        <input class="form-control  " type="text"/>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Surname</label>
+                                        <input class="form-control  " type="text"/>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="jq-selectbox">
+                                            <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Date Of Birth</label>
+                                            <select class="select-box">
+                                                <option selected></option>
+                                                <option>Option #1</option>
+                                                <option>Option #2</option>
+                                                <option>Option #3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Passport Number</label>
+                                        <input class="form-control  " type="text"/>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Passport issue date</label>
+                                        <input class="form-control  " type="text"/>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="jq-selectbox">
+                                            <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Passport expirey date </label>
+                                            <select class="select-box">
+                                                <option selected></option>
+                                                <option>Option #1</option>
+                                                <option>Option #2</option>
+                                                <option>Option #3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class=" text-muted mb-0 pl-2 d-bloc font-weight-600">Passport palce of issue </label>
+                                        <input class="form-control  " type="text"/>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Nationality </label>
+                                        <input class="form-control  " type="text"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Child Room-->
+                            <div class="room-head">
+                                <img class="mr-1 child-img" src="../images/booking-passenger-info-page/child-big.png" alt="adult"/>
+                                <span class="font-weight-600  ">Child 1</span>
+                            </div>
+                            <div class="px-3 mt-3">
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <div class="jq-selectbox">
+                                            <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Title</label>
+                                            <select class="select-box">
+                                                <option selected></option>
+                                                <option>Option #1</option>
+                                                <option>Option #2</option>
+                                                <option>Option #3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Name</label>
+                                        <input class="form-control  " type="text"/>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Surname</label>
+                                        <input class="form-control  " type="text"/>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="jq-selectbox">
+                                            <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Date Of Birth</label>
+                                            <select class="select-box">
+                                                <option selected></option>
+                                                <option>Option #1</option>
+                                                <option>Option #2</option>
+                                                <option>Option #3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Passport Number</label>
+                                        <input class="form-control  " type="text"/>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Passport issue date</label>
+                                        <input class="form-control  " type="text"/>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="jq-selectbox">
+                                            <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Passport expirey date </label>
+                                            <select class="select-box">
+                                                <option selected></option>
+                                                <option>Option #1</option>
+                                                <option>Option #2</option>
+                                                <option>Option #3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Passport palce of issue </label>
+                                        <input class="form-control  " type="text"/>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="input-title text-muted mb-0 pl-2 d-block font-weight-600">Nationality </label>
+                                        <input class="form-control  " type="text"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Submit Btn-->
+                        <input class="text-uppercase   ml-3 mt-4" type="submit" value="Submit"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--End booking-passenger-info-->
+        <!--Start pagination-->
+        <div class="pagination">
+            <ul class="p-0 list-unstyled mx-auto">
+                <li class="d-inline-block"> 
+                    <i class="fas fa-chevron-left  "></i>
+                    <i class="fas fa-chevron-left  "></i> 
+                </li>
+                <li class="d-inline-block"> 
+                    <i class="fas fa-chevron-left  "></i> 
+                </li>
+                <li class="d-inline-block number active"> 
+                    <span class=" ">1</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">2</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">3</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">4</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">5</span>
+                </li>
+                <li class="d-inline-block"> 
+                    <span class=" ">......</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">12</span>
+                </li>
+                <li class="d-inline-block"> 
+                    <i class="fas fa-chevron-right  "></i>
+                </li>
+                <li class="d-inline-block"> 
+                    <i class="fas fa-chevron-right  "></i>
+                    <i class="fas fa-chevron-right  "></i>
+                </li>
+            </ul>
+        </div>
+        <!--End pagination-->
+    
+        
+        <!--Start Footer-->
+        <div class="footer py-5">
+            <div class="container">
+                <span class="title d-block text-center mx-auto">Destinations</span>
+                <ul class="list-unstyled text-center mt-3 mx-auto cities">
+                    <li class="d-inline-block mr-3 mb-3"><a href="./destination-landing-page.html">Dubai</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="./destination-landing-page.html">New York</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="./destination-landing-page.html">Cape Town</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="./destination-landing-page.html">Istambul</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="./destination-landing-page.html">Hong Kong</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="./destination-landing-page.html">Doha</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="./destination-landing-page.html">Lose Angeles</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="./destination-landing-page.html">Sydney</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="./destination-landing-page.html">Auckland</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="./destination-landing-page.html">Tokyo</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="./destination-landing-page.html">Parise</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="./destination-landing-page.html">Bombay</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="./destination-landing-page.html">Bangkok</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="./destination-landing-page.html">Dubai</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="./destination-landing-page.html">Delhi</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="./destination-landing-page.html">Kuala Lumpure</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="./destination-landing-page.html">Jeddah</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="./destination-landing-page.html">Nairobia</a></li>
+                </ul>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <ul class="terms list-unstyled text-center text-lg-left mx-auto mx-lg-0 mb-0" >
+                            <li class=" d-inline-block mr-2 mb-3 "><a href="./terms-conditions.html">Terms and conditions</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href=" # ">Privacy policy</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href="./contact-us.html">Contact</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href=" # ">FAQs</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href="./booking-passenger-info-page.html">Flight information</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-lg-4 ">
+                        <ul class="social-media-icons list-unstyled text-center text-lg-right mx-auto mx-lg-0 ">
+                            <li class="d-inline-block mr-2">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="d-inline-block mr-2">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="d-inline-block mr-2">
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="d-inline-block mr-2">
+                                <a href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright text-center text-lg-left">
+                    Copyright 2019 Major Independent Partner
+                </div>
+            </div>
+        </div>
+        <div class="go-top">
+            <div class="icon">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </div>
+        <!--End Footer-->
+    </div>
+
+
+    <script src="../js/library/all.min.js"></script>
+    <script src="../js/library/jquery-3.3.1.min.js"></script>
+    <script src="../js/library/popper.min.js"></script>
+    <script src="../js/library/bootstrap.min.js"></script>
+    <script src="../js/library/jquery-ui.min.js"></script>
+    <script src="../js/myFramwork.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/booking-passenger-info-page.js"></script>
+</body>
+
+</html>

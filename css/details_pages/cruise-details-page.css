@@ -1,0 +1,2021 @@
+
+
+.custom-img-scrolling-container
+{
+    position: relative;
+    z-index: 3;
+}
+.custom-img-scrolling-container .img-thumb
+{
+    width: 70px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+.custom-img-scrolling-container .img-thumb .thumb_img
+{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+.custom-img-scrolling-container .img-thumb .cursor-box
+{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 50px;
+    background-color: transparent;
+    border: .3rem solid #124ca0;
+}
+.custom-img-scrolling-container .main-image
+{
+    overflow: hidden;   
+    width: 400px;
+    height: 200px;
+}
+.custom-img-scrolling-container .main-image .custom-main_img
+{
+    width: 100%;
+    height: 800px;
+}
+
+
+
+
+/*Start cruise-details-header*/
+.cruise-details-page .cruise-details-header
+{
+    overflow: hidden;
+}
+.cruise-details-page .cruise-details-header .carousel-control-next,
+.cruise-details-page .cruise-details-header .carousel-control-prev
+{
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cruise-details-page .cruise-details-header .overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    z-index: 2;
+}
+.cruise-details-page .cruise-details-header .slide-content
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    color: #fff;
+}
+.cruise-details-page .cruise-details-header .slide-img
+{
+    object-fit: cover;
+}
+.cruise-details-page .cruise-details-header .slide-content .ship-name
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+.cruise-details-page .cruise-details-header .slide-content .line-logo
+{
+    position: absolute;
+    top: 100%;
+    left: 30px;
+    width: 170px;
+    transform: translateY(-100%);
+}
+@media (min-width: 1750px)
+{
+    .cruise-details-page .cruise-details-header .slide-content .ship-name
+    {
+        font-size: 2vmax;
+    }
+    .cruise-details-page .cruise-details-header .slide-content .line-logo
+    {
+        width: 16vmax;
+    }
+}
+/*End cruise-details-header*/
+/*Start cruise-tabs */
+.cruise-details-page .cruise-tabs .all-tabs .swiper-container {
+    width: 100%;
+    height: 100%;
+    background-color: #0a2c5a;
+}
+.cruise-details-page .cruise-tabs .all-tabs .swiper-container .swiper-wrapper{
+    
+    
+}
+
+.cruise-details-page .cruise-tabs .all-tabs .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    height: auto;
+    align-items: center;
+    cursor: pointer;
+}
+.cruise-details-page .cruise-tabs .all-tabs .swiper-button-next, 
+.cruise-details-page .cruise-tabs .all-tabs .swiper-button-prev
+{
+    position: static;
+    margin: 0;
+    height: auto;
+    background-color: rgba(0,0,0,.7);
+}
+.cruise-details-page .cruise-tabs .all-tabs .swiper-button-next:after,
+.cruise-details-page .cruise-tabs .all-tabs .swiper-button-prev:after
+{
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+}
+.cruise-details-page .cruise-tabs
+{
+    position: relative;
+    z-index: 9;
+}
+.cruise-details-page .cruise-tabs .custom-nav-tabs .custom-nav-item
+{
+    color: #fff;
+    border: none;
+}
+.cruise-details-page .cruise-tabs .custom-nav-tabs .custom-nav-item .custom-nav-link
+{
+    border: none;
+    font-size: 16px;
+}
+.cruise-details-page .cruise-tabs .custom-nav-tabs .custom-nav-item.selected
+{
+    background-color: #155ebf;
+    color: #fff;
+    border: none;
+}
+@media (min-width: 1750px) {
+    .cruise-details-page .cruise-tabs .custom-nav-tabs .custom-nav-item .custom-nav-link
+    {
+        font-size: 1vmax;
+    }
+}
+@media (max-width: 991px) {
+    .cruise-details-page .cruise-tabs .custom-nav-tabs .custom-nav-item .custom-nav-link
+    {
+        font-size: 14px;
+    }
+}
+/*Start staterooms*/
+.cruise-details-page .cruise-tabs .tab-content .staterooms-content .stateroom-tabs
+{
+    border-bottom: 3px solid #155ebf;
+}
+.cruise-details-page .cruise-tabs .tab-content .tab-title
+{
+    color: #124ca0;
+    font-size: 23px;
+}
+.cruise-details-page .cruise-tabs .tab-content .staterooms-content .stateroom-tabs .sta-tabs-container
+{
+    
+}
+
+.cruise-details-page .cruise-tabs .tab-content .staterooms-content .stateroom-tabs .sta-tabs-container .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.cruise-details-page .cruise-tabs .tab-content .staterooms-content .stateroom-tabs .sta-tabs-container .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.cruise-details-page .cruise-tabs .staterooms-content .swiper-button-next, 
+.cruise-details-page .cruise-tabs .staterooms-content .swiper-button-prev
+{
+    position: static;
+    margin: 0;
+    height: auto;
+}
+.cruise-details-page .cruise-tabs .staterooms-content .swiper-button-next:after,
+.cruise-details-page .cruise-tabs .staterooms-content .swiper-button-prev:after
+{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+
+.cruise-details-page .cruise-tabs .tab-content .staterooms-content .stateroom-tabs .sta-tabs-container .swiper-slide
+{
+    color: #0a2c5a;
+    background-color: #eee;
+    border-radius: .5em .5em 0 0;
+    cursor: pointer;
+}
+.cruise-details-page .cruise-tabs .tab-content .staterooms-content .stateroom-tabs .sta-tabs-container .swiper-slide.selected
+{
+    color: #fff;
+    background-color: #155ebf;
+}
+.cruise-details-page .cruise-tabs .tab-content .staterooms-content .stateroom-tabs .sta-tabs-container .swiper-slide .text
+{
+    font-size: 14px;
+}
+.cruise-details-page .cruise-tabs .tab-content .staterooms-content .stateroom-tabs .sta-tabs-container .swiper-slide .price-info .from
+{
+    font-size: 13px;
+}
+.cruise-details-page .cruise-tabs .tab-content .staterooms-content .stateroom-tabs .sta-tabs-container .swiper-slide .price-info .price
+{
+    font-size: 15px;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms
+{
+    display: none;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms.active
+{
+    display: block;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card .card-body .card-title
+{
+    color: #0a2c59;
+    font-size: 20px;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card .card-body .card-text
+{
+    font-size: 15px;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card .card-body .price-info .from
+{
+    font-size: 15px;
+    color: #0a2c59;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card .card-body .price-info .price
+{
+    font-size: 25px;
+    color: #0a2c59;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card .card-body .arrows svg
+{
+    color: #124ca0;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card .card-body .arrows .arrow-down
+{
+    transition: .3s;
+    cursor: pointer;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card .card-body .arrows .arrow-down.reversed
+{
+    transform: rotateZ(180deg);
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details
+{
+    display: none;
+    border: 2px solid rgba(18, 77, 160, 0.301);
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .image
+{
+    width: 100%;
+    height: 270px;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .img-text
+{
+    font-size: 15px;
+    color: #444;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .details-title
+{
+    color: #0a2c59;
+    font-size: 20px;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .subtitle
+{
+    font-size: 16px;
+    color: #444;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .details-text
+{
+    font-size: 15px;
+    color: #444;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .btn
+{
+    background-color: #155ebf;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details img
+{
+    object-fit: cover;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .btn-text
+{
+    color: #fff;
+    font-size: 13px;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .details-features span
+{
+    font-size: 15px;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .details-info
+{
+    background-color: #eeeeee;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .details-info span
+{
+    color: #444;
+    font-size: 15px;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .details-info .cat-num
+{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ec008c;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .details-info .cat-num span
+{
+    color: #fff;
+    font-size: 15px;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .details-info .price
+{
+    font-size: 25px;
+    color: #0a2c5a;
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .details-info .select-btn
+{
+    background: linear-gradient(180deg, #00238c, #b9006e);
+}
+.cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .details-info .select-btn .select-link
+{
+    color: #fff;
+    font-size: 16px;
+}
+@media (min-width: 1750px) {
+    .cruise-details-page .cruise-tabs .tab-content .staterooms-content .stateroom-tabs .sta-tabs-container ul li .text
+    {
+        font-size: .9vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .staterooms-content .stateroom-tabs .sta-tabs-container ul li .price-info .from
+    {
+        font-size: .8vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .staterooms-content .stateroom-tabs .sta-tabs-container ul li .price-info .price
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card .card-body .card-title
+    {
+        font-size: 1.3vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card .card-body .card-text
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card .card-body .price-info .from
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card .card-body .price-info .price
+    {
+        font-size: 1.3vmax
+    }
+    .cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card .card-body .arrows svg
+    {
+        font-size: 1.3vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .details-title
+    {
+        font-size: 1.3vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .subtitle
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .details-text
+    {
+        font-size: .9vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details img
+    {
+        width: 1vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .btn-text
+    {
+        font-size: .8vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .details-features span
+    {
+        font-size: .9vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .details-info .select-btn .select-link
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .img-text
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .main-staterooms .main-card .card-details .details-info .cat-num span
+    {
+        font-size: .9vmax;
+    }
+}
+@media (max-width: 991px) {
+    .cruise-details-page .cruise-tabs .tab-content .staterooms-content .stateroom-tabs .sta-tabs-container ul li .text
+    {
+        font-size: 13px;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .staterooms-content .stateroom-tabs .sta-tabs-container ul li .price-info .from
+    {
+        font-size: 10px;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .staterooms-content .stateroom-tabs .sta-tabs-container ul li .price-info .price
+    {
+        font-size: 13px;
+    }
+}
+/*End staterooms*/
+/*Start deck-plans-content*/
+.cruise-details-page .cruise-tabs .tab-content .deck-plans-content .blue-rectangle
+{
+    width: 100%;
+    height: 40px;
+    background-color: #155ebf;
+}
+.cruise-details-page .cruise-tabs .tab-content .deck-plans-content .blue-rectangle .table-head
+{
+    color:#fff;
+    font-size: 15px;
+}
+.cruise-details-page .cruise-tabs .tab-content .deck-plans-content .deck-main-content .deck-title
+{
+    color: #fff;
+    background-color: #155ebf;
+}
+.cruise-details-page .cruise-tabs .tab-content .deck-plans-content .deck-main-content .responsive-tabs .responsive-tabs-items
+{
+    position: relative;
+    height: 100%;
+}
+.cruise-details-page .cruise-tabs .tab-content .deck-plans-content .deck-main-content .responsive-tabs .responsive-tabs-items::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #155ebf;
+}
+.cruise-details-page .cruise-tabs .tab-content .deck-plans-content .deck-main-content .responsive-tabs .res-tab-item .btn
+{
+    background-color: #eee;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 14px;
+    color: #0a2c5a;
+    width: 100%;
+}
+.cruise-details-page .cruise-tabs .tab-content .deck-plans-content .deck-main-content .responsive-tabs .res-tab-item.selected .btn
+{
+    background-color: #155ebf;
+    color: #fff;
+}
+.cruise-details-page .cruise-tabs .tab-content .deck-plans-content .deck-main-content .responsive-tabs .blue-btn
+{
+    background-color: #155ebf;
+    color: #fff;
+}
+.cruise-details-page .cruise-tabs .tab-content .deck-plans-content .deck-main-content .responsive-tabs .res_tab_content .tab-content
+{
+    display: none;
+}
+.cruise-details-page .cruise-tabs .tab-content .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .location-title .text
+{
+    font-size: 15px;
+}
+.cruise-details-page .cruise-tabs .tab-content .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .location-title .blue-text
+{
+    font-size: 16px;
+    color: #155ebf;
+}
+.cruise-details-page .cruise-tabs .tab-content .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content img
+{
+    width: 250px;
+}
+.cruise-details-page .cruise-tabs .tab-content .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .title
+{
+    font-size: 16px;
+}
+.cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box
+{
+    border: 1px solid #ddd;
+}
+.cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .circle
+{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+}
+.cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .H6-color
+{
+    background-color: #607f24;
+}
+.cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .circle.H7-color
+{
+    background-color: #abd031;
+}
+.cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .circle.M2-color
+{
+    background-color: #d01531;
+}
+.cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .circle.M3-color
+{
+    background-color: #bb384b;
+}
+.cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .circle.M4-color
+{
+    background-color: #b05d32;
+}
+.cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .circle.MX-color
+{
+    background-color: #e8845e;
+}
+.cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .circle.B1-color
+{
+    background-color: #7c1444;
+}
+.cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .circle.B2-color
+{
+    background-color: #956f7f;
+}
+.cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .circle.B3-color
+{
+    background-color: #ed69a3;
+}
+.cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .circle.B4-color
+{
+    background-color: #f1762b;
+}
+.cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .circle.BX-color
+{
+    background-color: #bfc3d4;
+}
+.cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .text
+{
+    font-size: 15px;
+}
+.cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .chevron-down
+{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #155ebf;
+    text-align: center;
+    color: #fff;
+}
+.cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .box-container
+{
+    position: relative;
+}
+.cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .chevron-down
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+.cruise-details-page .deck-plans-content .deck-plan-content
+{
+    background-color: #155ebf;
+    height: 100%;
+    position: relative;
+}
+.cruise-details-page .deck-plans-content .deck-plan-content .main-image
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.cruise-details-page .deck-plans-content .deck-plan-content .thumb-image
+{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 60px;
+}
+.cruise-details-page .deck-plans-content .deck-plan-content .deck_box
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,.8);
+}
+.cruise-details-page .deck-plans-content .deck-plan-content .deck_box .box_title
+{
+    color: #444;
+}
+.cruise-details-page .deck-plans-content .deck-plan-content .deck_box img
+{
+    width: 20px;
+}
+.cruise-details-page .deck-plans-content .deck-plan-content .deck_box .text
+{
+    color: #444;
+    font-size: 14px;
+}
+@media (min-width: 1750px) {
+    .cruise-details-page .cruise-tabs .tab-content .tab-title
+    {
+        font-size: 1.6vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .deck-plans-content .blue-rectangle
+    {
+        height: 50px;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .deck-plans-content .blue-rectangle .table-head
+    {
+        font-size: .9vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .deck-plans-content .deck-main-content .responsive-tabs .res-tab-item .btn
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .location-title .text
+    {
+        font-size: .9vmax;
+    }
+    .cruise-details-page .cruise-tabs .tab-content .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .title
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .text
+    {
+        font-size: .9vmax;
+    }
+    .cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .circle
+    {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: .9vmax;
+    }
+    .cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .chevron-down
+    {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .cruise-details-page .deck-plans-content .deck-main-content .responsive-tabs .deck-location-content .box .chevron-down svg
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .deck-plans-content .deck-plan-content .deck_box .box_title
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .deck-plans-content .deck-plan-content .deck_box img
+    {
+        width: 1vmax;
+    }
+    .cruise-details-page .deck-plans-content .deck-plan-content .deck_box .text
+    {
+        font-size: .8vmax;
+    }
+}
+@media (max-width: 991px)
+{
+    /*
+    .cruise-details-page .deck-plans-content .deck-plan-content
+    {
+        height: 600px;
+    }
+    */
+    .cruise-details-page .deck-plans-content .deck-plan-content .main-image
+    {
+        position: relative;
+    }
+}
+@media (max-width: 767px) {
+    /*
+    .cruise-details-page .deck-plans-content .deck-plan-content
+    {
+        height: 700px;
+    }
+    */
+    .cruise-details-page .deck-plans-content .deck-plan-content .deck_box img
+    {
+        width: 13px;
+    }
+    .cruise-details-page .deck-plans-content .deck-plan-content .deck_box .text
+    {
+        font-size: 12px;
+    }
+    .cruise-details-page .deck-plans-content .deck-plan-content .deck_box .box_title
+    {
+        font-size: 13px;
+    }
+}
+/*End deck-plans-content*/
+/*Start Itinerary*/
+.cruise-details-page .itinerary-content .itinerary_logo
+{
+    width: 150px;
+}
+.cruise-details-page .itinerary-content .card-text
+{
+    color: #124ca0;
+}
+.cruise-details-page .itinerary-content .address img
+{
+    width: 15px;
+}
+.cruise-details-page .itinerary-content .address .text
+{
+    color: #444;
+    font-size: 16px;
+}
+.cruise-details-page .itinerary-content .address .text svg
+{
+    color: #eb008c;
+    font-size: 13px;
+}
+.cruise-details-page .itinerary-content .night-num
+{
+    background-color: #0a2c5a;
+    color: #fff;
+}
+.cruise-details-page .itinerary-content .night-num img
+{
+    width: 15px;
+}
+.cruise-details-page .itinerary-content .price-info .from,
+.cruise-details-page .itinerary-content .price-info .price
+{
+    color: #0a2c5a;
+}
+.cruise-details-page .itinerary-content .price-info .from
+{
+    font-size: 18px;
+}
+.cruise-details-page .itinerary-content .price-info .price
+{
+    font-size: 25px;
+}
+.cruise-details-page .itinerary-content .price-info .hint
+{
+    color: #124ca0;
+}
+.cruise-details-page .itinerary-content .arrow svg
+{
+    color: #124ca0;
+    font-size: 18px;
+    transition: .3s;
+    cursor: pointer;
+}
+.cruise-details-page .itinerary-content .arrow.reversed svg
+{
+    transform: rotateZ(180deg);
+}
+.cruise-details-page .itinerary-content .card_info .card-details
+{
+    display: none;
+    border: 2px solid rgba(18, 77, 160, 0.2);
+}
+.cruise-details-page .itinerary-content .card_info .card-details .card
+{
+    border: none;
+}
+.cruise-details-page .itinerary-content .card_info .card-details .card .cruise_logo
+{
+    width: 100px;
+}
+.cruise-details-page .itinerary-content .card_info .card-details .card .card-text
+{
+    color: #124ca0;
+    width: 70%;
+    font-size: 15px;
+}
+.cruise-details-page .itinerary-content .card_info .card-details .card .night-num span
+{
+    color: #fff;
+}
+.cruise-details-page .itinerary-content .card_info .card-details .card .address .text
+{
+    color: #444;
+    font-size: 16px;
+}
+.cruise-details-page .itinerary-content .card_info .card-details .card .address .text svg
+{
+    color: #eb008c;
+    font-size: 13px;
+}
+.cruise-details-page .itinerary-content .main-table
+{
+    position: relative;
+}
+.cruise-details-page .itinerary-content .main-table .table-res::-webkit-scrollbar
+{
+    height: 10px;
+    background-color: #2570d8;
+}
+.cruise-details-page .itinerary-content .main-table .table-res::-webkit-scrollbar-thumb
+{
+    background-color: #124ca0;
+}
+.cruise-details-page .itinerary-content .main-table .table-left-arrow,
+.cruise-details-page .itinerary-content .main-table .table-right-arrow
+{
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 50px;
+    z-index: 9;
+    cursor: pointer;
+}
+.cruise-details-page .itinerary-content .main-table .table-right-arrow
+{
+    right: 10px;
+}
+.cruise-details-page .itinerary-content .main-table .table-left-arrow
+{
+    left: 0;
+}
+.cruise-details-page .itinerary-content .main-table .table-left-arrow svg,
+.cruise-details-page .itinerary-content .main-table .table-right-arrow svg
+{
+    font-size: 20px;
+    color: #fff;
+}
+.cruise-details-page .itinerary-content .main-table .custom-row-head .custom-box
+{
+    width: 14%;
+    flex-basis: 14%;
+    background-color: #eee;
+    margin-right: .29%;
+    cursor: pointer;
+}
+.cruise-details-page .itinerary-content .main-table .custom-row-head .custom-box.white-space
+{
+    background-color: #fff;
+}
+.cruise-details-page .itinerary-content .main-table .custom-row-body
+{
+    
+}
+.cruise-details-page .itinerary-content .main-table .custom-row-body .custom-box.box_col-4
+{
+    width: 14%;
+    flex-basis: 14%;
+    background-color: #ff0;
+}
+.cruise-details-page .itinerary-content .main-table .custom-row-body .custom-box.box_col-8
+{
+    width: 86%;
+    flex-basis: 86%;
+    background-color: #f00;
+}
+
+.cruise-details-page .itinerary-content .main-table .table tr,
+.cruise-details-page .itinerary-content .main-table .table th,
+.cruise-details-page .itinerary-content .main-table .table td
+{
+    border: none;
+    /*width: 10px;*/
+}
+.cruise-details-page .itinerary-content .main-table .table thead tr
+{
+    
+}
+.cruise-details-page .itinerary-content .main-table .table thead tr th .head-text
+{
+    border-right: 3px solid #fff;
+    border-left: 3px solid #fff;
+}
+.cruise-details-page .itinerary-content .main-table .table thead tr th.blue-border
+{
+    background-color: #eee;
+    border-radius: 1em 1em 0 0;
+    position: relative;
+    padding: 0;
+}
+.cruise-details-page .itinerary-content .main-table .table thead tr th.blue-border::after
+{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #124ca0;
+    display: block;
+}
+.cruise-details-page .itinerary-content .main-table .table thead tr .text
+{
+    color: #0a2c5a;
+    font-size: 15px;
+}
+.cruise-details-page .itinerary-content .main-table .table thead tr .price-info
+{
+    color: #0a2c5a;
+}
+.cruise-details-page .itinerary-content .main-table .table thead tr .price-info .from
+{
+    font-size: 13px;
+}
+.cruise-details-page .itinerary-content .main-table .table thead tr .price-info .price
+{
+    font-size: 18px;
+}
+.cruise-details-page .itinerary-content .main-table .table thead tr th.blue-border.active
+{
+    background-color: #124ca0;
+}
+.cruise-details-page .itinerary-content .main-table .table thead tr th.blue-border.active .text,
+.cruise-details-page .itinerary-content .main-table .table thead tr th.blue-border.active .price-info .from,
+.cruise-details-page .itinerary-content .main-table .table thead tr th.blue-border.active .price-info .price
+{
+    color: #fff;
+}
+.cruise-details-page .itinerary-content .main-table .table thead tr th.blue-border.active
+.cruise-details-page .itinerary-content .main-table .table tbody tr th
+{
+    
+}
+.cruise-details-page .itinerary-content .main-table .table tbody tr td
+{
+    color: #ccc;
+    border: 4px solid #fff;
+    vertical-align: bottom;
+}
+.cruise-details-page .itinerary-content .main-table .table tbody .day-date .date
+{
+    color: #444;
+}
+.cruise-details-page .itinerary-content .main-table .table tbody .day-date .date .date-name
+{
+    font-size: 12px;
+    color: inherit;
+}
+.cruise-details-page .itinerary-content .main-table .table tbody .day-date .date .separator
+{
+    color: inherit;
+}
+.cruise-details-page .itinerary-content .main-table .table tbody .day-date .date .date-num
+{
+    font-size: 18px;
+    color: #124da1;
+}
+.cruise-details-page .itinerary-content .main-table .table tbody .day-date .day
+{
+    color: #444;
+    font-size: 12px;
+}
+.cruise-details-page .itinerary-content .main-table .table tbody .table-content
+{
+    position: relative;
+}
+.cruise-details-page .itinerary-content .main-table .table tbody .text
+{
+    color: #878787;
+    font-size: 13px;
+}
+.cruise-details-page .itinerary-content .main-table .table tbody .sold-out
+{
+    color: #ccc;
+}
+.cruise-details-page .itinerary-content .main-table .table tbody .price-text
+{
+    color: #0a2c5a;
+}
+.cruise-details-page .itinerary-content .card-details .point
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.cruise-details-page .itinerary-content .card-details .blue-point
+{
+    background-color: #009bf8;
+}
+.cruise-details-page .itinerary-content .card-details .red-point
+{
+    background-color: #d91d6b;
+}
+.cruise-details-page .itinerary-content .card-details .orange-point
+{
+    background-color: #f37114;
+}
+.cruise-details-page .itinerary-content .card-details .points-hint .text
+{
+    color: #444;
+    font-size: 15px;
+}
+.cruise-details-page .itinerary-content .card-details .cruise-details .blue-back .head-title
+{
+    font-size: 15px;
+}
+.cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item
+{
+    border-bottom: 1px solid #ddd;
+}
+.cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item:last-of-type
+{
+    border-bottom: none;
+}
+.cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .day-num
+{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #124ca0;
+}
+.cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .day-num .num
+{
+    font-size: 15px;
+    color: #fff;
+}
+.cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .port-of-call span,
+.cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .arrival-time span,
+.cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .arrival-time span,
+.cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .departure-time span
+{
+    color: #444;
+    font-size: 15px;
+}
+.cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .accordion-arrow
+{
+    cursor: pointer;
+}
+.cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .accordion-arrow svg
+{
+    color: #155ebf;
+    font-size: 18px;
+    transition: .3s;
+}
+.cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .accordion-arrow.reversed svg
+{
+    transform: rotateZ(180deg);
+}
+.cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .accordion-item-details
+{
+    display: none;
+}
+.cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .accordion-item-details img
+{
+    object-fit: cover;
+}
+.cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .accordion-item-details .acc-text
+{
+    font-size: 14px;
+    color: #444;
+}
+.cruise-details-page .itinerary-content .card-details .map-img .map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height: 100%;
+}
+.cruise-details-page .itinerary-content .card-details .map-img .map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+@media (min-width: 1750px) {
+    .cruise-details-page .itinerary-content .itinerary_logo
+    {
+        width: 9vmax;
+    }
+    .cruise-details-page .itinerary-content .card-text
+    {
+        font-size: 1.2vmax;
+    }
+    .cruise-details-page .itinerary-content .address img
+    {
+        width: 1vmax;
+    }
+    .cruise-details-page .itinerary-content .address .text
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .itinerary-content .night-num img
+    {
+        width: 1vmax
+    }
+    .cruise-details-page .itinerary-content .night-num span
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .itinerary-content .price-info .from
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .itinerary-content .price-info .price
+    {
+        font-size: 1.5vmax;
+    }
+    .cruise-details-page .itinerary-content .price-info .hint
+    {
+        font-size: .9vmax;
+    }
+    .cruise-details-page .itinerary-content .arrow svg
+    {
+        font-size: 1.1vmax;
+    }
+    .cruise-details-page .itinerary-content .card_info .card-details .card .cruise_logo
+    {
+        width: 9vmax;
+    }
+    .cruise-details-page .itinerary-content .card_info .card-details .card .card-text
+    {
+        font-size: 1.2vmax;
+    }
+    .cruise-details-page .itinerary-content .card_info .card-details .card .address .text
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .itinerary-content .main-table .table thead tr .text
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .itinerary-content .main-table .table thead tr .price-info .from
+    {
+        font-size: .8vmax;
+    }
+    .cruise-details-page .itinerary-content .main-table .table thead tr .price-info .price
+    {
+        font-size: 1.2vmax;
+    }
+    .cruise-details-page .itinerary-content .main-table .table tbody .day-date .date .date-name
+    {
+        font-size: .7vmax;
+    }
+    .cruise-details-page .itinerary-content .main-table .table tbody .day-date .date .date-num
+    {
+        font-size: 1.1vmax;
+    }
+    .cruise-details-page .itinerary-content .main-table .table tbody .day-date .day
+    {
+        font-size: .7vmax;
+    }
+    .cruise-details-page .itinerary-content .main-table .table tbody .text
+    {
+        font-size: .8vmax;
+    }
+    .cruise-details-page .itinerary-content .main-table .table tbody .price-text
+    {
+        font-size: .8vmax;
+    }
+    .cruise-details-page .itinerary-content .card-details .point
+    {
+        width: .6vmax;
+        height: .6vmax;
+    }
+    .cruise-details-page .itinerary-content .card-details .points-hint .text
+    {
+        font-size: .9vmax;
+    }
+    .cruise-details-page .itinerary-content .card-details .cruise-details .blue-back .head-title
+    {
+        font-size: .9vmax;
+    }
+    .cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .day-num
+    {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .day-num .num
+    {
+        font-size: .9vmax;
+    }
+    .cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .port-of-call span, .cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .arrival-time span, .cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .arrival-time span, .cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .departure-time span
+    {
+        font-size: .9vmax;
+    }
+    .cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .accordion-arrow svg
+    {
+        font-size: 1.1vmax;
+    }
+    .cruise-details-page .itinerary-content .card-details .cruise-details .accordion-list .accordion-item .accordion-item-details .acc-text
+    {
+        font-size: .9vmax;
+    }
+}
+@media (max-width: 576px) {
+    .cruise-details-page .itinerary-content .address .text
+    {
+        font-size: 14px;
+    }
+    .cruise-details-page .itinerary-content .card_info .card-details .card .card-text
+    {
+        width: 100%;
+    }
+    .cruise-details-page .itinerary-content .card_info .card-details .card .address .text
+    {
+        font-size: 14px;
+    }
+}
+/*End Itinerary*/
+/*Start dining-content*/
+
+.cruise-details-page .dining-content .swiper-slide
+{
+    opacity: 0.5;
+}
+.cruise-details-page .dining-content .swiper-slide.swiper-slide-active,
+.cruise-details-page .dining-content .swiper-slide.swiper-slide-prev
+{
+    opacity: 1;
+}
+.cruise-details-page .dining-content .swiper-button-prev,
+.cruise-details-page .dining-content .swiper-button-next
+{
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: #0a2c5a;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.cruise-details-page .dining-content .swiper-button-next:after,
+.cruise-details-page .dining-content .swiper-button-prev:after
+{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+}
+.cruise-details-page .dining-content .swiper-button-prev
+{
+    left: 3%;
+}
+.cruise-details-page .dining-content .swiper-button-next
+{
+    right: 3%;
+}
+
+
+.cruise-details-page .dining-content .main-text
+{
+    color: #444;
+    font-size: 16px;
+}
+.cruise-details-page .dining-content .card .image
+{
+    position: relative;
+}
+.cruise-details-page .dining-content .card .image .img-overlay
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(0, rgba(0,0,0,.9) 40%, rgba(0,0,0,.1))
+}
+.cruise-details-page .dining-content .card .image .img-text
+{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+}
+.cruise-details-page .dining-content .card .card-body
+{
+    background-color: #0a2c5a;
+    color: #fff;
+}
+.cruise-details-page .dining-content .card .card-body .card-text
+{
+    font-size: 14px;
+}
+.cruise-details-page .dining-content .card .card-body .card-info .text
+{
+    font-size: 13px;
+}
+@media (min-width:1750px) {
+    .cruise-details-page .dining-content .main-text
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .dining-content .special_slider .boxes .box
+    {
+        width: 400px !important;
+    }
+    .cruise-details-page .dining-content .card .image .img-text
+    {
+        font-size: .9vmax;
+    }
+    .cruise-details-page .dining-content .card .card-body .card-text
+    {
+        font-size: .8vmax;
+    }
+    .cruise-details-page .dining-content .card .card-body .card-info .text
+    {
+        font-size: .7vmax;
+    }
+}
+
+@media (max-width: 1199px) {
+    .cruise-details-page .dining-content .swiper-slide.swiper-slide-prev
+    {
+        opacity: .5;
+    }
+}
+
+/*End dining-content*/
+/*Start entertainment-content*/
+.cruise-details-page .entertainment-content .main-text
+{
+    color: #444;
+    font-size: 16px;
+}
+.cruise-details-page .entertainment-content .card_info .main-card .card-title
+{
+    color: #0a2c59;
+    font-size: 19px;
+}
+.cruise-details-page .entertainment-content .card_info .main-card .card-text
+{
+    color: #444;
+    font-size: 17px;
+}
+.cruise-details-page .entertainment-content .card_info .main-card .entertainment-arrow
+{
+    cursor: pointer;
+}
+.cruise-details-page .entertainment-content .card_info .main-card .entertainment-arrow svg
+{
+    color: #124ca0;
+    font-size: 18px;
+    transition: .3s;
+}
+.cruise-details-page .entertainment-content .card_info .main-card .entertainment-arrow.reversed svg
+{
+    transform: rotateZ(180deg);
+}
+.cruise-details-page .entertainment-content .card_info .card-details
+{
+    display: none;
+    color: #444;
+    border: .1em solid rgba(18, 77, 160, 0.2);
+}
+.cruise-details-page .entertainment-content .card_info .card-details .details-title
+{
+    color: #124ca0;
+    font-size: 18px;
+}
+.cruise-details-page .entertainment-content .card_info .card-details .card
+{
+    background-color: transparent;
+}
+.cruise-details-page .entertainment-content .card_info .card-details .card .date-time img
+{
+    width: 16px;
+}
+.cruise-details-page .entertainment-content .card_info .card-details .card .text
+{
+    color: #444;
+    font-size: 14px;
+}
+.cruise-details-page .entertainment-content .card_info .card-details .card .card-text
+{
+    font-size: 15px;
+    color: #444;
+}
+@media (min-width: 1750px) {
+    .cruise-details-page .entertainment-content .main-text
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .entertainment-content .card_info .main-card .card-title
+    {
+        font-size: 1.2vmax;
+    }
+    .cruise-details-page .entertainment-content .card_info .main-card .card-text
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .entertainment-content .card_info .main-card .entertainment-arrow svg
+    {
+        font-size: 1.2vmax;
+    }
+    .cruise-details-page .entertainment-content .card_info .card-details .details-title
+    {
+        font-size: 1.1vmax;
+    }
+    .cruise-details-page .entertainment-content .card_info .card-details .card .date-time img
+    {
+        width: 1.1vmax;
+    }
+    .cruise-details-page .entertainment-content .card_info .card-details .card .text
+    {
+        font-size: .8vmax
+    }
+    .cruise-details-page .entertainment-content .card_info .card-details .card-body .card-text
+    {
+        font-size: 1vmax;
+    }
+}
+/*End entertainment-content*/
+
+/*Start activities-content*/
+/*
+.cruise-details-page .activities-content .content .card-text
+{
+    font-size: 16px;
+}
+.cruise-details-page .activities-content .gallery-list .gallery-list_item
+{
+    opacity: .5;
+    cursor: pointer;
+}
+*/
+.cruise-details-page .activities-content .gallery-list .gallery-list_item img
+{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: .3rem;
+}
+/*
+.cruise-details-page .activities-content .gallery-list .gallery-list_item.selected
+{
+    opacity: 1;
+}
+*/
+.cruise-details-page .activities-content .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.cruise-details-page .activities-content .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    opacity: .5;
+    cursor: pointer;
+}
+.cruise-details-page .activities-content .swiper-slide.swiper-slide-active
+{
+    opacity: 1;
+}
+.cruise-details-page .activities-content .swiper-button-next,
+.cruise-details-page .activities-content .swiper-button-prev
+{
+
+}
+.cruise-details-page .activities-content .swiper-button-next:after,
+.cruise-details-page .activities-content .swiper-button-prev:after
+{
+    font-size: 18px;
+    font-weight: 900;
+}
+@media (min-width: 1750px) {
+    .cruise-details-page .activities-content .content .card-text
+    {
+        font-size: 1vmax;
+    }
+}
+@media (max-width: 991px) {
+    .cruise-details-page .activities-content .content .card-text
+    {
+        font-size: 14px;
+    }
+}
+/*End activities-content*/
+/*Start excursions*/
+.cruise-details-page .excursions-content .main-text
+{
+    color: #444;
+    font-size: 16px;
+}
+.cruise-details-page .excursions-content .card_info .main-card .card-title
+{
+    color: #0a2c59;
+    font-size: 19px;
+}
+.cruise-details-page .excursions-content .card_info .main-card .card-text
+{
+    color: #444;
+    font-size: 17px;
+}
+.cruise-details-page .excursions-content .card_info .main-card .price-info .from,
+.cruise-details-page .excursions-content .card_info .main-card .price-info .price
+{
+    color: #124ca0;
+}
+.cruise-details-page .excursions-content .card_info .main-card .price-info .from
+{
+    font-size: 15px;
+}
+.cruise-details-page .excursions-content .card_info .main-card .price-info .price
+{
+    font-size: 24px;
+}
+.cruise-details-page .excursions-content .card_info .main-card .excursions-arrow
+{
+    cursor: pointer;
+}
+.cruise-details-page .excursions-content .card_info .main-card .excursions-arrow svg
+{
+    color: #124ca0;
+    font-size: 18px;
+    transition: .3s;
+}
+.cruise-details-page .excursions-content .card_info .main-card .excursions-arrow.reversed svg
+{
+    transform: rotateZ(180deg);
+}
+.cruise-details-page .excursions-content .card_info .card-details
+{
+    display: none;
+    color: #444;
+    border: .1em solid rgba(18, 77, 160, 0.2);
+}
+.cruise-details-page .excursions-content .card_info .card-details .details-title
+{
+    color: #124ca0;
+    font-size: 18px;
+}
+.cruise-details-page .excursions-content .card_info .card-details .card
+{
+    background-color: transparent;
+}
+.cruise-details-page .excursions-content .card_info .card-details .card .card-text
+{
+    font-size: 15px;
+    color: #444;
+}
+.cruise-details-page .excursions-content .card_info .card-details .card-body hr
+{
+    border-color: #ddd;
+}
+.cruise-details-page .excursions-content .card_info .card-details .card .date-time img
+{
+    width: 15px;
+}
+.cruise-details-page .excursions-content .card_info .card-details .card .text
+{
+    color: #444;
+    font-size: 13px;
+}
+.cruise-details-page .excursions-content .card_info .card-details .card .card-title
+{
+    color: #124ca0;
+    font-size: 20px;
+}
+.cruise-details-page .excursions-content .card_info .card-details .card .card-text
+{
+    color: #444;
+    font-size: 16px;
+}
+.cruise-details-page .excursions-content .card_info .card-details .card .blue-hr
+{
+    border: .1em solid #155ebf;
+}
+.cruise-details-page .excursions-content .card_info .card-details .card .text
+{
+    color: #444;
+    font-size: 16px;
+}
+.cruise-details-page .excursions-content .card_info .card-details .card .hint
+{
+    color: #999;
+    font-size: 15px;
+}
+.cruise-details-page .excursions-content .card_info .card-details .card .add-btn
+{
+    background-color: #155ebf;
+    cursor: pointer;
+}
+.cruise-details-page .excursions-content .card_info .card-details .card .add-btn span
+{
+    color: #fff
+}
+.cruise-details-page .excursions-content .card_info .card-details .card .price
+{
+    font-size: 16px;
+    color: #0a2c59;
+}
+.cruise-details-page .excursions-content .card_info .card-details .card .total-text
+{
+    font-size: 18px;
+}
+.cruise-details-page .excursions-content .card_info .card-details .card .total-price
+{
+    font-size: 18px;
+    color: #0a2c59;
+}
+.cruise-details-page .excursions-content .card_info .card-details .required-info .text
+{
+    font-size: 15px;
+}
+.cruise-details-page .excursions-content .card_info .card-details .details-card-info
+{
+    font-size: 15px;
+    color: #444;
+}
+.cruise-details-page .excursions-content .card_info .card-details .note
+{
+    background-color: #ffffdf;
+}
+.cruise-details-page .excursions-content .card_info .card-details .note img
+{
+    width: 20px;
+}
+.cruise-details-page .excursions-content .card_info .card-details .note .note-title
+{
+    color: #444;
+    font-size: 15px;
+}
+.cruise-details-page .excursions-content .card_info .card-details .note .note-text
+{
+    color: #444;
+    font-size: 15px;
+}
+@media (min-width: 1750px) {
+    .cruise-details-page .excursions-content .card_info .main-card .card-title
+    {
+        font-size: 1.3vmax;
+    }
+    .cruise-details-page .excursions-content .card_info .main-card .card-text
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .excursions-content .card_info .main-card .price-info .from
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .excursions-content .card_info .main-card .price-info .price
+    {
+        font-size: 1.3vmax;
+    }
+    .cruise-details-page .excursions-content .card_info .main-card .excursions-arrow svg
+    {
+        font-size: 1.3vmax;
+    }
+    .cruise-details-page .excursions-content .card_info .card-details .card .card-title
+    {
+        font-size: 1.3vmax;
+    }
+    .cruise-details-page .excursions-content .card_info .card-details .card .card-text
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .excursions-content .card_info .card-details .card .text
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .excursions-content .card_info .card-details .card .hint
+    {
+        font-size: .9vmax;
+    }
+    .cruise-details-page .excursions-content .card_info .card-details .card .price
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .excursions-content .card_info .card-details .card .total-text,
+    .cruise-details-page .excursions-content .card_info .card-details .card .total-price
+    {
+        font-size: 1.1vmax;
+    }
+    .cruise-details-page .excursions-content .card_info .card-details .details-card-info
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .excursions-content .card_info .card-details .note img
+    {
+        width: 1.2vmax;
+    }
+    .cruise-details-page .excursions-content .card_info .card-details .note .note-title,
+    .cruise-details-page .excursions-content .card_info .card-details .note .note-text
+    {
+        font-size: 1vmax;
+    }
+}
+/*End excursions*/
+/*Start upgrades-and-options-content*/
+.cruise-details-page .upgrades-and-options-content .card_info
+{
+    border: .1em solid #ddd;
+}
+.cruise-details-page .upgrades-and-options-content .card-head
+{
+    border-bottom: .1em solid #124ca0;
+}
+.cruise-details-page .upgrades-and-options-content .card-head .card-title
+{
+    color: #124ca0;
+    font-size: 20px;
+}
+.cruise-details-page .upgrades-and-options-content .special-checkbox ~ .special-check-label
+{
+    border: 1px solid rgb(133, 133, 133);
+    transition: .2s;
+}
+.cruise-details-page .upgrades-and-options-content .special-checkbox:checked ~ .special-check-label
+{
+    background-color: #124ca0;
+}
+.cruise-details-page .upgrades-and-options-content .special-checkbox ~ .special-check-label::after
+{
+    color: #fff;
+    transition: .2s ease-in-out;
+}
+.cruise-details-page .upgrades-and-options-content .checkbox-container .check-box-label
+{
+    color: #999;
+}
+.cruise-details-page .upgrades-and-options-content .card-head .price-info .from,
+.cruise-details-page .upgrades-and-options-content .card-head .price-info .price
+{
+    color: #124ca0;
+}
+.cruise-details-page .upgrades-and-options-content .card-head .price-info .from
+{
+    font-size: 15px;
+}
+.cruise-details-page .upgrades-and-options-content .card-head .price-info .price
+{
+    font-size: 22px;
+}
+.cruise-details-page .upgrades-and-options-content .card-text
+{
+    width: 50%;
+}
+.cruise-details-page .upgrades-and-options-content .card-details .add-btn
+{
+    background-color: #155ebf;
+    cursor: pointer;
+}
+.cruise-details-page .upgrades-and-options-content .card-details .add-btn span
+{
+    color: #fff
+}
+.cruise-details-page .upgrades-and-options-content .card-details .text
+{
+    color: #444;
+    font-size: 16px;
+}
+.cruise-details-page .upgrades-and-options-content .card-details .hint
+{
+    font-size: 15px;
+    color: #999;
+}
+.cruise-details-page .upgrades-and-options-content .card-details .price
+{
+    color: #124ca0;
+}
+.cruise-details-page .upgrades-and-options-content .card-details .total-text
+{
+    color: #444;
+    font-size: 18px;
+}
+.cruise-details-page .upgrades-and-options-content .card-details .total-price
+{
+    color: #124ca0;
+    font-size: 18px;
+}
+@media (min-width: 1750px) {
+    .cruise-details-page .upgrades-and-options-content .card-head .card-title
+    {
+        font-size: 1.2vmax
+    }
+    .cruise-details-page .upgrades-and-options-content .special-checkbox ~ .special-check-label
+    {
+        width: 30px;
+        height: 30px;
+    }
+    .cruise-details-page .upgrades-and-options-content .checkbox-container .check-box-label
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .upgrades-and-options-content .card-head .price-info .from
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .upgrades-and-options-content .card-head .price-info .price
+    {
+        font-size: 1.2vmax;
+    }
+    .cruise-details-page .upgrades-and-options-content .card-text
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .upgrades-and-options-content .card-details .text
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .upgrades-and-options-content .card-details .hint
+    {
+        font-size: .9vmax;
+    }
+    .cruise-details-page .upgrades-and-options-content .card-details .price
+    {
+        font-size: 1vmax;
+    }
+    .cruise-details-page .upgrades-and-options-content .card-details .total-text,
+    .cruise-details-page .upgrades-and-options-content .card-details .total-price
+    {
+        font-size: 1.1vmax;
+    }
+}
+@media (max-width: 767px) {
+    .cruise-details-page .upgrades-and-options-content .card-text
+    {
+        width: 100%;
+    }
+}
+/*End upgrades-and-options-content*/
+/*Start overview-content*/
+.cruise-details-page .overview-content .swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cruise-details-page .overview-content .swiper-slide {
+    /*
+    background-size: cover;
+    */
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.cruise-details-page .overview-content .overview
+{
+    /*
+    height: 600px;
+    */
+    height: 60vw;
+}
+.cruise-details-page .overview-content .gallery-top {
+    height: 80%;
+    width: 100%;
+}
+
+.cruise-details-page .overview-content .gallery-thumbs {
+    height: 18%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.cruise-details-page .overview-content .gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+}
+
+.cruise-details-page .overview-content .gallery-thumbs .swiper-slide-thumb-active {
+    border: .3em solid #eb008c;
+}
+.cruise-details-page .overview-content .swiper-button-next,
+.cruise-details-page .overview-content .swiper-button-prev
+{
+    background-color: rgba(255,255,255,.7);
+    height: 100%;
+    margin: 0;
+    top: 0;
+    width: 100px;
+}
+.cruise-details-page .overview-content .swiper-button-next
+{
+    right: 0;
+}
+.cruise-details-page .overview-content .swiper-button-prev
+{
+    left: 0;
+}
+.cruise-details-page .overview-content .swiper-button-next:after,
+.cruise-details-page .overview-content .swiper-button-prev:after
+{
+    font-size: 20px;
+    font-weight: 900;
+    color: #eb008c;
+}
+
+
+
+
+
+
+
+.cruise-details-page .overview-content .cruise-details-page .overview-content .main-text
+{
+    font-size: 15px;
+    color: #444;
+}
+.cruise-details-page .arrow-edit
+{
+    top: 83% !important;
+}
+.cruise-details-page .arrow-edit .nav-arrow
+{
+    text-align: center;
+}
+.cruise-details-page .arrow-edit .nav-arrow svg
+{
+    color: #eb008c;
+}
+@media (min-width: 1750px) {
+    .cruise-details-page .overview-content .main-text
+    {
+        font-size: 1vmax;
+    }
+    
+    .cruise-details-page .arrow-edit .nav-arrow svg
+    {
+        font-size: 1vmax;
+    }
+}
+@media (max-width: 767px) {
+    .cruise-details-page .overview-content .swiper-button-next,
+    .cruise-details-page .overview-content .swiper-button-prev
+    {
+        width: 50px;
+    }
+    .cruise-details-page .overview-content .gallery-top {
+        height: 70%;
+        width: 100%;
+    }
+    
+    .cruise-details-page .overview-content .gallery-thumbs {
+        height: 30%;
+    }
+}
+/*End overview-content*/
+
+/*End cruise-tabs */
+
+
+
+
+
+/*test-section*/

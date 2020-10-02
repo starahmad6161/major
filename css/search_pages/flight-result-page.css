@@ -1,0 +1,653 @@
+
+
+
+/*Start Flight Result Page*/
+
+/*Start Sidebar [ searchBox ] */
+.result-sidebar .flight-result-body .title,
+.result-sidebar .flight-result-body .return-date-box label
+{
+    font-size: 16px;
+}
+.result-sidebar .flight-result-body .checkbox
+{
+    font-size: 16px;
+}
+@media (min-width: 1500px) {
+    .result-sidebar .flight-result-body .title,
+    .result-sidebar .flight-result-body .checkbox,
+    .result-sidebar .flight-result-body .special-check-label,
+    .result-sidebar .flight-result-body .checkbox-text,
+    .result-sidebar .flight-result-body .return-date-box label
+    {
+        font-size: 1.1vmax
+    }
+    .result-sidebar .flight-result-body input
+    {
+        font-size: 1vmax;
+    }
+}
+/*End Sidebar [ searchBox ] */
+
+/*Start flight-result-body*/
+.flight-result-page .jq-selectbox.form-control
+{
+    border: none;
+}
+@media (min-width: 1750px) {
+    .flight-result-page .jq-selectbox.form-control
+    {
+        height: 3.5em;
+    }
+}
+.flight-result-page .jq-selectbox .ui-selectmenu-button.ui-button
+{
+    height: 100%;
+}
+
+/*Start main-search-body*/
+.flight-result-body .main-search-body img
+{
+    width: 30px;
+}
+.main-search-body .offers-with-connection .carousel-inner .header
+{
+    background-color: #113992;
+    color: #fff;
+    font-size: 16px;
+}
+.flight-result-page .flight-result-body .carousel-control-next,
+.flight-result-page .flight-result-body .carousel-control-prev
+{
+    height: 3em;
+    width: 4em;
+}
+@media (min-width: 1750px) {
+    .flight-result-page .flight-result-body .carousel-control-next-icon,
+    .flight-result-page .flight-result-body .carousel-control-prev-icon
+    {
+        width: 30px;
+        height: 30px;
+    }
+    .flight-result-page .flight-result-body .carousel-control-next,
+    .flight-result-page .flight-result-body .carousel-control-prev
+    {
+        top: 10px;
+    }
+}
+.flight-result-page .flight-result-body .offers-with-connection  .table .special-checkbox ~ .special-check-label
+{
+    width: 15px;
+    height: 15px;
+}
+.flight-result-body .checkbox
+{
+    font-size: 16px;
+}
+.main-search-body .offers-with-connection  .table th,
+.main-search-body .offers-with-connection  .table td
+{
+    padding: 10px 5px;
+    font-weight: 600;
+    text-align: center;
+    color: #103a93;
+    font-size: 16px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.main-search-body .offers-with-connection .table thead th
+{
+    background-color: #eaeaea;
+}
+.main-search-body .offers-with-connection .table thead th svg
+{
+    color: #1eafff;
+}
+.main-search-body .offers-with-connection .table tbody th
+{
+    text-align: left;
+    background-color: #eaeaea;
+}
+.main-search-body .offers-with-connection .table tbody th,
+.main-search-body .offers-with-connection .table tbody td
+{
+    padding: 10px 20px;
+}
+@media (min-width: 1750px) {
+    .main-search-body .offers-with-connection .carousel-inner .header
+    {
+        font-size: .9vmax;
+    }
+    .flight-result-body .title,
+    .flight-result-body .return-date-box label
+    {
+        font-size: .8vmax;
+    }
+    .flight-result-body .result-accordion .checkbox
+    {
+        font-size: .8vmax;
+    }
+    .main-search-body .offers-with-connection .table th,
+    .main-search-body .offers-with-connection .table td
+    {
+        font-size: .8vmax;
+    }
+    .flight-result-body .main-search-body img
+    {
+        width: 1.5vmax;
+    }
+    .flight-result-page .flight-result-body .offers-with-connection  .table .special-checkbox ~ .special-check-label
+    {
+        width: 1em;
+        height: 1em;
+    }
+    .flight-result-page .direct-flights .checkbox-text,
+    .flight-result-page .flexible-dates .checkbox-text
+    {
+        font-size: 1vmax;
+    }
+}
+@media(max-width: 1199px) {
+    .main-search-body .offers-with-connection .table tbody th,
+    .main-search-body .offers-with-connection .table tbody td
+    {
+        padding: 5px 2px;
+    }
+}
+@media (max-width: 991px) {
+    .main-search-body .offers-with-connection  .table .checkbox,
+    .main-search-body .offers-with-connection  .table th,
+    .main-search-body .offers-with-connection  .table td
+    {
+        font-size: 15px;
+    }
+    .main-search-body .offers-with-connection  .table thead th
+    {
+        padding: 8px 1px;
+    }
+}
+@media (max-width: 767px) {
+
+    .carousel-control-next-icon, .carousel-control-prev-icon
+    {
+        width: 15px;
+        height: 15px;
+    }
+
+    .flight-result-page .flight-result-body .offers-with-connection .table .special-checkbox ~ .special-check-label
+    {
+        width: 12px;
+        height: 12px;
+    }
+    .main-search-body .offers-with-connection .table tbody th,
+    .main-search-body .offers-with-connection .table tbody td,
+    .main-search-body .offers-with-connection  .table th
+    {
+        padding: 0px 2px;
+    }
+    .main-search-body .offers-with-connection .table tbody td
+    {
+        line-height: 3em;
+    }
+
+}
+@media (max-width: 575px) {
+    .main-search-body .offers-with-connection .table thead th
+    {
+        
+    }
+    .main-search-body .offers-with-connection .carousel-inner .header
+    {
+        font-size: 13px;
+    }
+    .main-search-body .offers-with-connection .table .checkbox,
+    .main-search-body .offers-with-connection .table th,
+    .main-search-body .offers-with-connection .table td
+    {
+        font-size: 10px;
+    }
+}
+
+.main-search-body .airplane-flight ul > li
+{
+    border: 1px solid #ebebeb;
+}
+
+.main-search-body .airplane-flight ul > li.active
+{
+    border: 2px solid #1ba0e2;
+    transition: .5s;
+}
+.main-search-body .airplane-flight ul li img.airplane-logo
+{
+    width: 1.8em;
+}
+.main-search-body .airplane-flight ul li .airplane-name
+{
+    font-size: 15px;
+}
+.main-search-body .airplane-flight ul li .date
+{
+    font-size: 15px;
+}
+.main-search-body .airplane-flight li .content .time-from,
+.main-search-body .airplane-flight li .content .date-to,
+.main-search-body .airplane-flight li .content .flight-time
+{
+    font-size: 16px;
+}
+.main-search-body .airplane-flight li .content .plane-icon
+{
+    position: relative;
+}
+.main-search-body .airplane-flight li .content .plane-icon img.plane
+{
+    width: 1.3em;
+    height: 1.3em;
+}
+.main-search-body .airplane-flight li .content .plane-icon::before,
+.main-search-body .airplane-flight li .content .plane-icon::after
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    display: block;
+    transform: translateY(-50%);
+    width: .5em;
+    height: .5em;
+    border-radius: .5em;
+}
+.main-search-body .airplane-flight li .content .plane-icon::after
+{
+    left: 130%;
+    background-color: #e8007e;
+}
+.main-search-body .airplane-flight li .content .plane-icon::before
+{
+    left: -1em;
+    background-color: #16aeff;
+}
+.main-search-body .airplane-flight li .content .city-name
+{
+    color: #888;
+    font-size: 14px;
+}
+.main-search-body .airplane-flight li .content .stop-line
+{
+    width: 100%;
+    height: .15em;
+    border-radius: .5em;
+    background-color: #a5a5a5;
+}
+.main-search-body .airplane-flight li .content .stops .stop-dot
+{
+    background-color: #1bd291;
+    width: .6em;
+    height: .6em;
+    border-radius: 50%;
+    display: inline-block;
+}
+.main-search-body .airplane-flight li .content .stops .stop-num
+{
+    font-size: 14px;
+}
+@media (max-width: 767px) {
+    .main-search-body .airplane-flight li .content .stops .stop-dot
+    {
+        transform: translateY(-50%);
+    }
+}
+@media (max-width: 575px) {
+    .main-search-body .airplane-flight li .content .stop-line
+    {
+        width: .15em;
+        min-height: 3em;
+    }
+    .main-search-body .airplane-flight li .content .stops .stop-dot 
+    {
+        transform: translateX(-50%);
+        flex-shrink: 0;
+    }
+    .main-search-body .airplane-flight ul li .date
+    {
+        font-size: 13px;
+    }
+}
+.main-search-body .airplane-flight li .content .icons img
+{
+    width: 1.4em;
+}
+.main-search-body .airplane-flight li .content .start-price 
+{
+    
+}
+.main-search-body .airplane-flight li .content .start-price .start-from-txt
+{
+    font-size: 13px;
+    color: #888;
+}
+.main-search-body .airplane-flight li .content .start-price .price
+{
+    font-size: 23px;
+    color: #113992;
+}
+.main-search-body .airplane-flight li .content .show-more
+{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+.main-search-body .airplane-flight li .content .show-more .text
+{
+    display: block;
+    color: #888;
+}
+
+.main-search-body .airplane-flight li .content .show-more svg
+{
+    color: #1663cb;
+    transition: .3s;
+}
+.main-search-body .airplane-flight li .content .show-more svg.rotated
+{
+    transform: rotateX(180deg);
+}
+
+.main-search-body .airplane-flight li .more-info
+{
+    display: none;
+}
+.main-search-body .airplane-flight li .more-info .more-info-container li
+{
+    border: none;
+}
+.main-search-body .airplane-flight li .more-info .flight-details-text
+{
+    color: #888;
+    font-size: 15px;
+}
+.main-search-body .airplane-flight li .more-info .flight-details-text::after
+{
+    content: "";
+    width: 100%;
+    height: .15em;
+    background-color: #1ba0e2;
+    display: block;
+    margin: 8px 0;
+}
+.main-search-body .airplane-flight li .more-info .airline-info img
+{
+    width: 2em;
+}
+.main-search-body .airplane-flight li .more-info .airline-info .airline-name
+{
+    font-size: 14px;
+}
+.main-search-body .airplane-flight li .more-info .airline-info .class
+{
+    font-size: 14px;
+}
+.main-search-body .airplane-flight li .more-info .flight-details
+{
+    position: relative;
+}
+.main-search-body .airplane-flight li .more-info .flight-details .line
+{
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 38%;
+    transform: translateY(-50%);
+    width: .1em;
+    height: 48%;
+    background: #c6c6c6;
+}
+.main-search-body .airplane-flight li .more-info .flight-details .line::before,
+.main-search-body .airplane-flight li .more-info .flight-details .line::after
+{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.main-search-body .airplane-flight li .more-info .flight-details .line::before
+{
+    top: -12px;
+    background-color: #00bfff;
+}
+.main-search-body .airplane-flight li .more-info .flight-details .line::after
+{
+    top: calc( 100% + 8px );
+    background-color: #00d9a3;
+}
+.main-search-body .airplane-flight li .more-info .flight-details .time
+{
+    font-size: 16px;
+}
+.main-search-body .airplane-flight li .more-info .flight-details .date
+{
+    color: #888;
+    font-size: 14px;
+}
+.main-search-body .airplane-flight li .more-info .flight-details .city-name
+{
+    color: #222;
+    font-size: 15px;
+}
+.main-search-body .airplane-flight li .more-info .flight-details .city-info
+{
+    color: #888;
+    font-size: 15px;
+}
+.main-search-body .airplane-flight li .more-info .flight-details .access-time img
+{
+    width: .8em;
+    height: .8em;
+}
+.main-search-body .airplane-flight li .more-info .flight-details .access-time span
+{
+    color: #272727;
+    font-size: 13px;
+}
+.main-search-body .airplane-flight li .more-info .flight-details ul li
+{
+    border: none;
+    font-size: 15px;
+}
+.main-search-body .airplane-flight li .more-info .flight-details ul li img
+{
+    width: 1.3em;
+}
+.main-search-body .airplane-flight li .more-info .flight-details ul li span
+{
+    color: #888;
+    font-size: 15px;
+}
+.main-search-body .airplane-flight li .more-info .flight-details-container .flight-details
+{
+    border: none;
+}
+.main-search-body .airplane-flight li .more-info .flight-details-container .note
+{
+    border-radius: 1em;
+    background-color: #f0f0f0;
+    font-size: 14px;
+}
+.main-search-body .airplane-flight li .more-info .flight-details-container .flight-details-2 .line::before
+{
+    background-color: #00d9a3;
+}
+.main-search-body .airplane-flight li .more-info .flight-details-container .flight-details-2 .line::after
+{
+    background-color: #ec008c;
+}
+@media (min-width: 1750px) {
+    .flight-result-body .main-search-body .checkbox
+    {
+        font-size: .9vmax;
+    }
+    .main-search-body .airplane-flight ul li img.airplane-logo
+    {
+        width: 1.5vmax;
+    }
+    .main-search-body .airplane-flight ul li .airplane-name
+    {
+        font-size: .9vmax;
+    }
+    .main-search-body .airplane-flight ul li .date
+    {
+        font-size: .9vmax;
+    }
+    .main-search-body .airplane-flight li .content .time-from, .main-search-body .airplane-flight li .content .date-to, .main-search-body .airplane-flight li .content .flight-time
+    {
+        font-size: .8vmax;
+    }
+    .main-search-body .airplane-flight li .content .city-name
+    {
+        font-size: .7vmax;
+    }
+    .main-search-body .airplane-flight li .content .plane-icon img.plane
+    {
+        width: 1.2vmax;
+        height: 1.2vmax;
+    }
+    .main-search-body .airplane-flight li .content .plane-icon::before, .main-search-body .airplane-flight li .content .plane-icon::after
+    {
+        width: .5em;
+        height: .5em;
+    }
+    .main-search-body .airplane-flight li .content .stops .stop-dot
+    {
+        width: .8em;
+        height: .8em;
+    }
+    .main-search-body .airplane-flight li .content .stops .stop-num
+    {
+        font-size: .8vmax;
+    }
+    .main-search-body .airplane-flight li .content .icons img
+    {
+        width: 1.4vmax;
+    }
+    .main-search-body .airplane-flight li .content .start-price .start-from-txt
+    {
+        font-size: .8vmax;
+    }
+    .main-search-body .airplane-flight li .content .start-price .price
+    {
+        font-size: 1.3vmax;
+    }
+    .main-search-body .airplane-flight li .content .show-more
+    {
+        font-size: .8vmax;
+    }
+    .main-search-body .airplane-flight li .more-info .airline-info img
+    {
+        width: 1.4vmax;
+    }
+    .main-search-body .airplane-flight li .more-info .airline-info .airline-name
+    {
+        font-size: .8vmax;
+    }
+    .main-search-body .airplane-flight li .more-info .airline-info .class
+    {
+        font-size: .8vmax;
+    }
+    .main-search-body .airplane-flight li .more-info .flight-details-text
+    {
+        font-size: .9vmax;
+    }
+    .main-search-body .airplane-flight li .more-info .flight-details .line::before,
+    .main-search-body .airplane-flight li .more-info .flight-details .line::after
+    {
+        width: .5em;
+        height: .5em;
+    }
+    .main-search-body .airplane-flight li .more-info .flight-details .line::before
+    {
+        top: -24px;
+    }
+    .main-search-body .airplane-flight li .more-info .flight-details .time
+    {
+        font-size: .8vmax;
+    }
+    .main-search-body .airplane-flight li .more-info .flight-details .access-time span
+    {
+        font-size: .7vmax;
+    }
+    .main-search-body .airplane-flight li .more-info .flight-details .access-time img
+    {
+        width: .7vmax;
+        height: .7vmax;  
+    }
+    .main-search-body .airplane-flight li .more-info .flight-details .date
+    {
+        font-size: .7vmax;
+    }
+    .main-search-body .airplane-flight li .more-info .flight-details .city-name
+    {
+        font-size: .8vmax;
+    }
+    .main-search-body .airplane-flight li .more-info .flight-details .city-info
+    {
+        font-size: .6vmax;
+    }
+    .main-search-body .airplane-flight li .more-info .flight-details ul li
+    {
+        font-size: .8vmax;
+    }
+    .main-search-body .airplane-flight li .more-info .flight-details ul li span
+    {
+        font-size: .7vmax;
+    }
+    .main-search-body .airplane-flight li .more-info .flight-details-container .note
+    {
+        font-size: .6vmax;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1270px) {
+    .main-search-body .airplane-flight ul li .date
+    {
+        font-size: 15px;
+    }
+}
+@media (max-width: 1199px) {
+    .main-search-body .airplane-flight li .more-info .flight-details ul li,
+    .main-search-body .airplane-flight li .more-info .flight-details ul li span
+    {
+        font-size: 13px;
+    }
+}
+@media (max-width: 767px) {
+    
+    .main-search-body .airplane-flight li .more-info .flight-details .line
+    {
+        left: -10px;
+        top: 53px;
+        height: 21%;
+    }
+}
+
+@media (max-width: 575px) {
+    
+    .main-search-body .airplane-flight li .content .icons img
+    {
+        width: 19px;
+    }
+    
+    .main-search-body .airplane-flight li .content .start-price .price
+    {
+        font-style: 18px;
+    }
+    .main-search-body .airplane-flight li .content .show-more
+    {
+        font-size: 17px;
+    }
+}
+/*End main-search-body*/
+/*End flight-result-body*/
+/*End Flight Result Page*/

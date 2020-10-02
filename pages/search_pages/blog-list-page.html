@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Start Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <!--End Fonts-->
+
+    <link rel="stylesheet" href="../../css/library/all.min.css">
+    <link rel="stylesheet" href="../../css/library/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/library/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../css/myFramwork.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/search_pages/slider-result-page.css">
+    <link rel="stylesheet" href="../../css/search_pages/sidebar-result-page.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/search_pages/blog-list-page.css">
+    <title>Blog List page</title>
+</head>
+
+<body>
+
+    <div class="blog-list-page">
+        <!--Start Upper Bar-->
+        <div class="upper-bar py-3">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 col-md-4 text-center mb-2 mb-lg-0">
+                        <div class="brand-name">
+                            <div class="image">
+                                <a href="../../index.html"><img src="../../images/home_page/upper-bar/brand-name.png" alt="image" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-8 text-right">
+                        <ul class="d-flex list-unstyled mb-0 align-items-center justify-content-end w-100 flex-wrap">
+                            <li class="mr-2 d-none d-lg-block">
+                                <span class="d-inline-flex align-items-center font-weight-bold mr-1"><a href="./contact-us.html">Call Us Today</a> </span>
+                            </li>
+                            <li class="mr-2 font-weight-bold d-none d-lg-flex align-items-center">
+                                <img class="icon mr-1" src="../../images/home_page/upper-bar/phone.png" alt="Phone" />
+                                <span><a href="../contact-us.html">+44 20 7123 1234</a> </span>
+                            </li>
+                            <li class="mr-2 d-none d-sm-flex align-items-center">
+                                <img class="icon mr-1" src="../../images/home_page/upper-bar/book.png" alt="Book" />
+                                <span><a href="../booking-passenger-info-page.html">My Booking</a> </span>
+                            </li>
+                            <li class="mr-2 font-weight-bold d-none d-sm-block">
+                                <span class="">
+                                    <a class="" href="#">Log In</a>
+                                </span>
+                            </li>
+                            <li class="font-weight-bold d-block d-sm-none">
+                                <div class="upper-search-container d-flex align-items-center">
+                                    <input class="upper-search form-control" type="search"/>
+                                    <i class="ml-2 search fas fa-search"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Upper Bar-->
+        <!--Start Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light py-2">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-block d-lg-none call-today">
+                    <a href="#">
+                        <span class="font-weight-600">Call Today:</span>
+                        02073931000
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link  " href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../flight-page.html">Flight</a>
+                        </li>
+                        <li class="nav-item anyWhere">
+                            <div class="nav-link   drop-title" href="#">
+                                Destination
+                            </div>
+                            <div class="Drop-Down px-3 py-3 anyWhere-menu" aria-labelledby="navbarDropdown">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <span class="d-block font-weight-bold">All Regions</span>
+                                        <hr />
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link py-1 font-weight-700 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-middle-east" role="tab" aria-controls="v-pills-home" aria-selected="true">Middle East</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-indian" role="tab" aria-controls="v-pills-profile" aria-selected="false">Indian Ocean</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-caribbean" role="tab" aria-controls="v-pills-messages" aria-selected="false">Caribbean</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-maxico" role="tab" aria-controls="v-pills-settings" aria-selected="false">Maxico</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-africa" role="tab" aria-controls="v-pills-settings" aria-selected="false">Africa</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-asia" role="tab" aria-controls="v-pills-settings" aria-selected="false">Asia</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-europe" role="tab" aria-controls="v-pills-settings" aria-selected="false">Europe</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-canada" role="tab" aria-controls="v-pills-settings" aria-selected="false">Canada</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-south-america" role="tab" aria-controls="v-pills-settings" aria-selected="false">Center & South
+                                                America</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-united-states" role="tab" aria-controls="v-pills-settings" aria-selected="false">United States Of
+                                                America</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-australasia" role="tab" aria-controls="v-pills-settings" aria-selected="false">Australasia</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="v-pills-middle-east" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                <span class="d-block font-weight-bold">Middle East Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-indian" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                <span class="d-block font-weight-bold">Indian Ocean Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-caribbean" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                                <span class="d-block font-weight-bold">Caribbean Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-maxico" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Maxico Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-africa" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Africa Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-asia" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Asia Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-europe" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Europe Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-canada" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Canada Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-south-america" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Center & South America
+                                                    Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-united-states" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">United States Of America
+                                                    Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-australasia" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Australasia Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../holiday-page.html">Holiday</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../hotels-page.html">Hotel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="#">Attraction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../cruise-page.html">Cruise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../details_pages/tour-details-page.html">Tour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../details_pages/blog-details-page.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../details_pages/offer-detail-page.html">Offer</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline d-none d-sm-flex my-2 my-lg-0">
+                        <div class="search-container">
+                            <input class="form-control mr-sm-2 search_input" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn my-2 my-sm-0  " type="submit">Search</button>
+                        </div>
+                        <i class="ml-2 search fas fa-search"></i>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--End Navbar-->
+        <!--Start Slider-->
+        <div class="slider">
+            <div class="carousel slide h-100" id="homeCarousel" data-ride="carousel">
+                <div class="carousel-inner h-100">
+                    <!--Slider [1]-->
+                    <div class="carousel-item h-100 active">
+                        <img class="w-100 h-100" src="../../images/search_result/flight_result/slider-back.png" alt="Ship"/>
+                        <div class="overlay">
+                            <div class="container h-100">
+                                <div class="content h-100 d-flex text-center">
+                                    <div class="m-auto">
+                                        <span class="slider-title">Our Recommendations For Your</span>
+                                        <h1>Dubai Holiday</h1>
+                                        <div class="date py-2 px-3">
+                                            21 <sup>st</sup> March 2019
+                                            - 30 <sup>th</sup> March 2019
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!--End Slider-->
+        
+        <!--Start blog-list-body-->
+        <div class="blog-list-body py-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <!--Start Left sidebar-->
+                    <div class="col-xl-3 result-sidebar">
+                        <form action="./blog-lists.html" method="GET">
+                            <div class="result-accordion">
+                                <!--Search Box Accordion-->
+                                <h2 class="d-block accordion-title">
+                                    <span class=" ">Search Box</span>
+                                </h2>
+                                <div class="search-box accordion-content p-4">
+                                    <!-- Pick Up Location -->
+                                    <div class="mb-3">
+                                        <div class="pick-up-location">
+                                            <span class="d-block mb-2">Pick Up Location</span>
+                                            <input type="text" class="form-control " placeholder="Pick Up Location" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <!-- Pick Up date -->
+                                    <div class="mb-3">
+                                        <div class="pick-up-date">
+                                            <span class="d-block mb-2">Pick Up date</span>
+                                            <input type="text" class="form-control  datepicker" placeholder="Pick Up date" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <!-- Pick up time   -->
+                                    <div class="mb-3">
+                                        <div class="pick-up-time">
+                                            <span class="d-block mb-2">Pick up time </span>
+                                            <div class="find-hotel form-control p-0 jq-selectbox">
+                                                <select class="select-box">
+                                                    <option value="1200AM">12:00 am</option>
+                                                    <option value="1215AM">12:15 am</option>
+                                                    <option value="1230AM">12:30 am</option>
+                                                    <option value="1245AM">12:45 am</option>
+                                                    <option value="0100AM">1:00 am</option>
+                                                    <option value="0115AM">1:15 am</option>
+                                                    <option value="0130AM">1:30 am</option>
+                                                    <option value="0145AM">1:45 am</option>
+                                                    <option value="0200AM">2:00 am</option>
+                                                    <option value="0215AM">2:15 am</option>
+                                                    <option value="0230AM">2:30 am</option>
+                                                    <option value="0245AM">2:45 am</option>
+                                                    <option value="0300AM">3:00 am</option>
+                                                    <option value="0315AM">3:15 am</option>
+                                                    <option value="0330AM">3:30 am</option>
+                                                    <option value="0345AM">3:45 am</option>
+                                                    <option value="0400AM">4:00 am</option>
+                                                    <option value="0415AM">4:15 am</option>
+                                                    <option value="0430AM">4:30 am</option>
+                                                    <option value="0445AM">4:45 am</option>
+                                                    <option value="0500AM">5:00 am</option>
+                                                    <option value="0515AM">5:15 am</option>
+                                                    <option value="0530AM">5:30 am</option>
+                                                    <option value="0545AM">5:45 am</option>
+                                                    <option value="0600AM">6:00 am</option>
+                                                    <option value="0615AM">6:15 am</option>
+                                                    <option value="0630AM">6:30 am</option>
+                                                    <option value="0645AM">6:45 am</option>
+                                                    <option value="0700AM">7:00 am</option>
+                                                    <option value="0715AM">7:15 am</option>
+                                                    <option value="0730AM">7:30 am</option>
+                                                    <option value="0745AM">7:45 am</option>
+                                                    <option value="0800AM">8:00 am</option>
+                                                    <option value="0815AM">8:15 am</option>
+                                                    <option value="0830AM">8:30 am</option>
+                                                    <option value="0845AM">8:45 am</option>
+                                                    <option value="0900AM">9:00 am</option>
+                                                    <option value="0915AM">9:15 am</option>
+                                                    <option value="0930AM">9:30 am</option>
+                                                    <option value="0945AM">9:45 am</option>
+                                                    <option value="1000AM">10:00 am</option>
+                                                    <option value="1015AM">10:15 am</option>
+                                                    <option value="1030AM" selected="">10:30 am</option>
+                                                    <option value="1045AM">10:45 am</option>
+                                                    <option value="1100AM">11:00 am</option>
+                                                    <option value="1115AM">11:15 am</option>
+                                                    <option value="1130AM">11:30 am</option>
+                                                    <option value="1145AM">11:45 am</option>
+                                                    <option value="1200PM">12:00 pm</option>
+                                                    <option value="1215PM">12:15 pm</option>
+                                                    <option value="1230PM">12:30 pm</option>
+                                                    <option value="1245PM">12:45 pm</option>
+                                                    <option value="0100PM">1:00 pm</option>
+                                                    <option value="0115PM">1:15 pm</option>
+                                                    <option value="0130PM">1:30 pm</option>
+                                                    <option value="0145PM">1:45 pm</option>
+                                                    <option value="0200PM">2:00 pm</option>
+                                                    <option value="0215PM">2:15 pm</option>
+                                                    <option value="0230PM">2:30 pm</option>
+                                                    <option value="0245PM">2:45 pm</option>
+                                                    <option value="0300PM">3:00 pm</option>
+                                                    <option value="0315PM">3:15 pm</option>
+                                                    <option value="0330PM">3:30 pm</option>
+                                                    <option value="0345PM">3:45 pm</option>
+                                                    <option value="0400PM">4:00 pm</option>
+                                                    <option value="0415PM">4:15 pm</option>
+                                                    <option value="0430PM">4:30 pm</option>
+                                                    <option value="0445PM">4:45 pm</option>
+                                                    <option value="0500PM">5:00 pm</option>
+                                                    <option value="0515PM">5:15 pm</option>
+                                                    <option value="0530PM">5:30 pm</option>
+                                                    <option value="0545PM">5:45 pm</option>
+                                                    <option value="0600PM">6:00 pm</option>
+                                                    <option value="0615PM">6:15 pm</option>
+                                                    <option value="0630PM">6:30 pm</option>
+                                                    <option value="0645PM">6:45 pm</option>
+                                                    <option value="0700PM">7:00 pm</option>
+                                                    <option value="0715PM">7:15 pm</option>
+                                                    <option value="0730PM">7:30 pm</option>
+                                                    <option value="0745PM">7:45 pm</option>
+                                                    <option value="0800PM">8:00 pm</option>
+                                                    <option value="0815PM">8:15 pm</option>
+                                                    <option value="0830PM">8:30 pm</option>
+                                                    <option value="0845PM">8:45 pm</option>
+                                                    <option value="0900PM">9:00 pm</option>
+                                                    <option value="0915PM">9:15 pm</option>
+                                                    <option value="0930PM">9:30 pm</option>
+                                                    <option value="0945PM">9:45 pm</option>
+                                                    <option value="1000PM">10:00 pm</option>
+                                                    <option value="1015PM">10:15 pm</option>
+                                                    <option value="1030PM">10:30 pm</option>
+                                                    <option value="1045PM">10:45 pm</option>
+                                                    <option value="1100PM">11:00 pm</option>
+                                                    <option value="1115PM">11:15 pm</option>
+                                                    <option value="1130PM">11:30 pm</option>
+                                                    <option value="1145PM">11:45 pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Drop off location -->
+                                    <div class="mb-3">
+                                        <div class="drop-off-location">
+                                            <span class="d-block mb-2">Drop off location</span>
+                                            <input type="text" class="form-control " placeholder="Drop off location" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <!-- Drop off date -->
+                                    <div class="mb-3">
+                                        <div class="drop-off-date">
+                                            <span class="d-block mb-2">Drop off date</span>
+                                            <input type="text" class="form-control  datepicker" placeholder="Drop off date" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <!-- Drop off time   -->
+                                    <div class="mb-3">
+                                        <div class="drop-off-time">
+                                            <span class="d-block mb-2">Drop off time </span>
+                                            <div class="find-hotel form-control p-0 jq-selectbox">
+                                                <select class="select-box">
+                                                    <option value="1200AM">12:00 am</option>
+                                                    <option value="1215AM">12:15 am</option>
+                                                    <option value="1230AM">12:30 am</option>
+                                                    <option value="1245AM">12:45 am</option>
+                                                    <option value="0100AM">1:00 am</option>
+                                                    <option value="0115AM">1:15 am</option>
+                                                    <option value="0130AM">1:30 am</option>
+                                                    <option value="0145AM">1:45 am</option>
+                                                    <option value="0200AM">2:00 am</option>
+                                                    <option value="0215AM">2:15 am</option>
+                                                    <option value="0230AM">2:30 am</option>
+                                                    <option value="0245AM">2:45 am</option>
+                                                    <option value="0300AM">3:00 am</option>
+                                                    <option value="0315AM">3:15 am</option>
+                                                    <option value="0330AM">3:30 am</option>
+                                                    <option value="0345AM">3:45 am</option>
+                                                    <option value="0400AM">4:00 am</option>
+                                                    <option value="0415AM">4:15 am</option>
+                                                    <option value="0430AM">4:30 am</option>
+                                                    <option value="0445AM">4:45 am</option>
+                                                    <option value="0500AM">5:00 am</option>
+                                                    <option value="0515AM">5:15 am</option>
+                                                    <option value="0530AM">5:30 am</option>
+                                                    <option value="0545AM">5:45 am</option>
+                                                    <option value="0600AM">6:00 am</option>
+                                                    <option value="0615AM">6:15 am</option>
+                                                    <option value="0630AM">6:30 am</option>
+                                                    <option value="0645AM">6:45 am</option>
+                                                    <option value="0700AM">7:00 am</option>
+                                                    <option value="0715AM">7:15 am</option>
+                                                    <option value="0730AM">7:30 am</option>
+                                                    <option value="0745AM">7:45 am</option>
+                                                    <option value="0800AM">8:00 am</option>
+                                                    <option value="0815AM">8:15 am</option>
+                                                    <option value="0830AM">8:30 am</option>
+                                                    <option value="0845AM">8:45 am</option>
+                                                    <option value="0900AM">9:00 am</option>
+                                                    <option value="0915AM">9:15 am</option>
+                                                    <option value="0930AM">9:30 am</option>
+                                                    <option value="0945AM">9:45 am</option>
+                                                    <option value="1000AM">10:00 am</option>
+                                                    <option value="1015AM">10:15 am</option>
+                                                    <option value="1030AM" selected="">10:30 am</option>
+                                                    <option value="1045AM">10:45 am</option>
+                                                    <option value="1100AM">11:00 am</option>
+                                                    <option value="1115AM">11:15 am</option>
+                                                    <option value="1130AM">11:30 am</option>
+                                                    <option value="1145AM">11:45 am</option>
+                                                    <option value="1200PM">12:00 pm</option>
+                                                    <option value="1215PM">12:15 pm</option>
+                                                    <option value="1230PM">12:30 pm</option>
+                                                    <option value="1245PM">12:45 pm</option>
+                                                    <option value="0100PM">1:00 pm</option>
+                                                    <option value="0115PM">1:15 pm</option>
+                                                    <option value="0130PM">1:30 pm</option>
+                                                    <option value="0145PM">1:45 pm</option>
+                                                    <option value="0200PM">2:00 pm</option>
+                                                    <option value="0215PM">2:15 pm</option>
+                                                    <option value="0230PM">2:30 pm</option>
+                                                    <option value="0245PM">2:45 pm</option>
+                                                    <option value="0300PM">3:00 pm</option>
+                                                    <option value="0315PM">3:15 pm</option>
+                                                    <option value="0330PM">3:30 pm</option>
+                                                    <option value="0345PM">3:45 pm</option>
+                                                    <option value="0400PM">4:00 pm</option>
+                                                    <option value="0415PM">4:15 pm</option>
+                                                    <option value="0430PM">4:30 pm</option>
+                                                    <option value="0445PM">4:45 pm</option>
+                                                    <option value="0500PM">5:00 pm</option>
+                                                    <option value="0515PM">5:15 pm</option>
+                                                    <option value="0530PM">5:30 pm</option>
+                                                    <option value="0545PM">5:45 pm</option>
+                                                    <option value="0600PM">6:00 pm</option>
+                                                    <option value="0615PM">6:15 pm</option>
+                                                    <option value="0630PM">6:30 pm</option>
+                                                    <option value="0645PM">6:45 pm</option>
+                                                    <option value="0700PM">7:00 pm</option>
+                                                    <option value="0715PM">7:15 pm</option>
+                                                    <option value="0730PM">7:30 pm</option>
+                                                    <option value="0745PM">7:45 pm</option>
+                                                    <option value="0800PM">8:00 pm</option>
+                                                    <option value="0815PM">8:15 pm</option>
+                                                    <option value="0830PM">8:30 pm</option>
+                                                    <option value="0845PM">8:45 pm</option>
+                                                    <option value="0900PM">9:00 pm</option>
+                                                    <option value="0915PM">9:15 pm</option>
+                                                    <option value="0930PM">9:30 pm</option>
+                                                    <option value="0945PM">9:45 pm</option>
+                                                    <option value="1000PM">10:00 pm</option>
+                                                    <option value="1015PM">10:15 pm</option>
+                                                    <option value="1030PM">10:30 pm</option>
+                                                    <option value="1045PM">10:45 pm</option>
+                                                    <option value="1100PM">11:00 pm</option>
+                                                    <option value="1115PM">11:15 pm</option>
+                                                    <option value="1130PM">11:30 pm</option>
+                                                    <option value="1145PM">11:45 pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- No. of drivers  -->
+                                    <div class="mb-3">
+                                        <div class="destination">
+                                            <span class="d-block mb-2">No. of drivers</span>
+                                            <div class="find-hotel form-control p-0 jq-selectbox">
+                                                <select class="select-box">
+                                                    <option value="1" selected>1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Age of driver 1  -->
+                                    <div class="mb-3">
+                                        <div class="destination">
+                                            <span class="d-block mb-2"> Age of driver 1</span>
+                                            <div class="find-hotel form-control p-0 jq-selectbox">
+                                                <select class="select-box">
+                                                    <option value="1" selected>1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Age of driver 2  -->
+                                    <div class="mb-3">
+                                        <div class="destination">
+                                            <span class="d-block mb-2"> Age of driver 2</span>
+                                            <div class="find-hotel form-control p-0 jq-selectbox">
+                                                <select class="select-box">
+                                                    <option value="1" selected>1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Filter Accordion-->
+                                <!--Filter Accordion-->
+                                <h2 class="d-block accordion-title filter">
+                                    <span class=" ">Filter</span>
+                                </h2>
+                                <div class="filter-acc accordion-content">
+                                     <!--Top Box Container-->
+                                    <div class="top-box-container p-4">
+                                        <div class="find-hotel mb-3 jq-selectbox">
+                                            <label class="font-weight-600   title" for="find-hotel">find me a hotel close to this popular site :</label>
+                                            <select class="select-box" id="find-hotel">
+                                                <option selected>City Center</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="hotel-address mb-3">
+                                            <label class="font-weight-600   title" for="find-hotel">or this address :</label>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" placeholder="Enter street address/postcode">
+                                                <img src="../../images/search_result/holiday-result/map-location.png" alt="location"/>
+                                            </div>
+                                        </div>
+                                        <!--Range Max distance-->
+                                        <div class="ragne-container">
+                                            <div class="d-flex mb-2">
+                                                <span class="mr-auto font-weight-600 title  ">Max. destance :</span>
+                                                <div class="destance-info ml-auto font-weight-500  " id="result-destance">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4" id="result-range-max-destance"></div>
+                                        <!--Range Price-->
+                                        <div class="ragne-container">
+                                            <div class="d-flex mb-2">
+                                                <span class="mr-auto font-weight-600 title  ">price</span>
+                                                <div class="price-info ml-auto font-weight-500  " id="result-price">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4" id="result-range-max-price"></div>
+                                    </div>
+                                    <!--Stops-->
+                                    <div class="stops-container p-4 mt-3">
+                                        <div class="stops">
+                                            <h3 class="font-weight-600 d-block title mb-1   mb-3">Stops</h3>
+                                            <ul class="p-0">
+                                                <!--Non Stop-->
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="stops" id="radio_stop_1" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="radio_stop_1"></label>
+                                                    <span class=" ">non-stop</span>
+                                                </li>
+                                                <!--1 stop-->
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="stops" id="radio_stop_2" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_stop_2"></label>
+                                                        <span class=" ">1 stop</span>
+                                                    </div>
+                                                    <span class="d-block ml-auto  ">+ $500</span>
+                                                </li>
+                                                <!--2+ stop-->
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="stops" id="radio_stop_3" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_stop_3"></label>
+                                                        <span class=" ">2+ stop</span>
+                                                    </div>
+                                                    <span class="d-block ml-auto  ">+ $500</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--Times-->
+                                        <div class="times mt-3">
+                                            <h3 class="font-weight-600 d-block title mb-1   mb-3">Times</h3>
+                                            <ul class="list-unstyled p-0 d-flex font-weight-600">
+                                                <li class="d-inline-block active py-2 px-3  ">Take-Off</li>
+                                                <li class="d-inline-block py-2 px-3  ">Landing</li>
+                                            </ul>
+                                        </div>
+                                        <!--take-off-lon-->
+                                        <div class="take-off-lon mt-3">
+                                            <span class="font-weight-600 d-block title mb-1   mb-3">Take-Off From Lon</span>
+                                            <div class="d-flex mb-3">
+                                                <span class="hint  ">Sun 06:30 - 22:30</span>
+                                                <span class="take-off-time d-block ml-auto font-weight-600  " id="take-lon-val">11:30 - 22:30</span>
+                                            </div>
+                                            <div class="range-slide" id="result-slider-range-take-lon"></div>
+                                        </div>
+                                        <!--take-off-htk-->
+                                        <div class="take-off-hkt mt-3">
+                                            <span class="font-weight-600 d-block title mb-1   mb-3">Take-Off From HKT</span>
+                                            <div class="d-flex mb-3">
+                                                <span class="hint  ">Wed 06:30 - 22:30</span>
+                                                <span class="take-off-time d-block ml-auto font-weight-600  " id="take-hkt-val">11:30 - 22:30</span>
+                                            </div>
+                                            <div class="range-slide" id="result-slider-range-take-hkt"></div>
+                                        </div>
+                                        <!--Airlines-->
+                                        <div class="airlines mt-3">
+                                            <span class="font-weight-600 d-block title mb-1   mb-3">Airlines</span>
+                                            <ul class="p-0">
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="airlines" id="radio_airlines_1" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_airlines_1"></label>
+                                                        <span class="font-weight-500  ">British Airways</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="airlines" id="radio_airlines_2" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_airlines_2"></label>
+                                                        <span class="font-weight-500  ">Emirates</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="airlines" id="radio_airlines_3" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_airlines_3"></label>
+                                                        <span class="font-weight-500  ">Ethad Airways</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="airlines" id="radio_airlines_4" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_airlines_4"></label>
+                                                        <span class="font-weight-500  ">Finnair</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="airlines" id="radio_airlines_5" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_airlines_5"></label>
+                                                        <span class="font-weight-500  ">Qatar Airways</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="airlines" id="radio_airlines_6" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_airlines_6"></label>
+                                                        <span class="font-weight-500  ">Multiple airlines</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block show-more px-1 py-2 text-center font-weight-600 mt-2">Show 28 more airlines</li>
+                                            </ul>
+                                        </div>
+                                        <!--Alliance-->
+                                        <div class="alliance mt-3">
+                                            <h3 class="font-weight-600 d-block title mb-1   mb-3">Alliance</h3>
+                                            <ul class="p-0">
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="alliance" id="radio_alliance_1" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_alliance_1"></label>
+                                                        <span class="font-weight-500  ">Oneworld</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="alliance" id="radio_alliance_2" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_alliance_2"></label>
+                                                        <span class="font-weight-500  ">Skyteam</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="alliance" id="radio_alliance_3" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_alliance_3"></label>
+                                                        <span class="font-weight-500  ">Star Alliance</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--Airport-->
+                                        <div class="airport mt-3">
+                                            <h3 class="font-weight-600 d-block title mb-1   mb-3">Airport</h3>
+                                            <div class="checkbox d-inline-flex">
+                                                <input class="special-checkbox" type="checkbox" name="airport" id="airport" />
+                                                <label class="special-check-label direct-flight mb-0 mr-2" for="airport"></label>
+                                                <span class="font-weight-500  ">Depart/return same</span>
+                                            </div>
+                                        </div>
+                                        <!--london-->
+                                        <div class="london mt-3">
+                                            <h3 class="font-weight-600 d-block title mb-1   mb-3">London</h3>
+                                            <ul class="p-0">
+                                                <li class="d-block mb-1">
+                                                    <div class="d-flex">
+                                                        <div class="checkbox d-inline-flex">
+                                                            <input class="special-checkbox" type="radio" name="london" id="radio_london_1" />
+                                                            <label class="special-check-label direct-flight mb-0 mr-2" for="radio_london_1"></label>
+                                                            <span class="font-weight-500  ">LHR: Heatgrow</span>
+                                                        </div>
+                                                        <div class="text ml-auto font-weight-500  ">$550</div>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block mb-1">
+                                                    <div class="d-flex">
+                                                        <div class="checkbox d-inline-flex">
+                                                            <input class="special-checkbox" type="radio" name="london" id="radio_london_2" />
+                                                            <label class="special-check-label direct-flight mb-0 mr-2" for="radio_london_2"></label>
+                                                            <span class="font-weight-500  ">LGW: Gatwick</span>
+                                                        </div>
+                                                        <div class="text ml-auto font-weight-500  ">$550</div>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block mb-1">
+                                                    <div class="d-flex">
+                                                        <div class="checkbox d-inline-flex">
+                                                            <input class="special-checkbox" type="radio" name="london" id="radio_london_3" />
+                                                            <label class="special-check-label direct-flight mb-0 mr-2" for="radio_london_3"></label>
+                                                            <span class="font-weight-500  ">LCY: London City</span>
+                                                        </div>
+                                                        <div class="text ml-auto font-weight-500  ">$550</div>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block mb-1">
+                                                    <div class="d-flex">
+                                                        <div class="checkbox d-inline-flex">
+                                                            <input class="special-checkbox" type="radio" name="london" id="radio_london_4" />
+                                                            <label class="special-check-label direct-flight mb-0 mr-2" for="radio_london_4"></label>
+                                                            <span class="font-weight-500  ">STN: Stansted</span>
+                                                        </div>
+                                                        <div class="text ml-auto font-weight-500  ">$550</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--Flight-leg-->
+                                        <div class="flight-leg">
+                                            <ul class="p-0 list-unstyled">
+                                                <li class="d-block mb-3">
+                                                    <h3 class="font-weight-600 d-block title mb-1   mb-3">Flight Leg</h3>
+                                                    <div class="d-flex mb-2 mt-2">
+                                                        <span class="mr-auto font-weight-600 hint  ">15h 40m - 52h 15m</span>
+                                                        <div class="flight-leg-result ml-auto font-weight-600  " id="result-flight-leg"></div>
+                                                    </div>
+                                                    <div id="result-range-max-flight-leg"></div>
+                                                </li>
+                                                <li class="d-block mb-3">
+                                                    <h3 class="font-weight-600 d-block title mb-1   mb-3">Stopover</h3>
+                                                    <div class="d-flex mb-2 mt-2">
+                                                        <span class="hint font-weight-500  ">15h 40m - 52h 15m</span>
+                                                        <span class="flight-leg-result d-block ml-auto font-weight-600  " id="result-flight-leg-2">11:30 - 22:30</span>
+                                                    </div>
+                                                    <div class="range-slide" id="result-range-dration_2"></div>
+                                                </li>
+                                                <li class="d-block mb-3">
+                                                    <h3 class="font-weight-600 d-block title mb-1   mb-3">Price</h3>
+                                                    <div class="d-flex mb-3 mt-2">
+                                                        <span class="hint font-weight-500  " id="result-flight-leg-price">$446 - $5949 </span>
+                                                    </div>
+                                                    <div class="range-slide" id="result-range-dration_price"></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--Cabin-->
+                                        <div class="cabin mt-4">
+                                            <h3 class="font-weight-600 d-block title mb-1   mb-3">Cabin</h3>
+                                            <ul class="p-0">
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="cabin" id="radio_cabin_1" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_cabin_1"></label>
+                                                        <span class="font-weight-500  ">Basic Economy</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="cabin" id="radio_cabin_2" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_cabin_2"></label>
+                                                        <span class="font-weight-500  ">Economy</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="cabin" id="radio_cabin_3" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_cabin_3"></label>
+                                                        <span class="font-weight-500  ">Business</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="cabin" id="radio_cabin_4" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_cabin_4"></label>
+                                                        <span class="font-weight-500  ">First</span>
+                                                    </div>
+                                                </li>
+                                                <li class="d-block">
+                                                    <div class="checkbox d-inline-flex">
+                                                        <input class="special-checkbox" type="radio" name="cabin" id="radio_cabin_5" />
+                                                        <label class="special-check-label direct-flight mb-0 mr-2" for="radio_cabin_5"></label>
+                                                        <span class="font-weight-500  ">Mixed</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--Hotel Box Container-->
+                                    <div class="hotel-box-container p-4 mt-3">
+                                        <!--Hotel-->
+                                        <div class="hotel">
+                                            <h3 class="font-weight-600 d-block title mb-1   mb-3">Hotel</h3>
+                                            <ul class="list-unstyled list-items">
+                                                <!--Star [5]-->
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="hotel-star" id="radio_star_5" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="radio_star_5"></label>
+                                                    <ul class="list-unstyled stars">
+                                                        <li class="d-inline-block">
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="d-inline-block ml-auto  ">5-star hotels</span>
+                                                </li>
+                                                <!--Star [4]-->
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="hotel-star" id="radio_star_4" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="radio_star_4"></label>
+                                                    <ul class="list-unstyled stars">
+                                                        <li class="d-inline-block">
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="d-inline-block ml-auto  ">4-star hotels</span>
+                                                </li>
+                                                <!--Star [3]-->
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="hotel-star" id="radio_star_3" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="radio_star_3"></label>
+                                                    <ul class="list-unstyled stars">
+                                                        <li class="d-inline-block">
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="d-inline-block ml-auto  ">3-star hotels</span>
+                                                </li>
+                                                <!--Star [2]-->
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="hotel-star" id="radio_star_2" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="radio_star_2"></label>
+                                                    <ul class="list-unstyled stars">
+                                                        <li class="d-inline-block">
+                                                            <i class="fas fa-star  "></i>
+                                                            <i class="fas fa-star  "></i>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="d-inline-block ml-auto  ">2-star hotels</span>
+                                                </li>
+                                                <!--Star [1]-->
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="hotel-star" id="radio_star_1" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="radio_star_1"></label>
+                                                    <ul class="list-unstyled stars">
+                                                        <li class="d-inline-block">
+                                                            <i class="fas fa-star  "></i>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="d-inline-block ml-auto  ">0/1-star hotels</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--facilities & Amenities-->
+                                        <div class="facilities-amenities">
+                                            <h3 class="font-weight-600 d-block title mb-1   mb-3">Popular Facilities & Amenities</h3>
+                                            <ul class="list-unstyled list-items">
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_1" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_1"></label>
+                                                    <span class="d-inline-block font-weight-500  ">Free WiFi</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_2" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_2"></label>
+                                                    <span class="d-inline-block font-weight-500  ">Air Conditioning</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_3" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_3"></label>
+                                                    <span class="d-inline-block font-weight-500  ">Car Park</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_4" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_4"></label>
+                                                    <span class="d-inline-block font-weight-500  ">Pool</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_5" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_5"></label>
+                                                    <span class="d-inline-block font-weight-500  ">SPA</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_6" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_6"></label>
+                                                    <span class="d-inline-block font-weight-500  ">Resturant</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_7" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_7"></label>
+                                                    <span class="d-inline-block font-weight-500  ">Sauna</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_8" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_8"></label>
+                                                    <span class="d-inline-block font-weight-500  ">Gym</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_9" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_9"></label>
+                                                    <span class="d-inline-block font-weight-500  ">24-hour Reception</span>
+                                                </li>
+                                                <li class="checkbox d-flex font-weight-600 mb-2">
+                                                    <input class="special-checkbox" type="radio" name="facilities-amenities" id="facilities-amenities_10" />
+                                                    <label class="special-check-label direct-flight mb-0 mr-2" for="facilities-amenities_10"></label>
+                                                    <span class="d-inline-block font-weight-500  ">House/Apartment</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--Else Accomodation-->
+                                        <div class="else-accomodation">
+                                            <span class="d-block title mb-3 font-weight-600  ">What else should your accomodation have ?</span>
+                                            <input class="form-control" type="text" placeholder="enter street address/postcode"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons d-flex justify-content-center my-5">
+                                <button class="reset py-2 px-3 mr-3">Reset</button>
+                                <input class="py-2 px-3" type="submit" value="Done" name="done" />
+                            </div>
+                        </form>
+                    </div>
+                    <!--End Left sidebar-->
+
+                    <!--Start Main Search Body-->
+                    <div class="col-xl-9">
+                        <div class="main-search-body">
+                            <div class="row">
+                                <!--Card #1-->
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="card border-0">
+                                        <div class="row">
+                                            <!--Card Image-->
+                                            <div class="col-md-12">
+                                                <div class="card-image">
+                                                    <img class="w-100 h-100" src="../../images/blog-list-page/card_img.png" alt="Image"/>
+                                                    <p class="read-time mb-0 px-3 py-2">
+                                                        Read Time: 12min
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!--Main Card-->
+                                            <div class="col-md-12">
+                                                <div class="card-body">
+                                                    <h3 class="card-title font-weight-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                                    <div class="row">
+                                                        <div class="col-md-12 mb-3">
+                                                            <p class="card-text">
+                                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores minima tenetur adipisci consequuntur, rem, facere magni temporibus ullam libero mollitia dicta maxime 
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="row align-items-center no-gutters">
+                                                                <div class="col-sm-6 col-md-6 col-xl mb-3 mb-xl-0">
+                                                                    <div class="author-info d-flex align-items-center flex-wrap justify-content-center justify-content-sm-start justify-content-center justify-content-md-start">
+                                                                        <span class="text mr-1 d-inline-flex mb-1">Posted by </span>
+                                                                        <div class="d-inline-flex align-items-center">
+                                                                            <img class="author-img rounded-circle mr-1" src="../../images/blog-list-page/person.png" alt="persone"/>
+                                                                            <span class="author-name font-weight-600">Jennifer</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6 col-md-6 col-xl">
+                                                                    <div class="text-center text-sm-right text-center text-md-right">
+                                                                        <a class="more-btn rounded-pill px-3 py-2 d-inline-block" href="#">Read More</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card #2-->
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="card border-0">
+                                        <div class="row">
+                                            <!--Card Image-->
+                                            <div class="col-md-12">
+                                                <div class="card-image">
+                                                    <img class="w-100 h-100" src="../../images/blog-list-page/card_img.png" alt="Image"/>
+                                                    <p class="read-time mb-0 px-3 py-2">
+                                                        Read Time: 12min
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!--Main Card-->
+                                            <div class="col-md-12">
+                                                <div class="card-body">
+                                                    <h3 class="card-title font-weight-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                                    <div class="row">
+                                                        <div class="col-md-12 mb-3">
+                                                            <p class="card-text">
+                                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores minima tenetur adipisci consequuntur, rem, facere magni temporibus ullam libero mollitia dicta maxime 
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="row align-items-center no-gutters">
+                                                                <div class="col-sm-6 col-md-6 col-xl mb-3 mb-xl-0">
+                                                                    <div class="author-info d-flex align-items-center flex-wrap justify-content-center justify-content-sm-start justify-content-center justify-content-md-start">
+                                                                        <span class="text mr-1 d-inline-flex mb-1">Posted by </span>
+                                                                        <div class="d-inline-flex align-items-center">
+                                                                            <img class="author-img rounded-circle mr-1" src="../../images/blog-list-page/person.png" alt="persone"/>
+                                                                            <span class="author-name font-weight-600">Jennifer</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6 col-md-6 col-xl">
+                                                                    <div class="text-center text-sm-right text-center text-md-right">
+                                                                        <a class="more-btn rounded-pill px-3 py-2 d-inline-block" href="#">Read More</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Card #3-->
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="card border-0">
+                                        <div class="row">
+                                            <!--Card Image-->
+                                            <div class="col-md-12">
+                                                <div class="card-image">
+                                                    <img class="w-100 h-100" src="../../images/blog-list-page/card_img.png" alt="Image"/>
+                                                    <p class="read-time mb-0 px-3 py-2">
+                                                        Read Time: 12min
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!--Main Card-->
+                                            <div class="col-md-12">
+                                                <div class="card-body">
+                                                    <h3 class="card-title font-weight-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                                    <div class="row">
+                                                        <div class="col-md-12 mb-3">
+                                                            <p class="card-text">
+                                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores minima tenetur adipisci consequuntur, rem, facere magni temporibus ullam libero mollitia dicta maxime 
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="row align-items-center no-gutters">
+                                                                <div class="col-sm-6 col-md-6 col-xl mb-3 mb-xl-0">
+                                                                    <div class="author-info d-flex align-items-center flex-wrap justify-content-center justify-content-sm-start justify-content-center justify-content-md-start">
+                                                                        <span class="text mr-1 d-inline-flex mb-1">Posted by </span>
+                                                                        <div class="d-inline-flex align-items-center">
+                                                                            <img class="author-img rounded-circle mr-1" src="../../images/blog-list-page/person.png" alt="persone"/>
+                                                                            <span class="author-name font-weight-600">Jennifer</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6 col-md-6 col-xl">
+                                                                    <div class="text-center text-sm-right text-center text-md-right">
+                                                                        <a class="more-btn rounded-pill px-3 py-2 d-inline-block" href="#">Read More</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="image-container">
+                                        <img class="background-img" src="../../images/blog-list-page/mountain.png" alt="Background"/>
+                                        <div class="content pb-3 px-3">
+                                            <div class="row">
+                                                <div class="order-1 order-xl-1 col-xl-6 mb-3 mb-xl-0">
+                                                    <div class="d-flex flex-column justify-content-end h-100">
+                                                        <h3 class="title mb-0">Amazing California Tour</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="order-3 order-xl-2 col-xl-6 mb-3 mb-xl-0">
+                                                    <div class="box px-2 py-3">
+                                                        <div class="hotel-info">
+                                                            <div class="row">
+                                                                <!--Item #1-->
+                                                                <div class="mb-3 col-md-3 col-lg-3 col-xl-4">
+                                                                    <div class="item d-flex align-items-start h-100">
+                                                                        <img class="mr-2" src="../../images/blog-list-page/icon_1.png" alt="Icon">
+                                                                        <p class="text mb-0">
+                                                                            9 nights in hotels and 1 in flight
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <!--Item #2-->
+                                                                <div class="mb-3 col-md-3 col-lg-3 col-xl-4">
+                                                                    <div class="item d-flex align-items-start h-100">
+                                                                        <img class="mr-2" src="../../images/blog-list-page/icon_2.png" alt="Icon">
+                                                                        <p class="text mb-0">
+                                                                            1 meal include
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <!--Item #3-->
+                                                                <div class="mb-3 col-md-3 col-lg-3 col-xl-4">
+                                                                    <div class="item d-flex align-items-start h-100 no-after">
+                                                                        <img class="mr-2" src="../../images/blog-list-page/icon_3.png" alt="Icon">
+                                                                        <p class="text mb-0">
+                                                                            6 include excursion and visits
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <!--Item #4 [Button]-->
+                                                                <div class="mb-3 col-md-3 col-lg-3 col-xl-12">
+                                                                    <div class="price-info d-flex align-items-center justify-content-center">
+                                                                        <span class="from text-uppercase font-weight-500 mr-2">From</span>
+                                                                        <span class="price text-uppercase font-weight-600">$880</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order-2 order-xl-3 col-xl-6 mb-3 mb-xl-0">
+                                                    <div class="d-flex h-100 align-items-center">
+                                                        <img class="location-img mr-2" src="../../images/blog-list-page/location.png" alt="Location-img">
+                                                        <p class="location-name mb-0">Sierra Nevada | Golden Gate</p>
+                                                    </div>
+                                                </div>
+                                                <div class="order-4 order-xl-4 col-xl-6 mb-3 mb-xl-0">
+                                                    <div class="text-right my-3">
+                                                        <a class="detail-btn rounded-pill px-3 py-2 d-inline-block" href="#">View Detail</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Main Search Body-->
+                </div>
+            </div>
+        </div>
+        <!--End flight-result-body-->
+        <!--Start pagination-->
+        <div class="pagination">
+            <ul class="p-0 list-unstyled mx-auto">
+                <li class="d-inline-block"> 
+                    <i class="fas fa-chevron-left  "></i>
+                    <i class="fas fa-chevron-left  "></i> 
+                </li>
+                <li class="d-inline-block"> 
+                    <i class="fas fa-chevron-left  "></i> 
+                </li>
+                <li class="d-inline-block number active"> 
+                    <span class=" ">1</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">2</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">3</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">4</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">5</span>
+                </li>
+                <li class="d-inline-block"> 
+                    <span class=" ">......</span>
+                </li>
+                <li class="d-inline-block number"> 
+                    <span class=" ">12</span>
+                </li>
+                <li class="d-inline-block"> 
+                    <i class="fas fa-chevron-right"></i>
+                </li>
+                <li class="d-inline-block"> 
+                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </li>
+            </ul>
+        </div>
+        <!--End pagination-->
+        
+        <!--Start Footer-->
+        <div class="footer py-5">
+            <div class="container">
+                <span class="title d-block text-center mx-auto">Destinations</span>
+                <ul class="list-unstyled text-center mt-3 mx-auto cities">
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Dubai</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">New York</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Cape Town</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Istambul</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Hong Kong</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Doha</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Lose Angeles</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Sydney</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Auckland</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Tokyo</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Parise</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Bombay</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Bangkok</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Dubai</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Delhi</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Kuala Lumpure</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Jeddah</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Nairobia</a></li>
+                </ul>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <ul class="terms list-unstyled text-center text-lg-left mx-auto mx-lg-0 mb-0" >
+                            <li class=" d-inline-block mr-2 mb-3 "><a href="../terms-conditions.html">Terms and conditions</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href=" # ">Privacy policy</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href="../contact-us.html">Contact</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href=" # ">FAQs</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href="../booking-passenger-info-page.html">Flight information</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-lg-4 ">
+                        <ul class="social-media-icons list-unstyled text-center text-lg-right mx-auto mx-lg-0 ">
+                            <li class="d-inline-block mr-2">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="d-inline-block mr-2">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="d-inline-block mr-2">
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="d-inline-block mr-2">
+                                <a href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright text-center text-lg-left">
+                    Copyright 2019 Major Independent Partner
+                </div>
+            </div>
+        </div>
+        <div class="go-top">
+            <div class="icon">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </div>
+        <!--End Footer-->
+    </div>
+
+
+    <script src="../../js/library/all.min.js"></script>
+    <script src="../../js/library/jquery-3.3.1.min.js"></script>
+    <script src="../../js/library/popper.min.js"></script>
+    <script src="../../js/library/bootstrap.min.js"></script>
+    <script src="../../js/library/jquery-ui.min.js"></script>
+    <script src="../../js/search_pages/sidebar-result.js"></script>
+    <script src="../../js/myFramwork.js"></script>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/search_pages/blog-list-page.js"></script>
+</body>
+
+</html>

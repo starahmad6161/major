@@ -1,0 +1,363 @@
+/*Start Slider*/
+.offer-list-page .slider .carousel .carousel-inner .carousel-item .overlay .content .header-text
+{
+    font-size: 35px;
+}
+@media (min-width: 1750px) {
+    .offer-list-page .slider .carousel .carousel-inner .carousel-item .overlay .content .header-text
+    {
+        font-size: 2vmax;
+    }
+}
+/*End Slider*/
+
+/*Start Main Body*/
+/*Start Sidebar*/
+.offer-list-page .nav-tabs .nav-item .nav-link,
+.offer-list-page .nav-tabs .nav-link
+{
+    font-size: 16px;
+}
+.offer-list-page .nav-tabs .nav-item.show .nav-link,
+.offer-list-page .nav-tabs .nav-link.active
+{
+    background-color: #124EA2;
+    color: #fff;
+}
+.offer-list-page .ui-accordion .ui-accordion-header.ui-accordion-header-active
+{
+    background: #124EA2;
+}
+.offer-list-page .accordion-content .box
+{
+    background-color: #124EA2;
+    border-radius: .2em;
+}
+.offer-list-page .accordion-content .box .title
+{
+    color: #fff;
+    font-size: 16px;
+}
+.offer-list-page .accordion-content .box .box-val
+{
+    color: #fff;
+    font-size: 14px;
+}
+.offer-list-page .range-slide.ui-slider-horizontal .ui-slider-range
+{
+    background-color: #1a74f0;
+}
+.offer-list-page .range-slide.ui-slider.ui-corner-all.ui-slider-horizontal.ui-widget.ui-widget-content
+{
+    border: none;
+}
+.offer-list-page .ui-accordion .ui-accordion-content
+{
+    overflow: hidden;
+}
+.offer-list-page .ui-slider-handle.ui-corner-all.ui-state-default
+{
+    border: none;
+}
+.offer-list-page .accordion-content .box .btns .btn
+{
+    border-radius: .1em;
+    color: #fff;
+    background-color: #3a85bf;
+    font-size: 13px;
+}
+.offer-list-page .accordion-content .box .checkbox
+{
+    border-bottom: .1em solid rgba(202, 202, 202, 0.25);
+}
+.offer-list-page .accordion-content .box .checkbox:last-of-type
+{
+    border-bottom: none;
+}
+.offer-list-page .accordion-content .box .checkbox .radio-title
+{
+    font-size: 14px;
+    color: #fff;
+}
+.offer-list-page .accordion-content .box .checkbox .special-checkbox:checked ~ .special-check-label
+{
+    background-color: #1a74f0;
+    transition: .3s;
+}
+.offer-list-page .accordion-content .box .checkbox .special-checkbox ~ .special-check-label::after
+{
+    color: #fff;
+}
+.offer-list-page .accordion-content .box .see-all .see-all-tilte
+{
+    background-color: #3a85bf;
+    color: #fff;
+}
+.offer-list-page .accordion-content .box .tour-type-box .jq-selectbox .ui-selectmenu-button.ui-button
+{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offer-list-page .accordion-content .box .tour-type-box .jq-selectbox .ui-selectmenu-text
+{
+    font-size: 13px;
+}
+/*End side-bar*/
+/*Start holidays-offers*/
+
+.offer-list-page-content .all-tabs .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.offer-list-page-content .all-tabs .swiper-slide {
+    text-align: center;
+    font-size: 16px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.offer-list-page-content .all-tabs .swiper-button-prev,
+.offer-list-page-content .all-tabs .swiper-button-next 
+{
+    position: static;
+    margin: 0;
+    width: auto;
+}
+.offer-list-page-content .all-tabs .swiper-slide.active {
+    background-color: #124EA2;
+    color: #fff;
+}
+.offer-list-page-content .all-tabs .swiper-button-prev::after,
+.offer-list-page-content .all-tabs .swiper-button-next::after 
+{
+    font-size: 16px;
+    font-weight: 900;
+
+}
+.holidays-offers .card
+{
+  border: none;
+  box-shadow: 0px 10px 20px -3px #ddd;
+  border-radius: 1em;
+  overflow: hidden;
+}
+.holidays-offers .card .card-img-top
+{
+    position: relative;
+}
+.holidays-offers .card .card-img-top img
+{
+    object-fit: cover;
+}
+.holidays-offers .card .card-img-top .price
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background: #124ea2;
+  border-radius: 0 1.5em 0 0;
+  font-size: 13px;
+}
+.holidays-offers .card .card-img-top .price span:first-of-type
+{
+  font-size: 14px;
+}
+.holidays-offers .card .card-img-top .price span:nth-of-type(2)
+{
+  font-size: 20px;
+}
+.holidays-offers .card .card-body .hotel-name
+{
+  color: #535353;
+  font-weight: 600;
+  font-size: 15px;
+}
+.holidays-offers .card .card-body .hotel-location
+{
+  position: relative;
+}
+.holidays-offers .card .card-body .hotel-location::after
+{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  display: block;
+  background: #e8e8e8;
+}
+.holidays-offers .card .ship-desc p
+{
+  font-size: 13px;
+}
+.holidays-offers .card .card-body .hotel-location .location-name
+{
+  color: #545454;
+  font-size: 13px;
+}
+.holidays-offers .card .card-body .hotel-location .hotel-rating svg
+{
+  color: #ffc926;
+  font-size: 11px;
+}
+.holidays-offers .card .card-body .hotel-desc .desc-head
+{
+  color: #545454;
+  font-weight: 600;
+  font-size: 15px;
+}
+.holidays-offers .card .card-body .hotel-desc .card-text
+{
+  font-size: 15px;
+}
+.holidays-offers .card .card-body .hotel-desc .night-num,
+.holidays-offers .card .card-body .hotel-desc .breakfast
+{
+  color: #fff;
+  background: #0a2c5a;
+  padding: 5px 15px;
+  border-radius: 1em;
+  font-size: 13px;
+}
+.holidays-offers .card .card-body .hotel-desc .night-num img,
+.holidays-offers .card .card-body .hotel-desc .breakfast img
+{
+  width: 1em;
+  height: 1em;
+}
+.holidays-offers .card .card-body .offer-info
+{
+  color: #eb008c;
+  font-size: 14px;
+}
+.holidays-offers .card .card-body .book-by
+{
+  font-weight: 500;
+  color: #545454;
+  font-size: 15px;
+}
+.holidays-offers .card .card-body .book-by span
+{
+  color: #124ea2;
+}
+.holidays-offers .card .card-body .valid
+{
+  color: #535353;
+  font-weight: 500;
+  font-size: 15px;
+}
+.holidays-offers .card .card-body .valid img
+{
+  width: 100%;
+}
+@media (min-width: 1750px) {
+    .offer-list-page .nav-tabs .nav-item .nav-link,
+    .offer-list-page .nav-tabs .nav-link
+    {
+        font-size: 1vmax;
+    }
+    .offer-list-page .accordion-content .box .title
+    {
+        font-size: .9vmax;
+    }
+    .offer-list-page .accordion-content .box .box-val
+    {
+        font-size: .8vmax;
+    }
+    .offer-list-page .accordion-content .box .btns .btn
+    {
+        font-size: .7vmax;
+    }
+    .offer-list-page .accordion-content .box .checkbox .radio-title
+    {
+        font-size: .8vmax;
+    }
+    .offer-list-page .accordion-content .box .see-all .see-all-tilte
+    {
+        font-size: .8vmax;
+    }
+    .offer-list-page .offer-list-page-content .image .img-text-container .ship-name
+    {
+        font-size: 1.1vmax;
+    }
+    .holidays-offers .card .card-img-top .price span:first-of-type
+    {
+        font-size: .9vmax;
+    }
+    .holidays-offers .card .card-img-top .price span:nth-of-type(2)
+    {
+        font-size: 1.5vmax;
+    }
+    .holidays-offers .card .card-body .hotel-name
+    {
+        font-size: 1.2vmax;
+    }
+    .holidays-offers .card .card-body .hotel-location img
+    {
+        width: 1em;
+        transform: translateY(-6px);
+    }
+    .holidays-offers .card .card-body .hotel-location .location-name
+    {
+        font-size: 1vmax;
+    }
+    .holidays-offers .card .card-body .hotel-location .hotel-rating svg
+    {
+        font-size: .8vmax;
+    }
+    .holidays-offers .card .card-body .hotel-desc .desc-head
+    {
+        font-size: 1.2vmax;
+    }
+    .holidays-offers .card .card-body .hotel-desc .card-text
+    {
+        font-size: 1vmax;
+    }
+    .holidays-offers .card .card-body .hotel-desc .night-num,
+    .holidays-offers .card .card-body .hotel-desc .breakfast
+    {
+        font-size: 1vmax;
+    }
+    .holidays-offers .card .card-body .offer-info
+    {
+        font-size: 1vmax;
+    }
+    .holidays-offers .card .card-body .book-by
+    {
+        font-size: 1.1vmax;
+    }
+    .holidays-offers .card .card-body .valid
+    {
+        font-size: 1.1vmax;
+    }
+    .holidays-offers .card .card-body .valid img
+    {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 767px) {
+  .holidays-offers .card .card-body .valid img
+  {
+      width: 4em;
+  }
+}
+/*End holidays-offers*/

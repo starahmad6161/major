@@ -1,0 +1,1376 @@
+
+
+
+/*Start header*/
+.tour-details-page .header
+{
+    width: 100%;
+    /*min-height: 100vh;*/
+    position: relative;
+}
+.tour-details-page .header .header-background
+{
+    /*
+    position: absolute;
+    top: 0;
+    left: 0;
+    */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 767px) {
+    .tour-details-page .header
+    {
+        height: 100vh;
+    }
+}
+.tour-details-page .header .custom-row-height
+{
+    height: 100%;
+}
+.tour-details-page .header .custom-col-height
+{
+    height: 100%;
+}
+/*
+*/
+.tour-details-page .header .overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+}
+.tour-details-page .header .overlay .title
+{
+    font-size: 30px;
+    position: relative;
+}
+.tour-details-page .header .overlay .title::after
+{
+    content: "";
+    width: 30%;
+    height: .2em;
+    background-color: #ec008c;
+    display: block;
+    margin: 10px auto;
+    border-radius: .2em;
+}
+.tour-details-page .header .overlay .text
+{
+    width: 400px;
+    font-size: 15px;
+}
+.tour-details-page .header .overlay .imgs-container
+{
+    height: 100%;
+}
+.tour-details-page .header .overlay .imgs-container .imgs_
+{
+    height: 100%;
+    flex-wrap: wrap;
+}
+.tour-details-page .header .overlay .imgs-container .imgs_ .image
+{
+    position: relative;
+    flex: 1 0 50%;
+    height: 50%;
+}
+.tour-details-page .header .overlay .imgs-container .imgs_ .image .landscape-img
+{
+    object-fit: cover;
+}
+.tour-details-page .header .overlay .imgs-container .imgs_ .image .img-overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 78, 162, 0.6);
+    opacity: 0;
+    transition: .3s;
+    cursor: pointer;
+}
+.tour-details-page .header .overlay .imgs-container .image .img-overlay:hover
+{
+    opacity: 1;
+}
+.tour-details-page .header .overlay .imgs-container .image .img-overlay .icon-img
+{
+    width: 30px;
+}
+@media (max-width:1024px) and (max-height:768px) {
+    
+    .tour-details-page .header .overlay .imgs-container .imgs_
+    {
+        justify-content: space-between;
+    }
+    .tour-details-page .header .overlay .imgs-container .imgs_ .image
+    {
+        flex: 0 0 24%;
+        height: 100%;
+    }
+}
+/*
+.tour-details-page .header .overlay .imgs-container .image
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+*/
+
+@media (min-width: 1750px) {
+    .tour-details-page .header .overlay .title
+    {
+        font-size: 2vmax;
+    }
+    .tour-details-page .header .overlay .text
+    {
+        font-size: 1vmax;
+        width: 50%;
+    }
+    .tour-details-page .header .overlay .imgs-container .image .img-overlay .icon-img
+    {
+        width: 2.5vmax;
+    }
+}
+@media (max-width: 1199px)
+{
+    .tour-details-page .header .custom-col-height
+    {
+        height: 50%;
+    }
+}
+@media (max-width: 991px)
+{
+    /*
+    .tour-details-page .header .custom-col-height
+    {
+        height: auto;
+    }
+    */
+    .tour-details-page .header .overlay .imgs-container .image
+    {
+        width: 100%;
+        height: auto;
+    }
+    .tour-details-page .header .overlay .imgs-container .image .img-overlay .icon-img
+    {
+        width: 1em;
+    }
+}
+@media (max-width: 767px)
+{
+    .tour-details-page .header .overlay .text
+    {
+        width: auto;
+    }
+}
+/*End header*/
+
+/*Start main-section*/
+.tour-details-page .main-section .title
+{
+    font-size: 25px;
+    color: #444;
+}
+.tour-details-page .main-section .text
+{
+    font-size: 15px;
+    width: 50%;
+    color: #444;
+}
+@media (min-width: 1750px) {
+    .tour-details-page .main-section .title
+    {
+        font-size: 1.3vmax;
+    }
+    .tour-details-page .main-section .text
+    {
+        font-size: 1vmax;
+    }
+}
+@media (max-width: 991px) {
+
+    .tour-details-page .main-section .text
+    {
+        width: 70%;
+    }
+}
+@media (max-width: 767px) {
+    
+    .tour-details-page .main-section .text
+    {
+        width: auto;
+        font-size: 16px;
+    }
+}
+/*End main-section*/
+
+
+/*Start itinerary-section*/
+.tour-details-page .itinerary-section
+{
+    min-height: 500px;
+    background-color: #124ea2;
+    position: relative;
+}
+.tour-details-page .itinerary-section .scroll-content
+{
+
+    height: 500px;
+}
+.tour-details-page .itinerary-section .accordion-list-container
+{
+}
+.tour-details-page .itinerary-section .accordion-list-container .accordion-list-items
+{
+    height: fit-content;
+    transition: .1s;
+}
+.tour-details-page .itinerary-section .accordion-list-container .accordion-list-items .item-content
+{
+    transition: .2s;
+}
+.tour-details-page .itinerary-section .accordion-list-container .accordion-list-items .item.active .item-content
+{
+    background-color: #10468f;
+
+}
+.tour-details-page .itinerary-section .accordion-list-container .accordion-list-items .item-content .text
+{
+    color: #fff;
+    font-size: 13px;
+}
+.tour-details-page .itinerary-section .accordion-list-container .accordion-list-items .item-content .acc-item-details
+{
+    width: 100%;
+    display: none;
+}
+.tour-details-page .itinerary-section .accordion-list-container .accordion-list-items .item-content .arrow
+{
+    cursor: pointer;
+}
+.tour-details-page .itinerary-section .accordion-list-container .accordion-list-items .arrow svg
+{
+    color: #fff;
+    font-size: 15px;
+    transition: .3s;
+    cursor: pointer;
+}
+.tour-details-page .itinerary-section .accordion-list-container .accordion-list-items .arrow.reversed svg
+{
+    transform: rotateZ(180deg);
+}
+.tour-details-page .itinerary-section .accordion-list-container .scroll-line .ui-widget.ui-widget-content
+{
+    min-height: 100%;
+    height: 100%;
+}
+.tour-details-page .itinerary-section .accordion-list-container .scroll-line .ui-slider-handle.ui-corner-all.ui-state-default
+{
+    border: 3px solid #1662c9;
+    background: #1662c9;
+}
+.tour-details-page .itinerary-section .accordion-list-container .scroll-line .ui-widget-header,
+.tour-details-page .itinerary-section .accordion-list-container .scroll-line .ui-widget.ui-widget-content
+{
+    background-color: #0e3c7a;
+    border: none;
+}
+
+.tour-details-page .itinerary-section .map-responsive
+{
+    height: 100%;
+}
+
+.tour-details-page .itinerary-section .map-responsive .map_iframe
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (min-width: 1750px) {
+    .tour-details-page .itinerary-section .scroll-content
+    {
+        height: 700px;
+    }
+    .tour-details-page .itinerary-section .accordion-list-container .accordion-list-items .arrow svg
+    {
+        font-size: 1vmax;
+    }
+    .tour-details-page .itinerary-section .accordion-list-container .accordion-list-items .item-content .text
+    {
+        font-size: .9vmax;
+    }
+    .tour-details-page .itinerary-section .accordion-list-container .accordion-list-items .item-content .acc-item-details
+    {
+        height: auto;
+    }
+}
+@media (max-width: 767px) {
+    .tour-details-page .itinerary-section .map-responsive
+    {
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    .tour-details-page .itinerary-section .map-responsive .map_iframe
+    {
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}
+/*End itinerary-section*/
+
+
+/*Start section_2*/
+.tour-details-page .section_2 .text
+{
+    width: 70%;
+    font-size: 16px;
+}
+@media (min-width: 1750px){
+    .tour-details-page .section_2 .text
+    {
+        font-size: 1vmax;
+    }
+}
+@media (max-width: 991px) {
+    .tour-details-page .section_2 .text
+    {
+        width: auto;
+    }
+}
+/*End section_2*/
+
+/*Start Section #3*/
+/*Start itinerary-section*/
+.tour-details-page .day-by-day-section
+{
+    height: 620px;
+    background-color: #10468f;
+}
+.tour-details-page .day-by-day-section .section_img
+{
+    /*height: 400px;*/
+}
+.tour-details-page .day-by-day-section .scroll-container
+{
+    width: 100%;
+    height: 700px;
+}
+.tour-details-page .day-by-day-section .scroll-content
+{
+    height: 100%;
+}
+.tour-details-page .day-by-day-section .accordion-list-container
+{
+
+}
+.tour-details-page .day-by-day-section .custom-nav-item
+{
+    cursor: pointer;
+}
+.tour-details-page .day-by-day-section .custom-nav-item .custom-nav-link
+{
+    color: #357fe1;
+    font-size: 15px;
+}
+.tour-details-page .day-by-day-section .custom-nav-item.selected .custom-nav-link
+{
+    color: #fff;
+}
+.tour-details-page .day-by-day-section .accordion-list-container .accordion-list-items
+{
+    width: 100%;
+}
+
+
+.tour-details-page .day-by-day-section .accordion-list-items .item .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.tour-details-page .day-by-day-section .swiper-button-next
+{
+    right: 0;
+}
+.tour-details-page .day-by-day-section .swiper-button-prev
+{
+    left: 0;
+}
+.tour-details-page .day-by-day-section .swiper-button-next:after,
+.tour-details-page .day-by-day-section .swiper-button-prev:after {
+    font-size: 16px;
+    font-weight: 900;
+    color: #fff;
+    
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.tour-details-page .day-by-day-section .boxscroll {
+    height: 600px;
+    width: 100%;
+    overflow: auto;
+    position: relative;
+}
+.tour-details-page .day-by-day-section .scroll-container .custom-circle {
+    position: absolute;
+    top: 0;
+    right: 1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #1662c9;
+    z-index: 99;
+    transition: .1s;
+}
+
+.tour-details-page .day-by-day-section .accordion-list-items .item-content
+{
+    transition: .2s;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-title
+{
+    color: #fff;
+    font-size: 15px;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-title span
+{
+    font-size: 16px;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .content_acc-title
+{
+    color: #222;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .content_acc-title span
+{
+    color: #1561c9;
+}
+
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .content_acc-title span
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details
+{
+    width: 100%;
+    display: none;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .custom-tabs-content
+{
+    background-color: #fff;
+    border-radius: .7em;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .nav-pills .nav-link
+{
+    background: transparent;
+    font-weight: 600;
+    color: #3884e9;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .nav-pills .nav-link.active,
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .nav-pills .show>.nav-link
+{
+    color: #fff;
+}
+.tour-details-page .day-by-day-section .item-content .acc-item-details .tab-content .tab-pane
+{
+    background-color: #fff;
+    border-radius: .5em;
+    overflow: hidden;
+}
+.tour-details-page .day-by-day-section .item-content .acc-item-details .tab-content .tab-pane .card
+{
+    
+}
+.tour-details-page .day-by-day-section .accordion-list-container .item-content .acc-item-details .tab-content .tab-pane .card-img
+{
+    border-radius: .5em;
+    overflow: hidden;
+}
+.tour-details-page .day-by-day-section .accordion-list-container .item-content .acc-item-details .tab-content .tab-pane .card-text
+{
+    color: #545454;
+    font-size: 13px;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .tab-content .content_acc-title
+{
+    color: #444;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .tab-content .content_acc-title span
+{
+    color: #1561c9;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .icon
+{
+    width: 14px;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .title
+{
+    font-size: 16px;
+    color: #444;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .img-container
+{
+    position: relative;
+    height: 150px
+}
+
+
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .img-container .img_text
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .img-container .img_text .title
+{
+    font-size: 15px;
+    color: #fff;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .img-container .img_text .stars li svg
+{
+    color: #ffc926;
+    font-size: 11px;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .box .icon
+{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #1662c9;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .box .image-container
+{
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    border-radius: .5em;
+    transition: .2s;
+    cursor: pointer;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .box .image-container:hover
+{
+    opacity: .5;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .box .image-container img
+{
+    
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .box .image-container .img-title
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(0deg , rgba(0,0,0,1), rgba(0,0,0,0));
+    color: #fff;
+}
+.tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .box .icon img
+{
+    width: 20px;
+}
+.tour-details-page .day-by-day-section .accordion-list-container .accordion-list-items .item-content .arrow
+{
+    cursor: pointer;
+}
+.tour-details-page .day-by-day-section .accordion-list-container .accordion-list-items .arrow svg
+{
+    color: #fff;
+    font-size: 15px;
+    transition: .3s;
+    cursor: pointer;
+}
+.tour-details-page .day-by-day-section .accordion-list-container .accordion-list-items .arrow.reversed svg
+{
+    transform: rotateZ(180deg);
+}
+.tour-details-page .day-by-day-section .accordion-list-container .scroll-line .ui-widget.ui-widget-content
+{
+    min-height: 100%;
+    height: 100%;
+}
+.tour-details-page .day-by-day-section .accordion-list-container .scroll-line .ui-slider-handle.ui-corner-all.ui-state-default
+{
+    border: 3px solid #1662c9;
+    background: #1662c9;
+}
+.tour-details-page .day-by-day-section .accordion-list-container .scroll-line .ui-widget-header,
+.tour-details-page .day-by-day-section .accordion-list-container .scroll-line .ui-widget.ui-widget-content
+{
+    background-color: #0e3c7a;
+    border: none;
+}
+
+.tour-details-page .day-by-day-section .map-responsive
+    {
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height: 100%;
+        /*
+        height:0;
+        */
+    }
+    .tour-details-page .day-by-day-section .map-responsive .map_iframe
+    {
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+        display: block;
+    }
+
+
+
+/*
+.tour-details-page .day-by-day-section .map-responsive
+{
+    height: 100%;
+}
+.tour-details-page .day-by-day-section .map-responsive .map_iframe
+{
+    width: 100%;
+    height: 100%;
+}
+*/
+@media (min-width: 1750px) {
+    .tour-details-page .day-by-day-section
+    {
+        height: 820px;
+    }
+    .tour-details-page .day-by-day-section .scroll-container,
+    .tour-details-page .day-by-day-section .boxscroll
+    {
+        height: 750px;
+    }
+    .tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-title
+    {
+        font-size: .9vmax;
+    }
+    .tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-title span
+    {
+        font-size: 1vmax;
+    }
+    .tour-details-page .day-by-day-section .accordion-list-container .accordion-list-items .arrow svg
+    {
+        font-size: 1vmax;
+    }
+    .tour-details-page .day-by-day-section .accordion-list-items .item-content .content_acc-title
+    {
+        font-size: 1vmax;
+    }
+    .tour-details-page .day-by-day-section .custom-nav-item .custom-nav-link
+    {
+        font-size: 1vmax;
+    }
+    .tour-details-page .day-by-day-section .card .card-text
+    {
+        font-size: 1vmax;
+    }
+    .tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .title
+    {
+        font-size: 1vmax;
+    }
+    .tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .img-container .img_text .title
+    {
+        font-size: 1vmax;
+    }
+    .tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .img-container .img_text .stars li svg
+    {
+        font-size: .7vmax;
+    }
+    .tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .box .image-container .img-title
+    {
+        font-size: 1vmax;
+    }
+}
+@media (max-width: 767px) {
+    .tour-details-page .day-by-day-section
+    {
+        height: auto;
+    }
+    .tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .img-container .img_text .title
+    {
+        font-size: 14px;
+    }
+    .tour-details-page .day-by-day-section .map-responsive
+    {
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    .tour-details-page .day-by-day-section .map-responsive .map_iframe
+    {
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+        display: block;
+    }
+}
+@media (max-width: 576px) {
+    .tour-details-page .day-by-day-section .accordion-list-items .item-content .acc-item-details .img-container img
+    {
+        height: 150px;
+    }
+    .tour-details-page .day-by-day-section .custom-nav-item .custom-nav-link
+    {
+        font-size: 16px;
+    }
+}
+/*End Section #3*/
+
+/*Start departure-date-section*/
+.departure-date-section .section-h
+{
+    color: #444;
+    font-size: 25px;
+}
+
+.departure-date-section .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.departure-date-section .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.departure-date-section .swiper-button-next:after,
+.departure-date-section .swiper-button-prev:after
+{
+    font-size: 20px;
+    font-weight: 900;
+}
+.departure-date-section .swiper-button-next,
+.departure-date-section .swiper-button-prev
+{
+    position: static;
+    margin: auto;
+}
+.departure-date-section .swiper-button-next,
+.departure-date-section .swiper-container-rtl .swiper-button-prev
+{
+    right: 0;
+}
+.departure-date-section .swiper-button-prev,
+.departure-date-section .swiper-container-rtl .swiper-button-next
+{
+    left: 0;
+}
+.departure-date-section .main-content .date-tabs .title
+{
+    color: #444;
+    font-size: 18px;
+}
+.departure-date-section .main-content .date-tabs .month-text
+{
+    font-size: 15px;
+}
+.departure-date-section .main-content .date-tabs .swiper-slide
+{
+    cursor: pointer;
+}
+.departure-date-section .main-content .date-tabs .swiper-slide.disable
+{
+    color: #ddd;
+    cursor: default;
+}
+.departure-date-section .main-content .date-tabs .swiper-slide.selected
+{
+    color: #1561c9;
+}
+.departure-date-section .main-content .tabs-item-content
+{
+    
+}
+.departure-date-section .main-content .tabs-item-content .tab_content
+{
+    
+}
+.departure-date-section .main-content .tabs-item-content .tab_content .table-title
+{
+    color: #fff;
+    background-color: #124ea2;
+    font-size: 14px;
+}
+.departure-date-section .table thead tr
+{
+    background-color: #ebebeb;
+}
+/*
+.departure-date-section .table td,
+.departure-date-section .table th
+{
+    vertical-align: middle;
+}
+*/
+.departure-date-section .table thead tr th
+{
+    color: #666666;
+    font-size: 14px;
+}
+.departure-date-section .table thead tr th.special-th span
+{
+    font-size: 12px;
+}
+.departure-date-section .table tbody tr.muted-back{
+    background-color: #f7f7f7;
+}
+.departure-date-section .table tbody tr .dep-date
+{
+    background-color: #ec008c;
+    border-radius: .5em;
+    color: #fff;
+}
+.departure-date-section .table tbody tr .dep-date .num
+{
+    font-size: 16px;
+    width: 30px;
+}
+.departure-date-section .table tbody tr .dep-date .text
+{
+    font-size: 14px;
+}
+.departure-date-section .table tbody tr .availability-text
+{
+    color: #333333;   
+}
+.departure-date-section .table tbody tr .availability-text.sold-out
+{
+    color: #cccccc;
+}   
+.departure-date-section .table tbody tr .price-container .from
+{
+    color: #999;
+    font-size: 12px;
+}
+.departure-date-section .table tbody tr .price-container .price
+{
+    color: #212121;
+    font-size: 18px;
+}
+.departure-date-section .table tbody tr .btn-itinerary
+{
+    color: #fff;
+    background-color: #0c356d;
+    font-size: 13px;
+}
+.departure-date-section .table tbody tr.table-row-content
+{
+    display: none;
+}
+.departure-date-section .table tbody tr.table-row-content .list-item
+{
+    background-color: #fff;
+    
+}
+.departure-date-section .table tbody tr.table-row-content .list-item .title
+{
+    color: #124da1;
+    font-size: 16px;
+}
+.departure-date-section .table tbody tr.table-row-content .list-item .text
+{
+    color: #545454;
+    font-size: 14px;
+}
+.departure-date-section .table tbody tr.table-row-content .list-item .main-price-container
+{
+    border-bottom: 1px solid #ccc;
+}
+.departure-date-section .table tbody tr.table-row-content .list-item .main-price-container .main-price
+{
+    color: #212121; 
+    font-size: 18px;
+}
+.departure-date-section .table tbody tr.table-row-content .list-item .main-price-container .hint
+{
+    color: #666;
+    font-size: 14px;
+}
+.departure-date-section .table tbody tr.table-row-content .list-item .price-title
+{
+    color: #888888;
+    font-size: 12px;
+}
+.departure-date-section .table tbody tr.table-row-content .list-item .price
+{
+    color: #124ea2;
+    font-size: 15px;
+}
+.departure-date-section tr.table-row-content .list-item .select-package-btn
+{
+    background: linear-gradient(0deg, #8f0e8c, #45198c);
+    color: #fff;
+    font-size: 13px;
+}
+.departure-date-section tr.table-row-content .list-item .select-package-btn .selected-txt
+{
+    display: none;
+}
+.departure-date-section tr.table-row-content .list-item .select-package-btn .selected-txt .selected-icon
+{
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+}
+.departure-date-section tr.table-row-content .list-item .select-package-btn .selected-txt .selected-icon svg
+{
+    color: #00b285;
+    font-size: 10px;
+}
+.departure-date-section tr.table-row-content .list-item .select-package-btn .selected-txt .text
+{
+    color: #fff;
+}
+.departure-date-section tr.table-row-content .list-item .select-package-btn.btn-selected .package-txt
+{
+    display: none;
+}
+.departure-date-section tr.table-row-content .list-item .select-package-btn.btn-selected .selected-txt
+{
+    display: flex;
+}
+.departure-date-section .main-content .view-more-dates
+{
+    color: #fff;
+    background-color: #124ea2;
+    font-size: 14px;
+}
+.departure-date-section .sidebar .departure-sidebar .trip-summary
+{
+    border-radius: .5em;
+    overflow: hidden;
+}
+.departure-date-section .sidebar .departure-sidebar .trip-summary .side-head
+{
+    background-color: #124ea2;
+}
+.departure-date-section .sidebar .departure-sidebar .trip-summary .side-head .text
+{
+    color: #fff;
+    font-size: 14px;
+}
+.departure-date-section .sidebar .departure-sidebar .trip-summary .side-head .change-flight-btn
+{
+    background-color: transparent;
+    border-radius: .5em;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+}
+.departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body
+{
+    background-color: #f7f7f7;
+}
+.departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .box
+{
+    background-color: #fff;
+}
+.departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .box .box-title
+{
+    font-size: 14px;
+}
+.departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .box .box-text
+{
+    color: #124da1;
+    font-size: 15px;
+}
+.departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .box .location-info .location-name
+{
+    color: #444;
+    font-size: 13px;
+}
+.departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .head-box
+{
+    background-color: #124c9f;
+}
+.departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .head-box .title
+{
+    color: #fff;
+    font-size: 15px;
+}
+.departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .box .airline-logo
+{
+    width: 6em;
+}
+.departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .box .time-container.muted
+{
+    background-color: #f7f7f7;
+    border-radius: .5em;
+}
+.departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .box .time-container .title
+{
+    color: #444;
+    font-size: 14px;
+}
+.departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .box .time-container .time
+{
+    color: #124c9f;
+    font-size: 14px;
+}
+.departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .total-payment
+{
+    font-size: 15px;
+}
+.departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .total-payment .price
+{
+    font-size: 20px;
+}
+@media (min-width: 1750px) {
+    .departure-date-section .section-h
+    {
+        font-size: 1.3vmax;
+    }
+    .departure-date-section .main-content .date-tabs .month-text
+    {
+        font-size: 1vmax;
+    }
+    .departure-date-section .main-content .date-tabs .title
+    {
+        font-size: 1.1vmax;
+    }
+    .departure-date-section .main-content .tabs-item-content .tab_content .table-title
+    {
+        font-size: .9vmax;
+    }
+    .departure-date-section .table thead tr th
+    {
+        font-size: .9vmax;
+    }
+    .departure-date-section .table thead tr th.special-th span
+    {
+        font-size: .7vmax;
+    }
+    .departure-date-section .table tbody tr .dep-date
+    {
+        width: 80px;
+        align-items: center;
+    }
+    .departure-date-section .table tbody tr .dep-date .num
+    {
+        font-size: 1vmax;
+    }
+    .departure-date-section .table tbody tr .dep-date .text
+    {
+        font-size: .8vmax;
+    }
+    .departure-date-section .table tbody tr .availability-text.sold-out
+    {
+        font-size: 1vmax;
+    }
+    .departure-date-section .table tbody tr .availability-text
+    {
+        font-size: 1vmax;
+    }
+    .departure-date-section .table tbody tr .price-container .from
+    {
+        font-size: .8vmax;
+    }
+    .departure-date-section .table tbody tr .price-container .price
+    {
+        font-size: 1.1vmax;
+    }
+    .departure-date-section .table tbody tr .btn-itinerary
+    {
+        font-size: .8vmax;
+    }
+    .departure-date-section .table tbody tr.table-row-content .list-item .title
+    {
+        font-size: 1vmax;
+    }
+    .departure-date-section .table tbody tr.table-row-content .list-item .text
+    {
+        font-size: .9vmax;
+    }
+    .departure-date-section .table tbody tr.table-row-content .list-item .main-price-container .main-price
+    {
+        font-size: 1.1vmax;
+    }
+    .departure-date-section .table tbody tr.table-row-content .list-item .main-price-container .hint
+    {
+        font-size: .9vmax;
+    }
+    .departure-date-section .table tbody tr.table-row-content .list-item .price-title
+    {
+        font-size: .7vmax;
+    }
+    .departure-date-section .table tbody tr.table-row-content .list-item .price
+    {
+        font-size: 1vmax;
+    }
+    .departure-date-section tr.table-row-content .list-item .select-package-btn
+    {
+        font-size: .9vmax;
+    }
+    .departure-date-section tr.table-row-content .list-item .select-package-btn .selected-txt .selected-icon
+    {
+        width: 1vmax;
+        height: 1vmax;
+        line-height: 1vmax;
+    }
+    .departure-date-section tr.table-row-content .list-item .select-package-btn .selected-txt .selected-icon svg
+    {
+        font-size: .7vmax;
+    }
+    .departure-date-section .main-content .view-more-dates
+    {
+        font-size: .9vmax;
+    }
+    .departure-date-section .sidebar .departure-sidebar .trip-summary .side-head .text,
+    .departure-date-section .sidebar .departure-sidebar .trip-summary .side-head .change-flight-btn,
+    .departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .box .box-title,
+    .departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .box .location-info .location-name
+    {
+        font-size: .8vmax;
+    }
+    .departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .box .location-info img
+    {
+        width: .4vmax;
+    }
+    .departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .box .box-text
+    {
+        font-size: 1vmax;
+    }
+    .departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .box img
+    {
+        width: 1vmax;
+    }
+    .departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .box .airline-logo
+    {
+        width: 6vmax;
+    }
+    .departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .head-box .title
+    {
+        font-size: 1vmax;
+    }
+    .departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .box .time-container .title,
+    .departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .box .time-container .time
+    {
+        font-size: .9vmax;
+    }
+    .departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .total-payment
+    {
+        font-size: 1vmax;
+    }
+    .departure-date-section .sidebar .departure-sidebar .trip-summary .sidebar-body .total-payment .price
+    {
+        font-size: 1.2vmax;
+    }
+}
+@media (max-width: 1199px) {
+    .departure-date-section .sidebar .departure-sidebar .trip-summary .side-head .text,
+    .departure-date-section .sidebar .departure-sidebar .trip-summary .side-head .change-flight-btn
+    {
+        font-size: 13px;
+    }
+}
+@media (max-width: 577px) {
+    .departure-date-section .table tr th,
+    .departure-date-section .table tr td
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+/*End departure-date-section*/
+
+
+/*Start excurions-section*/
+.excurions-section
+{
+    background-color: #0c356d;
+}
+.excurions-section .section-title-container .section-title
+{
+    color: #fff;
+    font-size: 18px;
+}
+.excurions-section .section-line
+{
+    width: 100%;
+    height: .1em;
+    background-color: #155ebf;
+    display: block;
+}
+
+.excurions-section .swiper-container {
+    width: 100%;
+    height: 100%;
+    cursor: move;
+}
+
+.excurions-section .swiper-slide {
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    opacity: .5;
+}
+.excurions-section .swiper-slide.swiper-slide-prev,
+.excurions-section .swiper-slide.swiper-slide-active,
+.excurions-section .swiper-slide.swiper-slide-next
+{
+    opacity: 1;
+}
+
+.excurions-section .card-container
+{
+    position: relative;
+    border-radius: .5em;
+    overflow: hidden;
+}
+.excurions-section .card-container .card-img
+{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.excurions-section .card-container .overlay
+{
+    position: relative;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.excurions-section .card-container .overlay .day-num
+{
+    color: #fff;
+    background-color: #ec008c;
+    font-size: 14px;
+}
+.excurions-section .card-container .overlay .card-info
+{
+    margin-top: 11rem;
+}
+.excurions-section .card-container .overlay .card-info .card-title
+{
+    color: #fff;
+    font-size: 16px;
+}
+.excurions-section .card-container .overlay .card-info .card-title::after
+{
+    content: "";
+    width: 100%;
+    height: .1em;
+    background-color: #ec008c;
+    display: block;
+    margin: .5rem 0;
+}
+.excurions-section .card-container .overlay .card-info .card-text
+{
+    color: #fff;
+    font-size: 13px;
+}
+.excurions-section .card-container .overlay .card-info .card-btn
+{
+    color: #fff;
+    background-color: #124ea2;
+    font-size: 14px;
+    border: none;
+}
+.excurions-section .box .box-title
+{
+    font-size: 16px;
+    color: #fff;
+}
+.excurions-section .box .box-text
+{
+    font-size: 13px;
+    color: #fff;
+}
+@media (min-width: 1750px) {
+    .excurions-section .section-title-container img
+    {
+        width: 1.3vmax;
+    }
+    .excurions-section .section-title-container .section-title
+    {
+        font-size: 1.1vmax;
+    }
+    .excurions-section .card-container .overlay .day-num
+    {
+        font-size: .9vmax;
+    }
+    .excurions-section .card-container .overlay .card-info .card-title
+    {
+        font-size: 1vmax;
+    }
+    .excurions-section .card-container .overlay .card-info .card-text
+    {
+        font-size: .8vmax;
+    }
+    .excurions-section .card-container .overlay .card-info .card-btn
+    {
+        font-size: .9vmax;
+    }
+    .excurions-section .box .box-title
+    {
+        font-size: 1vmax;
+    }
+    .excurions-section .box .box-text
+    {
+        font-size: .8vmax;
+    }
+}
+/*End excurions-section*/

@@ -1,0 +1,591 @@
+
+
+.card-border
+{
+    border: .1em solid #e5e5e5;
+    border-radius: .5em;
+}
+.booking-passenger-info-page .main-title
+{
+    font-size: 25px;
+}
+.booking-passenger-info-page .title
+{
+    position: relative;
+    flex-basis: 11em;
+    font-size: 18px;
+}
+.booking-passenger-info-page .line
+{
+    width: 100%;
+    height: 2px;
+    background: #ec008c; 
+}
+@media (min-width: 1750px) {
+    .booking-passenger-info-page .main-title
+    {
+        font-size: 1.5vmax;
+    }
+    .booking-passenger-info-page .title
+    {
+        font-size: 1.3vmax;
+    }
+}
+/*Start Flight Summary*/
+.booking-passenger-info-page .flight-summary-info .airline-logo img
+{
+    width: 1.5em;
+}
+.booking-passenger-info-page .flight-summary-info .airline-info .date
+{
+    font-size: 17px;
+}
+.booking-passenger-info-page .flight-summary-info .airline-info .time
+{
+    font-size: 16px;
+}
+.booking-passenger-info-page .flight-summary-info .airline-info .city-name
+{
+    font-size: 15px;
+}
+.booking-passenger-info-page .flight-summary-info .plane-icon
+{
+    position: relative;
+}
+.booking-passenger-info-page .flight-summary-info .plane-icon img
+{
+    width: 1.2em;
+    height: 1.2em;
+}
+.booking-passenger-info-page .flight-summary-info .plane-icon::before,
+.booking-passenger-info-page .flight-summary-info .plane-icon::after
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: .5em;
+    height: .5em;
+    border-radius: 50%;
+}
+.booking-passenger-info-page .flight-summary-info .plane-icon::before
+{
+    left: -.8em;
+    background-color: blue;
+}
+.booking-passenger-info-page .flight-summary-info .plane-icon::after
+{
+    left: 115%;
+    background-color: #ec008c;
+}
+.booking-passenger-info-page .flight-summary-info .stop-line
+{
+    width: 100%;
+    height: .15em;
+    border-radius: .5em;
+    background-color: #a5a5a5;
+}
+.booking-passenger-info-page .flight-summary-info .stops .flight-time
+{
+    font-size: 16px;
+}
+.booking-passenger-info-page .flight-summary-info .stops .stop-dot
+{
+    background-color: #1bd291;
+    width: .6em;
+    height: .6em;
+    border-radius: 50%;
+    display: inline-block;
+    transform: translateY(-50%);
+}
+.booking-passenger-info-page .flight-summary-info .stops .stop-num
+{
+    font-size: 14px;
+}
+.booking-passenger-info-page .flight-summary-info .icons img
+{
+    width: 1.4em;
+    height: 1.3em;
+}
+.booking-passenger-info-page .flight-summary-info .airline-info .price-text
+{
+    font-size: 15px;
+}
+.booking-passenger-info-page .flight-summary-info .airline-info .price
+{
+    font-size: 20px;
+}
+.booking-passenger-info-page .head-background
+{
+    background-color: #e5e5e5;
+    width: 100%;
+    height: 3em;
+    border-top: .1em solid #ddd;
+}
+.booking-passenger-info-page .flight-summary-info .price-table
+{
+    transform: translateY(-2.5em);
+}
+.booking-passenger-info-page .flight-summary-info .table thead th
+{
+    padding-bottom: 30px;
+    color: #104d9e;
+    font-size: 16px;
+}
+.booking-passenger-info-page .flight-summary-info .table th,
+.booking-passenger-info-page .flight-summary-info .table td
+{
+    border: none;
+    font-size: 16px;
+}
+.booking-passenger-info-page .flight-summary-info .table td.total
+{
+    font-size: 18px;
+}
+@media (min-width: 1750px) {
+    .booking-passenger-info-page .flight-summary-info .airline-logo img
+    {
+        width: 1.5vmax;
+    }
+    .booking-passenger-info-page .flight-summary-info .airline-logo span
+    {
+        font-size: 1.2vmax;
+    }
+    .booking-passenger-info-page .flight-summary-info .airline-info .date
+    {
+        font-size: 1.1vmax;
+    }
+    .booking-passenger-info-page .flight-summary-info .airline-info .time
+    {
+        font-size: 1vmax;
+    }
+    .booking-passenger-info-page .flight-summary-info .airline-info .city-name
+    {
+        font-size: .9vmax;
+    }
+    .booking-passenger-info-page .flight-summary-info .plane-icon
+    {
+        margin: 0 20px;
+    }
+    .booking-passenger-info-page .flight-summary-info .plane-icon img
+    {
+        width: 1.5vmax;
+        height: 1.5vmax;
+    }
+    .booking-passenger-info-page .flight-summary-info .plane-icon::before,
+    .booking-passenger-info-page .flight-summary-info .plane-icon::after
+    {
+        width: .5vmax;
+        height: .5vmax;
+    }
+    .booking-passenger-info-page .flight-summary-info .plane-icon::before
+    {
+        left: -.8vmax;
+    }
+    
+    .booking-passenger-info-page .flight-summary-info .stops .flight-time
+    {
+        font-size: 1vmax;
+    }
+    .booking-passenger-info-page .flight-summary-info .stops .stop-num
+    {
+        font-size: .9vmax;
+    }
+    .booking-passenger-info-page .flight-summary-info .stops .stop-dot
+    {
+        width: .7vmax;
+        height: .7vmax;
+    }
+    .booking-passenger-info-page .flight-summary-info .icons img
+    {
+        width: 1.5vmax;
+        height: 1.3vmax;
+    }
+    .booking-passenger-info-page .flight-summary-info .airline-info .price-text
+    {
+        font-size: .8vmax;
+    }
+    .booking-passenger-info-page .flight-summary-info .airline-info .price
+    {
+        font-size: 1.3vmax;
+    }
+    .booking-passenger-info-page .flight-summary-info .price-table
+    {
+        transform: translateY(-12%);
+    }
+    .booking-passenger-info-page .flight-summary-info .table thead th
+    {
+        font-size: 1vmax;
+    }
+    .booking-passenger-info-page .flight-summary-info .table th, .booking-passenger-info-page .flight-summary-info .table td
+    {
+        font-size: 1vmax;
+    }
+    .booking-passenger-info-page .flight-summary-info .table td.total
+    {
+        font-size: 1.05vmax;
+    }
+}
+@media (max-width: 767px) {
+    .booking-passenger-info-page .flight-summary-info .stops .stop-dot
+    {
+        transform: translateY(-50%);
+    }
+    .booking-passenger-info-page .flight-summary-info .table thead th
+    {
+        font-size: 13px;
+    }
+    .booking-passenger-info-page .flight-summary-info .table th,
+    .booking-passenger-info-page .flight-summary-info .table td
+    {
+        font-size: 14px;
+    }
+    .booking-passenger-info-page .flight-summary-info .table td.total
+    {
+        font-size: 15px;
+    }
+}
+@media (max-width: 575px) {
+    .booking-passenger-info-page .flight-summary-info .price-table
+    {
+        transform: translateY(-3em);
+    }
+}
+/*End Flight Summary*/
+
+/*Start Hotel-Summary-Info */
+.booking-passenger-info-page .hotel-summary-info .card
+{
+    border: none;
+}
+.booking-passenger-info-page .hotel-summary-info .card .card-body .card-title
+{
+    font-size: 20px;
+}
+.booking-passenger-info-page .hotel-summary-info .card .card-body .stars li
+{
+    color: #ffc926;
+    font-size: 13px;
+}
+.booking-passenger-info-page .hotel-summary-info .card .card-body .location img.map-icon
+{
+    width: 1em;
+    height: 1.2em;
+}
+.booking-passenger-info-page .hotel-summary-info .card .card-body .location p
+{
+    width: 50%;
+    font-size: 15px;
+}
+.booking-passenger-info-page .hotel-summary-info .card .card-body .hotel-info_type,
+.booking-passenger-info-page .hotel-summary-info .card .card-body .hotel-info_text
+{
+    font-size: 17px;
+}
+.booking-passenger-info-page .hotel-summary-info .card .card-body .room-num .text
+{
+    font-size: 16px;
+}
+.booking-passenger-info-page .hotel-summary-info .card .card-body .room-num .num
+{
+    font-size: 15px;
+}
+.booking-passenger-info-page .hotel-summary-info .card .card-body .room-num img.room-icon
+{
+    width: 1em;
+    height: .8em;
+}
+
+.booking-passenger-info-page .hotel-summary-info .card .card-body .room-num
+{
+    border-left: 1px solid #ddd;
+}
+.booking-passenger-info-page .hotel-summary-info .price-info .box
+{
+    border-radius: .5em;
+}
+.booking-passenger-info-page .hotel-summary-info .price-info .box.blue__box
+{
+    background-color: #d9f5ff;
+}
+.booking-passenger-info-page .hotel-summary-info .price-info .box.blue__box span,
+.booking-passenger-info-page .hotel-summary-info .price-info .box.red__box span
+{
+    font-size: 16px;
+}
+.booking-passenger-info-page .hotel-summary-info .price-info .box.red__box
+{
+    background-color: #ffeaf7;
+}
+.booking-passenger-info-page .hotel-summary-info .price-info .table tr,
+.booking-passenger-info-page .hotel-summary-info .price-info .table th,
+.booking-passenger-info-page .hotel-summary-info .price-info .table td
+{
+    border: none;
+    width: 10px;
+    font-size: 15px;
+}
+.booking-passenger-info-page .hotel-summary-info .price-info .table td.total
+{
+    font-size: 17px;
+}
+.booking-passenger-info-page .hotel-summary-info .price-info .table thead tr th
+{
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+.booking-passenger-info-page .hotel-summary-info .price-info .table
+{
+    transform: translateY(-2.5em);
+}
+@media (min-width: 1750px ) {
+    .booking-passenger-info-page .hotel-summary-info .card .card-body .card-title
+    {
+        font-size: 1.2vmax;
+    }
+    .booking-passenger-info-page .hotel-summary-info .card .card-body .location
+    {
+        margin: 1em 0;
+    }
+    .booking-passenger-info-page .hotel-summary-info .card .card-body .location p
+    {
+        font-size: .9vmax;
+    }
+    .booking-passenger-info-page .hotel-summary-info .card .card-body .hotel-info_type, .booking-passenger-info-page .hotel-summary-info .card .card-body .hotel-info_text
+    {
+        font-size: 1vmax;
+    }
+    .booking-passenger-info-page .hotel-summary-info .card .card-body .stars li
+    {
+        font-size: .7vmax;
+    }
+    .booking-passenger-info-page .hotel-summary-info .card .card-body .room-num
+    {
+        border-left: .3em solid #ddd;
+    }
+    .booking-passenger-info-page .hotel-summary-info .card .card-body .room-num .text
+    {
+        font-size: 1vmax;
+    }
+    .booking-passenger-info-page .hotel-summary-info .card .card-body .room-num img.room-icon
+    {
+        font-size: 1vmax;
+    }
+    .booking-passenger-info-page .hotel-summary-info .card .card-body .room-num .num
+    {
+        font-size: 1vmax;
+    }
+    .booking-passenger-info-page .hotel-summary-info .price-info .box.blue__box span,
+    .booking-passenger-info-page .hotel-summary-info .price-info .box.red__box span
+    {
+        font-size: 1vmax;
+    }
+    .booking-passenger-info-page .hotel-summary-info .price-info .table
+    {
+        transform: translateY(-25%);
+    }
+    .booking-passenger-info-page .hotel-summary-info .price-info .table thead tr th
+    {
+        font-size: 1vmax;
+    }
+    .booking-passenger-info-page .hotel-summary-info .price-info .table tr,
+    .booking-passenger-info-page .hotel-summary-info .price-info .table th,
+    .booking-passenger-info-page .hotel-summary-info .price-info .table td
+    {
+        font-size: .8vmax;
+    }
+    .booking-passenger-info-page .hotel-summary-info .price-info .table td.total
+    {
+        font-size: .9vmax;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .booking-passenger-info-page .hotel-summary-info .price-info .table thead tr th
+    {
+        font-size: 15px;
+    }
+    .booking-passenger-info-page .hotel-summary-info .card .card-body .location p
+    {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .booking-passenger-info-page .hotel-summary-info .card .card-body .room-num
+    {
+        border-left: none;
+    }
+    .booking-passenger-info-page .hotel-summary-info .price-info .table tr,
+    .booking-passenger-info-page .hotel-summary-info .price-info .table th,
+    .booking-passenger-info-page .hotel-summary-info .price-info .table td
+    {
+        width: auto;
+    }
+    .booking-passenger-info-page .hotel-summary-info .card .card-body .location p
+    {
+        width: 100%;
+    }
+
+}
+/*End Hotel-Summary-Info */
+
+/*Start cruise-summary-info */
+.booking-passenger-info-page .cruise-summary-info .card-body img.ship-logo
+{
+    width: 5em;
+}
+.booking-passenger-info-page .cruise-summary-info .card-body .card-title
+{
+    font-size: 20px;
+}
+.booking-passenger-info-page .cruise-summary-info .card-body .card-text
+{
+    width: 50%;
+    font-size: 15px;
+}
+.booking-passenger-info-page .cruise-summary-info .card-body .price .price_text
+{
+    font-size: 14px;
+}
+.booking-passenger-info-page .cruise-summary-info .card-body .price .price_num
+{
+    font-size: 22px;
+}
+.booking-passenger-info-page .cruise-summary-info .card-body .passengers .passengers_title
+{
+    font-size: 17px;
+}
+.booking-passenger-info-page .cruise-summary-info .card-body .passengers .icons span
+{
+    font-size: 16px;
+}
+.booking-passenger-info-page .cruise-summary-info .card-body .price-passengers-container
+{
+    border-left: 1px solid #ddd;
+}
+.booking-passenger-info-page .cruise-summary-info .card-body .price-passengers-container img.room-icon
+{
+    width: 1em;
+    height: 1em;
+}
+.booking-passenger-info-page .cruise-summary-info .table th,
+.booking-passenger-info-page .cruise-summary-info .table td
+{
+    border: none;
+    font-size: 15px;
+}
+.booking-passenger-info-page .cruise-summary-info .table thead tr th
+{
+    background-color: #e5e5e5;
+    font-size: 17px;
+}
+.booking-passenger-info-page .cruise-summary-info .table .num span
+{
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    border-radius: 50%;
+}
+@media (min-width: 1750px) {
+    .booking-passenger-info-page .cruise-summary-info .card-body img.ship-logo
+    {
+        width: 5vmax;
+        margin: 1vmax 0;
+    }
+    .booking-passenger-info-page .cruise-summary-info .card-body .card-title
+    {
+        font-size: 1.2vmax;
+    }
+    .booking-passenger-info-page .cruise-summary-info .card-body .card-text
+    {
+        font-size: 1vmax;
+    }
+    .booking-passenger-info-page .cruise-summary-info .card-body .price .price_text
+    {
+        font-size: .8vmax;
+    }
+    .booking-passenger-info-page .cruise-summary-info .card-body .price .price_num
+    {
+        font-size: 1.4vmax;
+    }
+    .booking-passenger-info-page .cruise-summary-info .card-body .passengers .passengers_title
+    {
+        font-size: 1.1vmax;
+    }
+    .booking-passenger-info-page .cruise-summary-info .card-body .price-passengers-container
+    {
+        border-left: .3em solid #ddd;
+    }
+    .booking-passenger-info-page .cruise-summary-info .card-body .price-passengers-container img.room-icon
+    {
+        font-size: 1vmax;
+    }
+    .booking-passenger-info-page .cruise-summary-info .card-body .passengers .icons span
+    {
+        font-size: 1vmax;
+    }
+    .booking-passenger-info-page .cruise-summary-info .table thead tr th
+    {
+        font-size: 1vmax;
+    }
+    .booking-passenger-info-page .cruise-summary-info .table th, .booking-passenger-info-page .cruise-summary-info .table td
+    {
+        font-size: .8vmax;
+    }
+} 
+@media (max-width: 767px) {
+    .booking-passenger-info-page .cruise-summary-info .card-body .price-passengers-container
+    {
+        border: none;
+    }
+    .booking-passenger-info-page .cruise-summary-info .card-body .card-text
+    {
+        width: 100%;
+    }
+}
+/*End cruise-summary-info */
+
+
+/*Start Room Info [Booking]*/
+.booking-passenger-info-page .booking .room-info .room-head img
+{
+    width: 1.3em;
+    
+}
+.booking-passenger-info-page .booking .room-info .room-head img.child-img
+{
+    width: 1.4em;
+    height: 1.2em;
+}
+.booking-passenger-info-page .booking .room-head span
+{
+    font-size: 17px;
+}
+.booking-passenger-info-page .booking .input-title
+{
+    font-size: 15px;
+}
+.booking-passenger-info-page .booking-passenger-info input
+{
+    border-radius: .4em;
+}
+.booking-passenger-info-page input[type="submit"]
+{
+    background: linear-gradient(180deg, #371b8c, #9e0c8c);
+    border-radius: 2em;
+    font-size: 15px;
+}
+@media (min-width: 1750px) {
+    .booking-passenger-info-page .booking .input-title
+    {
+        font-size: 1vmax;
+    }
+    .booking-passenger-info-page .booking .room-head span
+    {
+        font-size: 1.05vmax;
+    }
+    .booking-passenger-info-page input[type="submit"]
+    {
+        font-size: 1vmax;
+    }
+}
+/*End Room Info [Booking]*/

@@ -1,0 +1,1278 @@
+
+/*Start holidays-offers*/
+.holidays-offers .card
+{
+  border: none;
+  box-shadow: 0px 10px 20px -3px #ddd;
+  border-radius: 1em;
+  overflow: hidden;
+}
+.holidays-offers .card .card-img-top
+{
+  position: relative;
+  /*
+  height: 10em;
+  */
+}
+.holidays-offers .card .card-img-top .price
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background: #124ea2;
+  border-radius: 0 1.5em 0 0;
+  font-size: 13px;
+}
+.holidays-offers .card .card-img-top .price span:first-of-type
+{
+  font-size: 14px;
+}
+.holidays-offers .card .card-img-top .price span:nth-of-type(2)
+{
+  font-size: 20px;
+}
+.holidays-offers .card .card-body .hotel-name
+{
+  color: #535353;
+  font-weight: 600;
+  font-size: 15px;
+}
+.holidays-offers .card .card-body .hotel-location
+{
+  position: relative;
+}
+.holidays-offers .card .card-body .hotel-location::after
+{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  display: block;
+  background: #e8e8e8;
+}
+.holidays-offers .card .ship-desc p
+{
+  font-size: 13px;
+}
+.holidays-offers .card .card-body .hotel-location .location-name
+{
+  color: #545454;
+  font-size: 14px;
+}
+.holidays-offers .card .card-body .hotel-location .hotel-rating svg
+{
+  color: #ffc926;
+  font-size: 11px;
+}
+.holidays-offers .card .card-body .hotel-desc .desc-head
+{
+  color: #545454;
+  font-weight: 600;
+  font-size: 15px;
+}
+.holidays-offers .card .card-body .hotel-desc .card-text
+{
+  font-size: 15px;
+}
+.holidays-offers .card .card-body .hotel-desc .night-num,
+.holidays-offers .card .card-body .hotel-desc .breakfast
+{
+  color: #fff;
+  background: #0a2c5a;
+  padding: 5px 15px;
+  border-radius: 1em;
+  font-size: 13px;
+}
+.holidays-offers .card .card-body .hotel-desc .night-num img,
+.holidays-offers .card .card-body .hotel-desc .breakfast img
+{
+  width: 1em;
+  height: 1em;
+}
+.holidays-offers .card .card-body .offer-info
+{
+  color: #eb008c;
+  font-size: 14px;
+}
+.holidays-offers .card .card-body .book-by
+{
+  font-weight: 500;
+  color: #545454;
+  font-size: 15px;
+}
+.holidays-offers .card .card-body .book-by span
+{
+  color: #124ea2;
+}
+.holidays-offers .card .card-body .valid
+{
+  color: #535353;
+  font-weight: 500;
+  font-size: 15px;
+}
+.holidays-offers .card .card-body .valid img
+{
+  width: 100%;
+}
+@media (min-width: 1750px) {
+  .holidays-offers .card .card-img-top
+  {
+    /*
+    height: 12vmax;
+    */
+  }
+  .holidays-offers .card .card-img-top .price span:first-of-type
+  {
+    font-size: .9vmax;
+  }
+  .holidays-offers .card .card-img-top .price span:nth-of-type(2)
+  {
+    font-size: 1.5vmax;
+  }
+  .holidays-offers .card .card-body .hotel-name
+  {
+    font-size: 1.2vmax;
+  }
+  .holidays-offers .card .card-body .hotel-location img
+  {
+    width: 1em;
+    transform: translateY(-6px);
+  }
+  .holidays-offers .card .card-body .hotel-location .location-name
+  {
+    font-size: 1vmax;
+  }
+  .holidays-offers .card .card-body .hotel-location .hotel-rating svg
+  {
+    font-size: .8vmax;
+  }
+  .holidays-offers .card .card-body .hotel-desc .desc-head
+  {
+    font-size: 1.2vmax;
+  }
+  .holidays-offers .card .card-body .hotel-desc .card-text
+  {
+    font-size: 1vmax;
+  }
+  .holidays-offers .card .card-body .hotel-desc .night-num,
+  .holidays-offers .card .card-body .hotel-desc .breakfast
+  {
+    font-size: 1vmax;
+  }
+  .holidays-offers .card .card-body .offer-info
+  {
+    font-size: 1vmax;
+  }
+  .holidays-offers .card .card-body .book-by
+  {
+    font-size: 1.1vmax;
+  }
+  .holidays-offers .card .card-body .valid
+  {
+    font-size: 1.1vmax;
+  }
+  .holidays-offers .card .card-body .valid img
+  {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .holidays-offers .card .card-img-top
+  {
+    /*
+    height: 250px;
+    */
+  }
+  .holidays-offers .card .card-body .valid img
+  {
+      width: 4em;
+  }
+}
+/*End holidays-offers*/
+
+/*Start early-discount-section*/
+.early-discount-section
+{
+  background: url("../images/home_page/early-descount/background.png") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+.early-discount-section .overlay
+{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  background: linear-gradient(0deg, black,transparent,transparent,transparent);
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.early-discount-section .content
+{
+  position: relative;
+  z-index: 2;
+}
+.early-discount-section .content .discount-content
+{
+    max-width: 350px;
+}
+.early-discount-section .content .title
+{
+  text-shadow: 0px 0px 2px #5f5f5f;
+  position: relative;
+  font-size: 25px;
+}
+.early-discount-section .content .title::after
+{
+  content: "";
+  position: absolute;
+  top: 108%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 50%;
+  height: 2px;
+  box-shadow: 0px 0 10px 0 #5f5f5f;
+  background: #fff;
+}
+.early-discount-section .content .text
+{
+  text-shadow: 0px 0px 2px #5f5f5f;
+  font-size: 24px;
+}
+.early-discount-section .content .info
+{
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #2e1c8c, #9f0b8c);
+  border-radius: 4em;
+  width: 250px;
+}
+.early-discount-section .content .info .price
+{
+  position: relative;
+  font-size: 15px;
+}
+.early-discount-section .content .info .price span
+{
+  font-size: 20px;
+}
+.early-discount-section .content .info .line
+{
+  width: .1em;
+  background: #fff;
+}
+.early-discount-section .content .info .night-num
+{
+  font-size: 13px;
+}
+.early-discount-section .content .city-name
+{
+  text-shadow: 0px 0px 2px #5f5f5f;
+  font-size: 27px;
+}
+.early-discount-section .content .stars li
+{
+  color: #ffc926;
+  font-size: 13px;
+}
+.early-discount-section .content .location img
+{
+  width: 12px;
+  height: 15px;
+}
+.early-discount-section .content .location span
+{
+  font-size: 16px;
+}
+.early-discount-section .content .details .logo
+{
+  width: 117px;
+  height: 50px;
+}
+.early-discount-section .content .details span
+{
+  font-size: 16px;
+}
+@media (min-width: 1750px) {
+  .early-discount-section .content .title
+  {
+    font-size: 2vmax;
+  }
+  .early-discount-section .content .text
+  {
+    font-size: 1.95vmax;
+  }
+  .early-discount-section .content .info,
+  .early-discount-section .content .city-info
+  {
+    width: 500px;
+  }
+  .early-discount-section .content .info .price
+  {
+    font-size: .9vmax;
+  }
+  .early-discount-section .content .info .price::after
+  {
+    left: 105%;
+    width: 5px;
+  }
+  .early-discount-section .content .info .price span
+  {
+    font-size: 1.5vmax;
+  }
+  .early-discount-section .content .info .night-num
+  {
+    font-size: 1vmax;
+  }
+  .early-discount-section .content .city-name
+  {
+    font-size: 2.1vmax;
+  }
+  .early-discount-section .content .stars li
+  {
+    font-size: 1vmax;
+  }
+  .early-discount-section .content .location span
+  {
+    font-size: 1.1vmax;
+  }
+  .early-discount-section .content .details span
+  {
+    font-size: 1.3vmax;
+  }
+  .early-discount-section .content .discount-content
+  {
+    max-width: 80%;
+  }
+  .early-discount-section .content .location img
+  {
+    width: 1vmax !important;
+    height: auto;
+    transform: translateY(-6px);
+  }
+  .early-discount-section .content .logo img
+  {
+    width: 8vmax;
+  }
+}
+@media (max-width: 767px) {
+  
+  .early-discount-section .content .discount-content
+  {
+    max-width: 100%;
+  }
+}
+/*End early-discount-section*/
+
+/*Start holidays-categories*/
+.holidays-categories .tabs-items-container
+{
+  background: url("../images/home_page/holidays-cat/tab-nav-img.png") no-repeat center center;
+  background-size: cover;
+}
+.holidays-categories .tab-content .holiday-box-item
+{
+  position: relative;
+  height: 100%;
+}
+.holidays-categories .tab-content .holiday-box-item img
+{
+  width: 1em;
+}
+.holidays-categories .tab-content .holiday-box-item .price
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 10px;
+  background: #fff;
+  border-radius: 0 0 20px;
+  font-size: 13px;
+}
+.holidays-categories .tab-content .holiday-box-item .price span
+{
+  font-weight: 500;
+  font-size: 17px;
+}
+.holidays-categories .tab-content .holiday-box-item .holiday-box-content
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(255,255,255,.8);
+  width: 100%;
+}
+.holidays-categories .tab-content .holiday-box-item .holiday-box-content .title
+{
+  color: #545454;
+  font-weight: 600;
+  font-size: 15px;
+}
+.holidays-categories .tab-content .holiday-box-item .holiday-box-content .subtitle
+{
+  color: #545454;
+  font-size: 13px;
+}
+.holidays-categories .tab-content .holiday-box-item .holiday-box-content .night-num
+{
+  background: #0a2c5a;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+@media (min-width: 1750px) {
+
+  .holidays-categories .tab-content .holiday-box-item .price
+  {
+    font-size: .8vmax;
+  }
+  .holidays-categories .tab-content .holiday-box-item .price span
+  {
+    font-size: 1.4vmax;
+  }
+  .holidays-categories .tab-content .holiday-box-item .holiday-box-content .title
+  {
+    font-size: 1vmax;
+  }
+  .holidays-categories .tab-content .holiday-box-item .holiday-box-content .subtitle
+  {
+    font-size: 1vmax;
+  }
+  .holidays-categories .tab-content .holiday-box-item img
+  {
+    width: 1.3vmax;
+    height: 1.3vmax;
+  }
+  .holidays-categories .tab-content .holiday-box-item .holiday-box-content .night-num
+  {
+    padding: 5px 18px;
+    border-radius: 2em;
+    font-size: 1.1vmax;
+  }
+}
+@media (max-width: 575px) {
+  .holidays-categories .tab-content .holiday-box-item .holiday-box-content
+  {
+    padding: 10px 0;
+  }
+  .holidays-categories .tab-content .holiday-box-item .holiday-box-content .title
+  {
+    font-size: 16px;
+  }
+  .holidays-categories .tab-content .holiday-box-item .holiday-box-content .subtitle
+  {
+    font-size: 16px;
+  }
+  .holidays-categories .tab-content .holiday-box-item .holiday-box-content .night-num
+  {
+    font-size: 16px;
+  }
+}
+/*End holidays-categories*/
+
+
+
+
+
+
+/*Start best-flight-offers*/
+.best-flight-offers
+{
+  background: #f9f9f9;
+}
+.best-flight-offers .box
+{
+  border-radius: 10px;
+  background: #fff;
+  height: 100%;
+}
+.best-flight-offers .box .title-icon
+{
+  width: 25px;
+  height: 23px;
+}
+.best-flight-offers .box .title
+{
+  color: #124ea2;
+  font-weight: 500;
+  font-size: 18px;
+}
+.best-flight-offers .box hr
+{
+  background: #ec008c;
+  border-width: 2px;
+  margin: 5px 0 10px;
+}
+.best-flight-offers .box ul li
+{
+  position: relative;
+}
+.best-flight-offers .box ul li a
+{
+  text-decoration: none;
+}
+.best-flight-offers .box ul li::after
+{
+  content: "";
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #eee;
+}
+.best-flight-offers .box ul li:last-of-type::after
+{
+  display: none;
+}
+.best-flight-offers .box ul li img.icon
+{
+  width: 24px;
+  height: 29px;
+}
+.best-flight-offers .box ul li .fly-name
+{
+  font-weight: 600;
+  color: #222;
+  font-size: 14px;
+}
+.best-flight-offers .box ul li .price
+{
+  color: #145ebf;
+  font-size: 17px;
+}
+.best-flight-offers .box ul li .city-name
+{
+  color: #777;
+  font-size: 15px;
+}
+@media (min-width: 1750px) {
+  .best-flight-offers .box hr
+  {
+    margin: .5em 0 1.3em;
+  }
+  .best-flight-offers .box .title-icon
+  {
+    width: 1.6vmax;
+    height: auto;
+  }
+  .best-flight-offers .box .title
+  {
+    font-size: 1.5vmax;
+  }
+  .best-flight-offers .box ul li img.icon
+  {
+    width: 2.3vmax;
+    height: auto;
+  }
+  .best-flight-offers .box ul li .fly-name
+  {
+    font-size: 1.2vmax;
+  }
+  .best-flight-offers .box ul li .city-name
+  {
+    font-size: 1.2vmax;
+  }
+  .best-flight-offers .box ul li .price
+  {
+    font-size: 1.3vmax;
+  }
+  .best-flight-offers .box .media img
+  {
+    width: 160px;
+  }
+}
+
+/*End best-flight-offers*/
+
+/*Start early-descount [ 2 ] */
+.early-descount-2
+{
+  background: url("../images/home_page/early-descount_2/backgorund.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  min-height: 500px;
+}
+.early-descount-2 .overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0, #000, transparent, transparent);
+  z-index: 1;
+}
+.early-descount-2 .content
+{
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.early-descount-2 .content .h1
+{
+  position: relative;
+  text-shadow: 0px 0px 2px #5f5f5f;
+  font-size: 35px;
+}
+.early-descount-2 .content .h1 ~ span
+{
+  font-size: 30px;
+}
+.early-descount-2 .content .h1::after
+{
+  content: "";
+  margin: 20px 0;
+  width: 300px;
+  height: 2px;
+  background: #fff;
+  display: block;
+}
+.early-descount-2 .content .box
+{
+  border-radius: 2em;
+  background: linear-gradient(160deg, rgba(41, 29, 140, .7), rgba(163, 7, 127, .7));
+  width: fit-content;
+}
+.early-descount-2 .content .box .table
+{
+  width: inherit;
+}
+.early-descount-2 .content .box .table td,
+.early-descount-2 .content .box .table th
+{
+  border: none;
+  color: #fff;
+  font-weight: normal;
+  font-size: 15px;
+}
+.early-descount-2 .content img
+{
+  width: 190px;
+}
+@media (min-width: 1750px) {
+  .early-descount-2
+  {
+    min-height: 850px;
+  }
+  .early-descount-2 .content .h1
+  {
+    font-size: 2vmax;
+  }
+  .early-descount-2 .content .h1::after
+  {
+    width: 19vmax;
+    height: 3px;
+  }
+  .early-descount-2 .content .h1 ~ span
+  {
+    font-size: 1.9vmax;
+  }
+  .early-descount-2 .content .box
+  {
+    width: 38vmax;
+    border-radius: 4em;
+    margin-top: 6em !important;
+  }
+  .early-descount-2 .content .box .table td,
+  .early-descount-2 .content .box .table th
+  {
+    font-size: 1.7vmax;
+  }
+  .early-descount-2 .content img
+  {
+    width: 15vmax;
+  }
+}
+@media (max-width: 767px) {
+  .early-descount-2 .content img
+  {
+    width: 179px;
+  }
+  .early-descount-2 .content .h1::after
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 576px) {
+  .early-descount-2 .content .box
+  {
+    width: 100%;
+  }
+}
+/*End early-descount [ 2 ]*/
+
+/*Start holidays-cat- [ 2 ]*/
+.holidays-cat-2 .tabs-items-container
+{
+  background: url("../images/home_page/holidays-cat_2/tab-image.png") no-repeat center center;
+  background-size: cover;
+}
+.holidays-cat-2 .tab-content .holiday-box-item
+{
+  position: relative;
+  height: 100%;
+}
+.holidays-cat-2 .tab-content .location img
+{
+  width: .8em;
+  height: 1em;
+}
+.holidays-cat-2 .tab-content .location span
+{
+  font-size: 16px;
+  font-weight: 500;
+}
+.holidays-cat-2 .tab-content .holiday-box-item .price
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 10px;
+  background: #fff;
+  border-radius: 0 0 20px;
+  font-size: 13px;
+}
+.holidays-cat-2 .tab-content .holiday-box-item .price span
+{
+  font-weight: 500;
+  font-size: 17px;
+}
+.holidays-cat-2 .tab-content .holiday-box-item .holiday-box-content
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(255,255,255,.8);
+  width: 100%;
+}
+
+@media (min-width: 1750px) {
+
+  .holidays-cat-2 .tab-content .holiday-box-item .price
+  {
+    font-size: .8vmax;
+  }
+  .holidays-cat-2 .tab-content .holiday-box-item .price span
+  {
+    font-size: 1.4vmax;
+  }
+  .holidays-cat-2 .tab-content .location img
+  {
+    width: 1.1vmax;
+    height: 1.3vmax;
+  }
+  .holidays-cat-2 .tab-content .location span
+  {
+    font-size: 1.2vmax;
+  }
+}
+@media (max-width: 575px) {
+  .holidays-cat-2 .tab-content .holiday-box-item .holiday-box-content
+  {
+    padding: 10px 0;
+  }
+}
+/*End holidays-cat- [ 2 ]*/
+
+/*Start latest-blog*/
+.latest-blog .box
+{
+  background: #0a2c5a;
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+.latest-blog .box > img
+{
+  transition: .5s;
+}
+.latest-blog .box:hover > img
+{
+  transform: scale(1.3);
+}
+.latest-blog .box .overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0, #000, transparent, transparent);
+  z-index: 1;
+}
+.latest-blog .box .text
+{
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  z-index: 2;
+  transition: .3s;
+}
+
+/*
+.latest-blog .box .text
+{
+  transform: translateY(81px);
+}
+.latest-blog .box:hover .text
+{
+  transform: translateY(0px);
+}
+*/
+.latest-blog .box .text
+{
+
+  transition: .3s;
+}
+.latest-blog .box .text span.title
+{
+  font-size: 16px;
+  transition: .3s;
+  transform: translateY(100%);
+}
+.latest-blog .box .text .subtitle
+{
+  line-height: 1.7;
+  font-size: 13px;
+  transition: .3s;
+  transform: translateY(120%);
+}
+.latest-blog .box:hover .text .title,
+.latest-blog .box:hover .text .subtitle
+{
+  transform: translateY(0);
+}
+.latest-blog .box .text .subtitle::before
+{
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #ec008c;
+  display: block;
+  margin-bottom: 3px;
+}
+@media (min-width: 1750px) {
+  .latest-blog .box
+  {
+    height: 400px;
+  }
+  .latest-blog .box .text span.title
+  {
+    font-size: 1.3vmax;
+  }
+  .latest-blog .box .text .subtitle
+  {
+    font-size: .8vmax;
+  }
+  .latest-blog .box .text .subtitle::before
+  {
+    width: 12vmax;
+    height: 4px;
+  }
+}
+/*End latest-blog*/
+
+/*Start why-choose-us*/
+.why-choose-us
+{
+  background-color: #124ea2;
+}
+.why-choose-us .head
+{
+  color: #fff;
+}
+.why-choose-us img
+{
+  width: 50px;
+  height: 54px;
+}
+.why-choose-us .title
+{
+  color: #fff;
+  font-size: 19px;
+}
+.why-choose-us p
+{
+  color: #fff;
+  line-height: 2;
+  font-size: 14px;
+}
+@media (min-width: 1750px) {
+  .why-choose-us .head
+  {
+    font-size: 1.8vmax;
+  }
+  .why-choose-us img
+  {
+    width: 4vmax;
+    height: auto;
+  }
+  .why-choose-us .title
+  {
+    font-size: 1.3vmax;
+  }
+  .why-choose-us p
+  {
+    font-size: .8vmax;
+  }
+}
+/*End why-choose-us*/
+
+
+/*Start benefits-section*/
+.benefits-section
+{
+  position: relative;
+  background: url("../images/home_page/benefits/background.png") no-repeat center center;
+  background-size: cover;
+  height: 500px;
+}
+.benefits-section .overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 37, 37, 0.7);
+  z-index: 1;
+}
+.benefits-section .content
+{
+  position: relative;
+  z-index: 2;
+}
+.benefits-section .left-box
+{
+  color: #fff;
+  font-size: 25px;
+}
+.benefits-section .right-box li
+{
+  color: #fff;
+  font-size: 15px;
+}
+.benefits-section .right-box li::after
+{
+  content: "";
+  width: 100px;
+  height: 1px;
+  background: #989795;
+  display: block;
+  margin-top: 10px;
+}
+.benefits-section .right-box li:last-of-type::after
+{
+  display: none;
+}
+@media (min-width:1750px) {
+  .benefits-section
+  {
+    height: 700px;
+  }
+  .benefits-section .left-box
+  {
+    font-size: 1.8vmax;
+  }
+  .benefits-section .right-box li
+  {
+    font-size: 1.1vmax;
+  }
+  .benefits-section .right-box li::after
+  {
+    width: 6vmax;
+    height: 2px;
+    margin-top: 1em;
+  }
+}
+/*End benefits-section*/
+
+/*Start our-partners*/
+.our-partners .title
+{
+  color: #acacac;
+  width: 170px;
+}
+.our-partners .airline img,
+.our-partners .hotels img
+{
+  filter: grayscale(1);
+  opacity: 0.6;
+}
+@media (min-width: 1750px) {
+  .our-partners .title
+  {
+    font-size: 1.2vmax;
+  }
+}
+/*End our-partners*/
+/********************************************************/
+/******************* End Home Page ********************/
+/********************************************************/
+
+
+
+
+
+/********************************************************/
+/*************** Start Holiday Page ********************/
+/********************************************************/
+.holiday-page .slider .carousel-inner .carousel-item .content,
+.hotels-page .slider .carousel-inner .carousel-item .content
+{
+  color: #fff;
+}
+.holiday-page .slider .carousel-inner .carousel-item .content h1,
+.hotels-page .slider .carousel-inner .carousel-item .content h1
+{
+  text-shadow: 0 3px 3px #222;
+  font-size: 40px;
+}
+.holiday-page .slider .carousel-inner .carousel-item .content .stars li svg,
+.hotels-page .slider .carousel-inner .carousel-item .content .stars li svg
+{
+  color: #ffc926;
+  font-size: 15px;
+}
+.holiday-page .slider .carousel-inner .carousel-item .content .price,
+.hotels-page .slider .carousel-inner .carousel-item .content .price
+{
+  border-radius: 2em;
+  background:linear-gradient(180deg, #3a1a8c, #9b0c8c);
+  width: fit-content;
+  font-size: 16px;
+}
+.holiday-page .slider .carousel-inner .carousel-item .content p
+{
+  text-shadow: 0 2px 3px #222;
+  width: auto;
+}
+.holiday-page .slider .carousel-inner .carousel-item .content .location .location-logo,
+.hotels-page .slider .carousel-inner .carousel-item .content .location .location-logo
+{
+  width: 15px;
+}
+.holiday-page .slider .carousel-inner .carousel-item .content .location span,
+.hotels-page .slider .carousel-inner .carousel-item .content .location span
+{
+  font-size: 16px;
+}
+.holiday-page .slider .carousel-inner .carousel-item .content .logo-container img.logo
+{
+  width: 100px;
+}
+@media (min-width: 1750px) {
+  .holiday-page .slider .carousel-inner .carousel-item .content h1,
+  .hotels-page .slider .carousel-inner .carousel-item .content h1
+  {
+      font-size: 2vmax;
+  }
+  .holiday-page .slider .carousel-inner .carousel-item .content .stars li svg,
+  .hotels-page .slider .carousel-inner .carousel-item .content .stars li svg
+  {
+    font-size: 1.1vmax;
+  }
+  .holiday-page .slider .carousel-inner .carousel-item .content .location .location-logo,
+  .hotels-page .slider .carousel-inner .carousel-item .content .location .location-logo
+  {
+    width: 1vmax;
+  }
+  .holiday-page .slider .carousel-inner .carousel-item .content .location span,
+  .hotels-page .slider .carousel-inner .carousel-item .content .location span
+  {
+    font-size: 1.1vmax;
+  }
+  .holiday-page .slider .carousel-inner .carousel-item .content .logo-container img.logo
+  {
+    width: 200px;
+  }
+  .holiday-page .slider .carousel-inner .carousel-item .content .price,
+  .hotels-page .slider .carousel-inner .carousel-item .content .price
+  {
+    font-size: 1.1vmax;
+    border-radius: 4em;
+  }
+}
+/********************************************************/
+/*************** End Holiday Page ********************/
+/********************************************************/
+
+
+/********************************************************/
+/*************** Start Hotels Page ********************/
+/********************************************************/
+
+.holiday-page .holidays-offers .card .price span:nth-of-type(2),
+.hotels-page .holidays-offers .card .price span:nth-of-type(2)
+{
+  font-weight: 600;
+}
+.hotels-page .holidays-categories .tab-pane .holiday-box-item  .price span:nth-of-type(1),
+.hotels-page .holidays-categories .tab-pane .holiday-box-item  .price span:nth-of-type(3),
+.holiday-page .holidays-categories .tab-pane .holiday-box-item  .price span:nth-of-type(1),
+.holiday-page .holidays-categories .tab-pane .holiday-box-item  .price span:nth-of-type(3)
+{
+  color: #848484;
+}
+.hotels-page .holidays-categories .tab-pane .holiday-box-item  .price span:nth-of-type(2),
+.holiday-page .holidays-categories .tab-pane .holiday-box-item  .price span:nth-of-type(2)
+{
+  font-weight: 600;
+}
+.hotels-page .holidays-categories .tab-pane .holiday-box-content  .stars li svg,
+.holiday-page .holidays-categories .tab-pane .holiday-box-content  .stars li svg
+{
+  color: #eb008c;
+}
+/********************************************************/
+/*************** End Hotel Page ************************/
+/********************************************************/
+
+
+/********************************************************/
+/*************** Start Cruise Page ************************/
+/********************************************************/
+.cruise-page .holidays-categories .tabs-items-container
+{
+  background: url("../images/cruise/slider-ship.png");
+  background-size: cover;
+}
+.cruise-page .carousel-item .content
+{
+  color: #fff;
+}
+.cruise-page .carousel-item .content .cruise-line-logo
+{
+  width: 15em; 
+}
+.cruise-page .carousel-item .content .ship-name
+{
+  text-shadow: 0 3px 3px #222;
+  font-size: 33px;
+}
+.cruise-page .carousel-item .content .price span:nth-of-type(1),
+.cruise-page .carousel-item .content .price span:nth-of-type(3)
+{
+  font-size: 14px;
+}
+.cruise-page .carousel-item .content .price span:nth-of-type(2)
+{
+  font-size: 20px;
+}
+.cruise-page .carousel-item .content .cruise-title
+{
+  text-shadow: 0 3px 3px #222;
+}
+.cruise-page .carousel-item .content .nights-num
+{
+  background: linear-gradient(150deg, #124ea2, #b61391) no-repeat;
+  border-radius: 2em;
+  font-size: 17px;
+}
+.cruise-page .carousel-item .content .nights-num img
+{
+  width: 1em;
+}
+.cruise-page .holidays-offers .card .card-body .ship-name,
+.holidays-offers .card .card-body .ship-desc .desc-head
+{
+  color: #535353;
+  font-weight: 600;
+  font-size: 15px;
+}
+.cruise-page .holidays-offers .card .card-body .cruise-Logo
+{
+  width: 100%;
+}
+.holidays-offers .card .card-body .ship-desc .moon
+{
+  width: 1em;
+}
+.holidays-offers .card .card-body .ship-desc .night-num
+{
+  color: #fff;
+  background: #0a2c5a;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+@media (min-width: 1750px) {
+
+  .cruise-page .carousel-item .content .ship-name
+  {
+    text-shadow: 0 3px 3px #222;
+    font-size: 2vmax;
+  }
+  .cruise-page .holidays-offers .card .card-body .ship-name,
+  .holidays-offers .card .card-body .ship-desc .desc-head
+  {
+    font-size: 1vmax;
+  }
+  .holidays-offers .card .ship-desc p
+  {
+    font-size: 1vmax;
+  }
+  .holidays-offers .card .card-body .ship-desc .night-num
+  {
+    font-size: 1vmax;
+    border-radius: 4em;
+    margin-top: .5em;
+  }
+  .cruise-page .carousel-item .content .cruise-line-logo
+  {
+    width: 15vmax;
+  }
+  .cruise-page .carousel-item .content .price span:nth-of-type(1),
+  .cruise-page .carousel-item .content .price span:nth-of-type(3)
+  {
+    font-size: 1.1vmax;
+  }
+  .cruise-page .carousel-item .content .price span:nth-of-type(2)
+  {
+    font-size: 2vmax;
+  }
+  .cruise-page .carousel-item .content .nights-num
+  {
+    font-size: 1.5vmax;
+  }
+}
+@media (max-width: 767px) {
+  
+  .cruise-page .holidays-offers .card .card-body .cruise-Logo
+  {
+      width: 4em;
+  }
+}
+/********************************************************/
+/*************** End Cruise Page ************************/
+/********************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Start Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <!--End Fonts-->
+
+    <link rel="stylesheet" href="../../css/library/all.min.css">
+    <link rel="stylesheet" href="../../css/library/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/library/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../css/library/swiper.min.css">
+    <link rel="stylesheet" href="../../css/library/lightgallery.min.css">
+    <link rel="stylesheet" href="../../css/myFramwork.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/details_pages/offer-detail-page-v2.css">
+    <title>Offer Detail page</title>
+</head>
+
+<body>
+
+    <div class="offer-detail-page">
+        <!--Start Upper Bar-->
+        <div class="upper-bar py-3">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 col-md-4 text-center mb-2 mb-lg-0">
+                        <div class="brand-name">
+                            <div class="image">
+                                <a href="../../index.html"><img src="../../images/home_page/upper-bar/brand-name.png" alt="image" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-8 text-right">
+                        <ul class="d-flex list-unstyled mb-0 align-items-center justify-content-end w-100 flex-wrap">
+                            <li class="mr-2 d-none d-lg-block">
+                                <span class="d-inline-flex align-items-center font-weight-bold mr-1"><a href="./contact-us.html">Call Us Today</a> </span>
+                            </li>
+                            <li class="mr-2 font-weight-bold d-none d-lg-flex align-items-center">
+                                <img class="icon mr-1" src="../../images/home_page/upper-bar/phone.png" alt="Phone" />
+                                <span><a href="../contact-us.html">+44 20 7123 1234</a> </span>
+                            </li>
+                            <li class="mr-2 d-none d-sm-flex align-items-center">
+                                <img class="icon mr-1" src="../../images/home_page/upper-bar/book.png" alt="Book" />
+                                <span><a href="../booking-passenger-info-page.html">My Booking</a> </span>
+                            </li>
+                            <li class="mr-2 font-weight-bold d-none d-sm-block">
+                                <span class="">
+                                    <a class="" href="#">Log In</a>
+                                </span>
+                            </li>
+                            <li class="font-weight-bold d-block d-sm-none">
+                                <div class="upper-search-container d-flex align-items-center">
+                                    <input class="upper-search form-control" type="search"/>
+                                    <i class="ml-2 search fas fa-search"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Upper Bar-->
+        <!--Start Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light py-2">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-block d-lg-none call-today">
+                    <a href="#">
+                        <span class="font-weight-600">Call Today:</span>
+                        02073931000
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link  " href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../flight-page.html">Flight</a>
+                        </li>
+                        <li class="nav-item anyWhere">
+                            <div class="nav-link   drop-title" href="#">
+                                Destination
+                            </div>
+                            <div class="Drop-Down px-3 py-3 anyWhere-menu" aria-labelledby="navbarDropdown">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <span class="d-block font-weight-bold">All Regions</span>
+                                        <hr />
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link py-1 font-weight-700 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-middle-east" role="tab" aria-controls="v-pills-home" aria-selected="true">Middle East</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-indian" role="tab" aria-controls="v-pills-profile" aria-selected="false">Indian Ocean</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-caribbean" role="tab" aria-controls="v-pills-messages" aria-selected="false">Caribbean</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-maxico" role="tab" aria-controls="v-pills-settings" aria-selected="false">Maxico</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-africa" role="tab" aria-controls="v-pills-settings" aria-selected="false">Africa</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-asia" role="tab" aria-controls="v-pills-settings" aria-selected="false">Asia</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-europe" role="tab" aria-controls="v-pills-settings" aria-selected="false">Europe</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-canada" role="tab" aria-controls="v-pills-settings" aria-selected="false">Canada</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-south-america" role="tab" aria-controls="v-pills-settings" aria-selected="false">Center & South
+                                                America</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-united-states" role="tab" aria-controls="v-pills-settings" aria-selected="false">United States Of
+                                                America</a>
+                                            <a class="nav-link py-1 font-weight-700" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-australasia" role="tab" aria-controls="v-pills-settings" aria-selected="false">Australasia</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="v-pills-middle-east" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                <span class="d-block font-weight-bold">Middle East Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-indian" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                <span class="d-block font-weight-bold">Indian Ocean Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-caribbean" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                                <span class="d-block font-weight-bold">Caribbean Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-maxico" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Maxico Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-africa" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Africa Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-asia" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Asia Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-europe" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Europe Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-canada" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Canada Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-south-america" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Center & South America
+                                                    Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-united-states" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">United States Of America
+                                                    Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-australasia" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <span class="d-block font-weight-bold">Australasia Countries</span>
+                                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">United Arab Emirates</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Jordan</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Oman</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Bahrain</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Kuwait</a></div>
+                                                    <div class="col-md-6 mb-2"><a href="../destination-landing-page.html">Qatar</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../holiday-page.html">Holiday</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../hotels-page.html">Hotel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="#">Attraction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="../cruise-page.html">Cruise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="./tour-details-page.html">Tour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="./blog-details-page.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="./offer-detail-page.html">Offer</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline d-none d-sm-flex my-2 my-lg-0">
+                        <div class="search-container">
+                            <input class="form-control mr-sm-2 search_input" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn my-2 my-sm-0  " type="submit">Search</button>
+                        </div>
+                        <i class="ml-2 search fas fa-search"></i>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--End Navbar-->
+
+        <!--Start Slider-->
+        <div class="custom-hotel-slider">
+            <!--all-background-->
+            <img class="background-img" src="../../images/hotel-details-page/slider/background.png" alt="background">
+            <!--hotel-content-->
+            <div class="hotel-content h-100">
+                <div class="container-fluid h-100">
+                    <!--lightgallery [Show Only When Click Thumbnail]-->
+                    <ul id="lightgallery" class="list-unstyled row d-none">
+                        <!--Image #1-->
+                        <li class="lg-item col-xs-6 col-sm-4 col-md-3" data-src="../../images/hotel-details-page/slider/background.png">
+                            <a href="">
+                                <img class="img-responsive" src="../../images/hotel-details-page/slider/background.png">
+                            </a>
+                        </li>
+                        <!--Image #2-->
+                        <li class="lg-item col-xs-6 col-sm-4 col-md-3" data-src="../../images/hotel-details-page/slider/background.png">
+                            <a href="">
+                                <img class="img-responsive" src="../../images/hotel-details-page/slider/background.png">
+                            </a>
+                        </li>
+                        <!--Image #3-->
+                        <li class="lg-item col-xs-6 col-sm-4 col-md-3" data-src="../../images/hotel-details-page/slider/background.png">
+                            <a href="">
+                                <img class="img-responsive" src="../../images/hotel-details-page/slider/background.png">
+                            </a>
+                        </li>
+                        <!--Image #4-->
+                        <li class="lg-item col-xs-6 col-sm-4 col-md-3" data-src="../../images/hotel-details-page/slider/background.png">
+                            <a href="">
+                                <img class="img-responsive" src="../../images/hotel-details-page/slider/background.png">
+                            </a>
+                        </li>
+                        <!--Image #5-->
+                        <li class="lg-item col-xs-6 col-sm-4 col-md-3" data-src="../../images/hotel-details-page/slider/background.png">
+                            <a href="">
+                                <img class="img-responsive" src="../../images/hotel-details-page/slider/background.png">
+                            </a>
+                        </li>
+                        <!--Image #6-->
+                        <li class="lg-item col-xs-6 col-sm-4 col-md-3" data-src="../../images/hotel-details-page/slider/background.png">
+                            <a href="">
+                                <img class="img-responsive" src="../../images/hotel-details-page/slider/background.png">
+                            </a>
+                        </li>
+                        <!--Image #7-->
+                        <li class="lg-item col-xs-6 col-sm-4 col-md-3" data-src="../../images/hotel-details-page/slider/background.png">
+                            <a href="">
+                                <img class="img-responsive" src="../../images/hotel-details-page/slider/background.png">
+                            </a>
+                        </li>
+                        <!--Image #8-->
+                        <li class="lg-item col-xs-6 col-sm-4 col-md-3" data-src="../../images/hotel-details-page/slider/background.png">
+                            <a href="">
+                                <img class="img-responsive" src="../../images/hotel-details-page/slider/background.png">
+                            </a>
+                        </li>
+                        <!--Image #9-->
+                        <li class="lg-item col-xs-6 col-sm-4 col-md-3" data-src="../../images/hotel-details-page/slider/background.png">
+                            <a href="">
+                                <img class="img-responsive" src="../../images/hotel-details-page/slider/background.png">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="row h-100">
+                        <div class="col-md-9 col-lg-9 col-xl-10">
+                            <!--image-content-->
+                            <div class="image-content h-100">
+                                <div class="d-flex align-items-center justify-content-center h-100">
+                                    <div class="content text-md-center">
+                                        <h1 class="hotel-name">Burj Al Arab Hotel</h1>
+                                        <ul class="lis-unstyled stars p-0">
+                                            <li class="d-inline-block">
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li class="d-inline-block">
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li class="d-inline-block">
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li class="d-inline-block">
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li class="d-inline-block">
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                        </ul>
+                                        <p class="offer-text font-weight-500 mt-3">7 night holidays, 2 sharing</p>
+                                        <div
+                                            class="price-info d-flex align-items-center font-weight-500 justify-content-md-center">
+                                            <span class="from">from</span>
+                                            <span class="price mx-1">$799/</span>
+                                            <span class="person">person</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-2">
+                            <div class="image-gallery-container">
+                                <!--upper-items -->
+                                <div class="upper-items px-2 py-2 d-flex justify-content-between">
+                                    <div class="item text-center mr-1">
+                                        <img src="../../images/hotel-details-page/slider/photos_icon.png" />
+                                    </div>
+                                    <div class="item text-center mr-1">
+                                        <img src="../../images/hotel-details-page/slider/couch_icon.png" />
+                                    </div>
+                                    <div class="item text-center mr-1">
+                                        <img src="../../images/hotel-details-page/slider/media_icon.png" />
+                                    </div>
+                                </div>
+                                <!-- Swiper [header thumbnail]-->
+                                <div class="main-slider d-flex flex-column justify-content-center align-items-center">
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <!--Thumbnail #1-->
+                                            <div class="swiper-slide" data-image=".image_content_1">
+                                                <img class="gallery_img w-100 h-100" src="../../images/hotel-details-page/slider/background.png" alt="gallery-img">
+                                            </div>
+                                            <!--Thumbnail #2-->
+                                            <div class="swiper-slide" data-image=".image_content_2">
+                                                <img class="gallery_img w-100 h-100" src="../../images/hotel-details-page/slider/background.png" alt="gallery-img">
+                                            </div>
+                                            <!--Thumbnail #3-->
+                                            <div class="swiper-slide" data-image=".image_content_3">
+                                                <img class="gallery_img w-100 h-100" src="../../images/hotel-details-page/slider/background.png" alt="gallery-img">
+                                            </div>
+                                            <!--Thumbnail #4-->
+                                            <div class="swiper-slide" data-image=".image_content_4">
+                                                <img class="gallery_img w-100 h-100" src="../../images/hotel-details-page/slider/background.png" alt="gallery-img">
+                                            </div>
+                                            <!--Thumbnail #5-->
+                                            <div class="swiper-slide" data-image=".image_content_5">
+                                                <img class="gallery_img w-100 h-100" src="../../images/hotel-details-page/slider/background.png" alt="gallery-img">
+                                            </div>
+                                            <!--Thumbnail #6-->
+                                            <div class="swiper-slide" data-image=".image_content_6">
+                                                <img class="gallery_img w-100 h-100" src="../../images/hotel-details-page/slider/background.png" alt="gallery-img">
+                                            </div>
+                                            <!--Thumbnail #7-->
+                                            <div class="swiper-slide" data-image=".image_content_7">
+                                                <img class="gallery_img w-100 h-100" src="../../images/hotel-details-page/slider/background.png" alt="gallery-img">
+                                            </div>
+                                            <!--Thumbnail #8-->
+                                            <div class="swiper-slide" data-image=".image_content_8">
+                                                <img class="gallery_img w-100 h-100" src="../../images/hotel-details-page/slider/background.png" alt="gallery-img">
+                                            </div>
+                                            <!--Thumbnail #9-->
+                                            <div class="swiper-slide" data-image=".image_content_9">
+                                                <img class="gallery_img w-100 h-100" src="../../images/hotel-details-page/slider/background.png" alt="gallery-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Slider-->
+
+        <!--Start Main Site-->
+        <div class="main-site mt-3">
+            <div class="container">
+                <div class="text-center mb-3">
+                    <button class="section-title btn my-2 my-sm-0" type="submit">View Hotel Page</button>
+                </div>
+                <div class="row">
+                    <!--Start Left side-->
+                    <div class="col-xl-9 order-2 order-lg-1">
+                        <div class="left-side">
+                            <div class="map">
+                                <div class="map-responsive">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.3865890177062!2d-0.20804177330541293!3d51.539879866493685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876106bc9e3aaa5%3A0x7ebfece53f140a09!2zMTMxIFNhbHVzYnVyeSBSZCwgS2lsYnVybiwgTG9uZG9uIE5XNiA2UkfYjCDYp9mE2YXZhdmE2YPYqSDYp9mE2YXYqtit2K_YqQ!5e0!3m2!1sar!2seg!4v1572279878291!5m2!1sar!2seg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Left side-->
+                    <!--Start Side-bar [Right Side] -->
+                    <div class="col-xl-3 order-1 order-lg-2">
+                        <div class="right-side">
+                            <div class="trip-summary-card">
+                                <!-- card Head-->
+                                <div class="card-head px-2 py-3">
+                                    <h3 class="title">
+                                        Trip Summary Offer ID <span>3829</span>
+                                    </h3>
+                                    <p class="text">
+                                        Famous Dukes Hotel - From Manchester
+                                    </p>
+                                </div>
+                                <!--Main Card-->
+                                <div class="main-card">
+                                    <div class="px-2">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="plane-info py-3">
+                                                    <!--Row #1 [Text]-->
+                                                    <div class="row">
+                                                        <div class="col-4 d-flex align-items-center justify-content-start">
+                                                            <span class="title text-uppercase font-weight-600">Departure</span>
+                                                        </div>
+                                                        <div class="col-4 d-flex align-items-center justify-content-center">
+                                                            <span class="title text-uppercase font-weight-600">Arrival</span>
+                                                        </div>
+                                                        <div class="col-4 d-flex align-items-center justify-content-end">
+                                                            <span class="title text-uppercase font-weight-600">Destination</span>
+                                                        </div>
+                                                    </div>
+                                                    <!--Row #2 [Icons]-->
+                                                    <div class="icons-container">
+                                                        <div class="row">
+                                                            <div class="col-4 d-flex align-items-center">
+                                                                <div class="icon">
+                                                                    <i class="fas fa-plane-departure"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-4 d-flex align-items-center justify-content-center">
+                                                                <div class="icon">
+                                                                    <i class="fas fa-plane-arrival"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-4 d-flex align-items-center justify-content-end">
+                                                                <div class="icon">
+                                                                    <i class="fas fa-tablet"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--Row #3 [Text]-->
+                                                    <div class="row">
+                                                        <div class="col-4 d-flex align-items-center justify-content-start">
+                                                            <span class="city-name font-weight-600">Manchester Airport (MAN)</span>
+                                                        </div>
+                                                        <div class="col-4 d-flex align-items-center justify-content-center text-center">
+                                                            <span class="city-name font-weight-600">Dubai International (DXB)</span>
+                                                        </div>
+                                                        <div class="col-4 d-flex align-items-center justify-content-end text-right">
+                                                            <span class="city-name font-weight-600">Dukes Dubai</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Departure--
+                                                <div class="plane-info my-4 d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex flex-column align-items-start text-left">
+                                                        <span class="title text-uppercase font-weight-600">Departure</span>
+                                                        <div class="icon">
+                                                            <i class="fas fa-plane-departure"></i>
+                                                        </div>
+                                                        <span class="city-name font-weight-600">Manchester Airport (MAN)</span>
+                                                    </div>
+                                                    <div class="d-flex flex-column align-items-center text-center">
+                                                        <span class="title text-uppercase font-weight-600">Arrival</span>
+                                                        <div class="icon">
+                                                            <i class="fas fa-plane-arrival"></i>
+                                                        </div>
+                                                        <span class="city-name font-weight-600">Dubai International Airport (DXB)</span>
+                                                    </div>
+                                                    <div class="d-flex flex-column align-items-end text-center">
+                                                        <span class="title text-uppercase font-weight-600">Destination</span>
+                                                        <div class="icon">
+                                                            <i class="fas fa-tablet"></i>
+                                                        </div>
+                                                        <span class="city-name ml-2 font-weight-600">Dukes Dubai</span>
+                                                    </div>
+                                                </div>
+                                            -->
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="hotel-info">
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-6 col-xl-12">
+                                                            <p class="text font-weight-500">
+                                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam excepturi ullam nihil consectetur? Quidem consectetur dolorem enim praesentium dicta suscipit quis in maxime doloribus, corporis eos, mollitia voluptatibus ex porro.
+                                                                <br>
+                                                                <br>
+                                                                <span>
+                                                                    Quisquam excepturi ullam nihil consectetur? Quidem it quis in maxime doloribus, corporis eos, mollitia voluptatibus ex porro.
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 col-xl-12">
+                                                            <ul class="list-unstyled info-list">
+                                                                <li class="mb-2 d-flex align-items-start">
+                                                                    <span class="font-weight-600">Travel Betweeen:</span>
+                                                                    <span class="font-weight-500"> 18th March 2019 - 25th March 2019</span>
+                                                                </li>
+                                                                <li class="mb-2 d-flex align-items-start">
+                                                                    <span class="font-weight-600">Room Type:</span>
+                                                                    <span class="font-weight-500"> Standard Rooms</span>
+                                                                </li>
+                                                                <li class="mb-2 d-flex align-items-start">
+                                                                    <span class="font-weight-600">Meal Plan:</span>
+                                                                    <span class="font-weight-500"> Breakfast</span>
+                                                                </li>
+                                                                <li class="mb-2 d-flex align-items-start">
+                                                                    <span class="font-weight-600">Nights:</span>
+                                                                    <span class="font-weight-500"> 7</span>
+                                                                </li>
+                                                                <li class="mb-2 d-flex align-items-start">
+                                                                    <span class="font-weight-600">Airline:</span>
+                                                                    <span class="font-weight-500"> Emirates</span>
+                                                                </li>
+                                                                <li class="mb-2 d-flex align-items-start">
+                                                                    <span class="font-weight-600">Cabin:</span>
+                                                                    <span class="font-weight-500"> Economy</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-12 col-xl-12">
+                                                            <span class="duke-title font-weight-600">
+                                                                Dukes Dubai
+                                                            </span>
+                                                            <p class="duke-text font-weight-500">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas saepe, nulla in omnis quibusdam commodi eaque id sapiente animi autem laudantium totam ad magni ducimus, eum cupiditate numquam! Debitis, sunt.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="total-price d-flex align-items-center justify-content-between py-3 px-1">
+                                        <span class="text font-weight-600">Total</span>
+                                        <span class="text font-weight-600">from : $ 1055 / person</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Side-bar [Right Side]-->
+                </div>
+            </div>
+        </div>
+        <!--End Main Site-->
+        <!--Start Footer-->
+        <div class="footer py-5">
+            <div class="container">
+                <span class="title d-block text-center mx-auto">Destinations</span>
+                <ul class="list-unstyled text-center mt-3 mx-auto cities">
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Dubai</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">New York</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Cape Town</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Istambul</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Hong Kong</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Doha</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Lose Angeles</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Sydney</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Auckland</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Tokyo</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Parise</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Bombay</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Bangkok</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Dubai</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Delhi</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Kuala Lumpure</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Jeddah</a></li>
+                    <li class="d-inline-block mr-3 mb-3"><a href="../destination-landing-page.html">Nairobia</a></li>
+                </ul>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <ul class="terms list-unstyled text-center text-lg-left mx-auto mx-lg-0 mb-0">
+                            <li class=" d-inline-block mr-2 mb-3 "><a href="../terms-conditions.html">Terms and conditions</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href=" # ">Privacy policy</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href="../contact-us.html">Contact</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href=" # ">FAQs</a></li>
+                            <li class=" d-inline-block mr-2 mb-3 "><a href="../booking-passenger-info-page.html">Flight information</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-lg-4 ">
+                        <ul class="social-media-icons list-unstyled text-center text-lg-right mx-auto mx-lg-0 ">
+                            <li class="d-inline-block mr-2">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="d-inline-block mr-2">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="d-inline-block mr-2">
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="d-inline-block mr-2">
+                                <a href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright text-center text-lg-left">
+                    Copyright 2019 Major Independent Partner
+                </div>
+            </div>
+        </div>
+        <div class="go-top">
+            <div class="icon">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </div>
+        <!--End Footer-->
+    </div>
+
+    <script src="../../js/library/all.min.js"></script>
+    <script src="../../js/library/jquery-3.3.1.min.js"></script>
+    <script src="../../js/library/popper.min.js"></script>
+    <script src="../../js/library/bootstrap.min.js"></script>
+    <script src="../../js/library/jquery-ui.min.js"></script>
+    <script src="../../js/library/swiper.min.js"></script>
+    <script src="../../js/library/lightgallery-all.min.js"></script>
+    <script src="../../js/myFramwork.js"></script>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/details_pages/offer-detail-page-v2.js"></script>
+</body>
+
+</html>

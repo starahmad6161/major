@@ -1,0 +1,269 @@
+
+
+.payment-page .slide-bar .trip-summary .head span
+{
+    font-size: 16px;
+}
+.payment-page .slide-bar .trip-summary .flight__btn
+{
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: .5em;
+    color: #fff;
+    font-size: 13px;
+}
+.payment-page .slide-bar .trip-summary .head
+{
+    border-radius: .5em .5em 0 0;
+}
+.payment-page .slide-bar .trip-summary .content
+{
+    background-color: #f7f7f7;
+}
+.payment-page .slide-bar .trip-summary .content .box
+{
+    background: #fff;
+    border-radius: .2em;
+}
+.payment-page .slide-bar .trip-summary .content .box .title img
+{
+    width: 1.2em;
+}
+.payment-page .slide-bar .trip-summary .content .box .title span
+{
+    font-size: 16px;
+}
+.payment-page .slide-bar .trip-summary .content .box p
+{
+    font-size: 15px;
+}
+.payment-page .slide-bar .trip-summary .content .box.trip .trip_text
+{
+    font-size: 16px;
+}
+.payment-page .slide-bar .trip-summary .content .box.trip .trip_date
+{
+    font-size: 16px;
+}
+.payment-page .slide-bar .trip-summary .content .box.trip .trip_city
+{
+    font-size: 15px;
+}
+.payment-page .slide-bar .trip-summary .content .box.trip .location img,
+.payment-page .slide-bar .trip-summary .content .box.flights .location img
+{
+    width: .7em;
+    height: 1em;
+}
+.payment-page .slide-bar .trip-summary .content .box.flights .flight_date_time
+{
+    font-size: 15px;
+}
+.payment-page .slide-bar .trip-summary .content .box.flights .location .flight_city_name
+{
+    font-size: 13px;
+}
+.payment-page .slide-bar .trip-summary .content .box_title
+{
+    font-size: 16px;
+}
+.payment-page .slide-bar .trip-summary .content .box.flights img.airline-logo
+{
+    width: 9em;
+}
+.payment-page .slide-bar .trip-summary .content .box.flights img.date-time-img
+{
+    width: 1.6em;
+    height: 1.2em;
+}
+.payment-page .slide-bar .trip-summary .content .box.flights .stop-over
+{
+    background-color: #f7f7f7;
+    border-radius: .5em;
+}
+.payment-page .slide-bar .trip-summary .content .box.flights .travel_info
+{
+    font-size: 13px;
+}
+.payment-page .slide-bar .trip-summary .content .total-payment
+{
+    font-size: 14px;
+}
+.payment-page .slide-bar .trip-summary .content .total-payment .price
+{
+    font-size: 20px;
+}
+
+/*Start Payment Details*/
+.payment-page .payment-info .head span
+{
+    font-size: 25px;
+}
+.payment-page .payment-info label
+{
+    font-size: 16px;
+}
+.payment-page .payment-info .payment-detail .title
+{
+    flex-basis: 11em;
+    font-size: 16px;
+}
+.payment-page .payment-info .payment-detail .line
+{
+    width: 100%;
+    height: .1em;
+    background: #eb268a;   
+}
+.payment-page .payment-info .payment-detail #ui-id-3-button
+{
+    width: 50%;
+}
+.payment-page .payment-info .payment-detail .select-card .text
+{
+    font-size: 15px;
+}
+.payment-page .payment-info .payment-detail .select-card li
+{
+    width: 60px;
+    height: 31px;
+    transition: .2s;
+    cursor: pointer;
+    outline: 4px solid transparent;
+}
+.payment-page .payment-info .payment-detail .select-card li.active
+{
+    outline: 4px solid rgba(55, 133, 239, 0.32);
+}
+.payment-page .payment-info .payment-detail .card-info li label
+{
+    position: relative;
+    font-size: 15px;
+}
+.payment-page .payment-info .cv-container .explain
+{
+    background-color: #ffd150;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    cursor: pointer;
+}
+.payment-page .payment-info .cv-container .explain svg
+{
+    font-size: 11px;
+}
+/*End Payment Details*/
+/*Submit btn*/
+.payment-page input[type="submit"]
+{
+    background: linear-gradient(180deg, #371b8c, #9e0c8c);
+    border-radius: 2em;
+    font-size: 14px;
+}
+
+
+
+@media (min-width: 1750px) {
+    .payment-page .slide-bar .trip-summary .head span
+    {
+        font-size: 1vmax;
+    }
+    .payment-page .slide-bar .trip-summary .flight__btn
+    {
+        font-size: 1vmax;
+    }
+    .payment-page .slide-bar .trip-summary .content .box .title img
+    {
+        width: 1vmax;
+    }
+    .payment-page .slide-bar .trip-summary .content .box .title span
+    {
+        font-size: 1vmax;
+    }
+    .payment-page .slide-bar .trip-summary .content .box p
+    {
+        font-size: 1vmax;
+    }
+    .payment-page .slide-bar .trip-summary .content .box.trip .trip_text
+    {
+        font-size: 1vmax;
+    }
+    .payment-page .slide-bar .trip-summary .content .box.trip .trip_date
+    {
+        font-size: 1vmax;
+    }
+    .payment-page .slide-bar .trip-summary .content .box.trip .location img, .payment-page .slide-bar .trip-summary .content .box.flights .location img
+    {
+        width: .7vmax;
+        height: .8vmax;
+    }
+    .payment-page .slide-bar .trip-summary .content .box.trip .trip_city
+    {
+        font-size: .8vmax;
+    }
+    .payment-page .slide-bar .trip-summary .content .box_title
+    {
+        font-size: 1vmax;
+    }
+    .payment-page .slide-bar .trip-summary .content .box.flights img.airline-logo
+    {
+        width: 6vmax;
+    }
+    .payment-page .slide-bar .trip-summary .content .box.flights img.date-time-img
+    {
+        width: 1.2vmax;
+        height: 1vmax;
+    }
+    .payment-page .slide-bar .trip-summary .content .box.flights .flight_date_time
+    {
+        font-size: 1vmax;
+    }
+    .payment-page .slide-bar .trip-summary .content .box.flights .location .flight_city_name
+    {
+        font-size: .8vmax;
+    }
+    .payment-page .slide-bar .trip-summary .content .box.flights .travel_info
+    {
+        font-size: .8vmax;
+    }
+    .payment-page .slide-bar .trip-summary .content .total-payment
+    {
+        font-size: .8vmax;
+    }
+    .payment-page .slide-bar .trip-summary .content .total-payment .price
+    {
+        font-size: 1vmax;
+    }
+    .payment-page .payment-info .head span
+    {
+        font-size: 1.2vmax;
+    }
+    .payment-page .payment-info label
+    {
+        font-size: .8vmax;
+    }
+    .payment-page .payment-info .payment-detail .title
+    {
+        font-size: .9vmax;
+    }
+    .payment-page .payment-info .payment-detail .line
+    {
+        height: .2em;
+    }
+    .payment-page .payment-info .payment-detail .select-card .text
+    {
+        font-size: .8vmax;
+    }
+    .payment-page .payment-info .payment-detail .select-card li
+    {
+        width: 3.2vmax;
+        height: 1.5vmax;
+    }
+    .payment-page .payment-info .payment-detail .card-info li label
+    {
+        font-size: .8vmax;
+    }
+    .payment-page input[type="submit"]
+    {
+        font-size: 1vmax;
+    }
+}

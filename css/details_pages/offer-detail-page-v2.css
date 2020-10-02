@@ -1,0 +1,492 @@
+
+
+
+@media (min-width: 768px) {
+    .container
+    {
+        max-width: 95% ;
+    }
+}
+
+
+
+
+
+
+/*Start custom-hotel-slider*/
+.custom-hotel-slider .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.custom-hotel-slider .swiper-container .swiper-wrapper{ 
+    background-color: rgba(0,0,0,.4);
+}
+.custom-hotel-slider .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    cursor: pointer;
+    border: .3em solid rgba(0,0,0,.8);
+}
+.custom-hotel-slider .swiper-slide.swiper-slide-active
+{
+    border: .3em solid rgba(255,255,255,.8);
+}
+.custom-hotel-slider .main-slider
+{
+    position: relative;
+    /*
+    height: auto;
+    height: 100vh;
+    height: 100%;
+    */
+    height: calc(100% - 58px);
+}
+.custom-hotel-slider .swiper-button-next
+{
+    top: auto;
+    bottom: 0;
+}
+.custom-hotel-slider .swiper-button-prev
+{
+    top: 0;
+    bottom: auto;
+}
+.custom-hotel-slider .swiper-button-next,
+.custom-hotel-slider .swiper-button-prev
+{
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,.4);
+    left: 0;
+    z-index: 999;
+}
+.custom-hotel-slider .swiper-button-next:after,
+.custom-hotel-slider .swiper-button-prev:after
+{
+    transform: rotateZ(90deg);
+    font-size: 15px;
+    color: #fff;
+    font-weight: 900;
+}
+.custom-hotel-slider
+{
+    position: relative;
+}
+.custom-hotel-slider .background-img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.custom-hotel-slider .hotel-content
+{
+    position: relative;
+    z-index: 2;
+}
+.custom-hotel-slider .image-gallery-container
+{
+    display: flex;
+    flex-direction: column;
+}
+.custom-hotel-slider .image-gallery-container .upper-items
+{
+    background-color: rgba(0,0,0,.4);
+}
+.custom-hotel-slider .image-gallery-container .upper-items .item
+{
+    background-color: rgba(0,0,0,.4);
+    border-radius: .3em;
+    width: 57px;
+    height: 42px;
+    line-height: 42px;
+    cursor: pointer;
+}
+.custom-hotel-slider .image-gallery-container .upper-items .item img
+{
+    width: 18px;
+}
+.custom-hotel-slider .image-content
+{
+    
+}
+
+.custom-hotel-slider .image-content .content .hotel-name
+{
+    font-size: 30px;
+}
+.custom-hotel-slider .image-content .content .stars li
+{
+    color: #ffc926;
+}
+.custom-hotel-slider .image-content .content .offer-text
+{
+    color: #124ea2;
+    font-size: 16px;
+}
+.custom-hotel-slider .image-content .content .price-info
+{
+    color: #555;
+    font-size: 15px;
+}
+.custom-hotel-slider .image-content .content .price-info .price
+{
+    color: #124ea2;
+    font-size: 25px;
+}
+@media(min-width: 1750px) {
+    .custom-hotel-slider .image-content .content .hotel-name
+    {
+        font-size: 1.5vmax;
+    }
+    .custom-hotel-slider .image-content .content .stars li svg,
+    .custom-hotel-slider .image-content .content .offer-text,
+    .custom-hotel-slider .image-content .content .price-info
+    {
+        font-size: 1vmax;
+    }
+    .custom-hotel-slider .image-content .content .price-info .price
+    {
+        font-size: 1.3vmax;
+    }
+}
+@media (max-width: 567px) {
+    .custom-hotel-slider
+    {
+        height: 100vh;
+    }
+    .custom-hotel-slider .main-slider
+    {
+        height: auto;
+    }
+    .custom-hotel-slider .swiper-button-next,
+    .custom-hotel-slider .swiper-button-prev
+    {
+        width: 40px;
+        height: 100%;
+    }
+    .custom-hotel-slider .swiper-button-prev
+    {
+        left: 0;
+        right: auto;
+    }
+    .custom-hotel-slider .swiper-button-next
+    {
+        right: 0;
+        left: auto;
+    }
+    .custom-hotel-slider .swiper-button-next:after, .custom-hotel-slider .swiper-button-prev:after
+    {
+        transform: rotateZ(0);
+    }
+    .custom-hotel-slider .image-content .content .hotel-name,
+    .custom-hotel-slider .image-content .content .offer-text,
+    .custom-hotel-slider .image-content .content .price-info .from,
+    .custom-hotel-slider .image-content .content .price-info .person
+    {
+        color: #fff;
+        text-shadow: 0px 0px 1px rgba(0,0,0,9);
+    }
+    .custom-hotel-slider .image-gallery-container
+    {
+        height: 100%;
+        justify-content: flex-end;
+    }
+}
+/*End custom-hotel-slider*/
+
+/*Start Main Site */
+.offer-detail-page .section-title
+{
+    font-size: 25px;
+    color: #fff;
+    background-color: #276ece;
+    transition: .3s;
+}
+.offer-detail-page .section-title:hover
+{
+    background-color: #155ebf;
+}
+
+/*Start Left Side*/
+.left-side .map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.left-side .map-responsive iframe{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+}
+/*End Left Side*/
+
+
+/*Start Right Side*/
+.offer-detail-page .right-side .trip-summary-card
+{
+
+}
+.offer-detail-page .right-side .trip-summary-card .card-head
+{
+    background-color: #155ebf;
+}
+.offer-detail-page .right-side .trip-summary-card .card-head .title
+{
+    color: #fff;
+    font-size: 15px;
+}
+.offer-detail-page .right-side .trip-summary-card .card-head .title span
+{
+    background-color: #999;
+}
+.offer-detail-page .right-side .trip-summary-card .card-head .text
+{
+    color: #fff;
+    font-size: 15px;
+}
+.offer-detail-page .right-side .trip-summary-card .main-card
+{
+    border: 2px solid rgba(18, 78, 163, 0.472);
+}
+.offer-detail-page .right-side .trip-summary-card .main-card .plane-info
+{
+    position: relative;
+}
+
+.offer-detail-page .right-side .trip-summary-card .main-card .icons-container
+{
+    position: relative;
+}
+.offer-detail-page .right-side .trip-summary-card .main-card .icons-container::after
+{
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 95%;
+    height: 8px;
+    background-color: #ddd;
+    display: block;
+    z-index: 1;
+}
+
+.offer-detail-page .right-side .trip-summary-card .main-card .plane-info .icon
+{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ddd;
+    z-index: 2;
+}
+.offer-detail-page .right-side .trip-summary-card .main-card .plane-info .title
+{
+    font-size: 11px;
+    color: #999;
+}
+.offer-detail-page .right-side .trip-summary-card .main-card .plane-info .city-name
+{
+    font-size: 10px;
+    color: #999;
+}
+.offer-detail-page .right-side .trip-summary-card .main-card .plane-info .icon svg
+{
+    font-size: 14px;
+}
+.offer-detail-page .right-side .trip-summary-card .main-card .hotel-info .text
+{
+    font-size: 14px;
+}
+.offer-detail-page .right-side .trip-summary-card .main-card .hotel-info .text span
+{
+    color: #999;
+}
+.offer-detail-page .right-side .trip-summary-card .main-card .hotel-info .info-list li *
+{
+    font-size: 14px;
+}
+.offer-detail-page .right-side .trip-summary-card .main-card .hotel-info .duke-title
+{
+    font-size: 16px;
+}
+.offer-detail-page .right-side .trip-summary-card .main-card .hotel-info .duke-text
+{
+    font-size: 15px;
+}
+.offer-detail-page .right-side .trip-summary-card .total-price
+{
+    background-color: #ddd;
+}
+.offer-detail-page .right-side .trip-summary-card .total-price *
+{
+    font-size: 16px;
+}
+@media (min-width: 1750px) {
+    .offer-detail-page .search-box .jq-selectbox label
+    {
+        font-size: .7vmax;
+    }
+    .offer-detail-page .search-box input[type="submit"]
+    {
+        font-size: .7vmax;
+    }
+    .offer-detail-page .right-side .trip-summary-card .card-head .title
+    {
+        font-size: 1vmax;
+    }
+    .offer-detail-page .right-side .trip-summary-card .card-head .text
+    {
+        font-size: 1vmax;
+    }
+    .offer-detail-page .right-side .trip-summary-card .main-card .plane-info .title,
+    .offer-detail-page .right-side .trip-summary-card .main-card .plane-info .city-name
+    {
+        font-size: .7vmax;
+    }
+    .offer-detail-page .right-side .trip-summary-card .main-card .plane-info .icon
+    {
+        width: 4em;
+        height: 4em;
+        line-height: 4em;
+    }
+    .offer-detail-page .right-side .trip-summary-card .main-card .plane-info .icon svg
+    {
+        font-size: .8vmax;
+    }
+    .offer-detail-page .right-side .trip-summary-card .main-card .hotel-info .text
+    {
+        font-size: .8vmax;
+    }
+    .offer-detail-page .right-side .trip-summary-card .main-card .hotel-info .info-list li *
+    {
+        font-size: .8vmax;
+    }
+    .offer-detail-page .right-side .trip-summary-card .main-card .hotel-info .duke-title
+    {
+        font-size: 1vmax;
+    }
+    .offer-detail-page .right-side .trip-summary-card .main-card .hotel-info .duke-text
+    {
+        font-size: .8vmax;
+    }
+    .offer-detail-page .right-side .trip-summary-card .total-price *
+    {
+        font-size: 1vmax        ;
+    }
+}
+@media (max-width: 1199px) {
+    .offer-detail-page .right-side .trip-summary-card .main-card .plane-info .title
+    {
+        font-size: 16px;
+    }
+    .offer-detail-page .right-side .trip-summary-card .main-card .plane-info .city-name
+    {
+        font-size: 16px;
+    }
+    .offer-detail-page .right-side .trip-summary-card .main-card .plane-info::after
+    {
+        top: 50%;
+    }
+    .offer-detail-page .right-side .trip-summary-card .main-card .plane-info .icon
+    {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .offer-detail-page .right-side .trip-summary-card .main-card .plane-info .icon svg
+    {
+        font-size: 17px;
+    }
+}
+@media (max-width: 767px)
+{
+    .offer-detail-page .right-side .trip-summary-card .main-card .plane-info::after
+    {
+        top: 45%;
+    }
+    .offer-detail-page .right-side .trip-summary-card .main-card .plane-info .title
+    {
+        font-size: 13px;
+    }
+    .offer-detail-page .right-side .trip-summary-card .main-card .plane-info .city-name
+    {
+        font-size: 13px;
+    }
+}
+/*End Right Side*/
+
+@media screen and (max-height:567px) {
+    .col-iphone_Land-8
+    {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    .col-iphone_Land-4
+    {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .col-iphone_Land-6
+    {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .custom-hotel-slider .image-content .content .hotel-name
+    {
+        font-size: 25px;
+    }
+    /*
+    .custom-hotel-slider .main-slider
+    {
+        flex-direction: row !important;
+    }
+    */
+    .custom-hotel-slider .swiper-button-prev
+    {
+        width: 40px;
+        height: 100%;
+        left: 0;
+        right: auto;
+    }
+    .custom-hotel-slider .swiper-button-next
+    {
+        width: 40px;
+        height: 100%;
+        right: 0;
+        left: auto;
+    }
+    .custom-hotel-slider .swiper-button-next:after,
+    .custom-hotel-slider .swiper-button-prev:after
+    {
+        transform: rotateY(0);
+    }
+}
